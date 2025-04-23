@@ -14,8 +14,6 @@ function getInfo()
 	}
 end
 
--- @description return stuctured description of the formation
--- @argument formationName [string] name of the formaiton
 return function(unitsToFormations)
 	local formationUnits = {}
 

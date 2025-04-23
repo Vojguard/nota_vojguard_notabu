@@ -21,8 +21,8 @@
 			"height": 74,
 			"title": "echo",
 			"width": 189,
-			"x": 819,
-			"y": 6
+			"x": 1024,
+			"y": -87
 		},
 		"3awKFbeo0s64iebtiXrvtyNQ6w1CyU2B": {
 			"height": 70,
@@ -31,25 +31,11 @@
 			"x": 308,
 			"y": -80
 		},
-		"62nbehgsoHXl3QFmQ20i2TLnysxfSwTN": {
-			"height": 72,
-			"title": "echo",
-			"width": 131,
-			"x": 781,
-			"y": 357
-		},
-		"AmWNbneogxxfbdXQrnqbjZmIyTpytHse": {
-			"height": 90,
-			"title": "Common.relativeMove",
-			"width": 225,
-			"x": 821,
-			"y": 264
-		},
 		"J038Zmfzcwq9ixgvGG593zcQvA7NOzps": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 541,
+			"x": 542,
 			"y": 297
 		},
 		"LKFaVr7TlN3SL6onOIGokoNpxrVZfHtS": {
@@ -58,6 +44,13 @@
 			"width": 202,
 			"x": 295,
 			"y": 21
+		},
+		"PiGCqDe8XxYB40BAJj1xE5SsxhcZG0CY": {
+			"height": 94,
+			"title": "store",
+			"width": 328,
+			"x": 1111,
+			"y": -3
 		},
 		"bSioY59sycQx2dMLotCu8dR49HxzvnS3": {
 			"height": 60,
@@ -70,15 +63,43 @@
 			"height": 90,
 			"title": "Common.relativeMove",
 			"width": 446,
-			"x": 798,
+			"x": 797,
 			"y": 117
+		},
+		"kAvfda4stcbLQiUDB87lPqCeHkZNnRvB": {
+			"height": 94,
+			"title": "store",
+			"width": 697,
+			"x": 864,
+			"y": 389
+		},
+		"nfZJVosFWGm7EDcXMTShrh1HydtMHy1j": {
+			"height": 94,
+			"title": "store",
+			"width": 333,
+			"x": 865,
+			"y": 210
 		},
 		"r9HgPfssZ8E48MmoqZx1ljpfq4n2HVCW": {
 			"height": 94,
 			"title": "store",
 			"width": 195,
-			"x": 820,
+			"x": 819,
 			"y": -108
+		},
+		"tsR1KugjsBgK6vY1wv4wqxvLD2mMXTIy": {
+			"height": 94,
+			"title": "store",
+			"width": 159,
+			"x": 863,
+			"y": 297
+		},
+		"wmr2CIwvDwQhmuJhGkrsf5tP1ptTz5sd": {
+			"height": 132,
+			"title": "formation.moveCustomGroup",
+			"width": 397,
+			"x": 865,
+			"y": 552
 		}
 	},
 	"roles": [ {
@@ -119,6 +140,21 @@
 				"scriptName": "echo"
 			}, {
 				"children": [],
+				"id": "PiGCqDe8XxYB40BAJj1xE5SsxhcZG0CY",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "comPos"
+				}, {
+					"name": "value",
+					"value": "Spring.GetUnitPosition(units[1])"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			}, {
+				"children": [],
 				"id": "iZKQkhrzHkfYXlq0yjxWiIOtgZq2VjUG",
 				"nodeType": "luaCommand",
 				"parameters": [ {
@@ -139,31 +175,70 @@
 		}, {
 			"children": [ {
 				"children": [],
-				"id": "AmWNbneogxxfbdXQrnqbjZmIyTpytHse",
+				"id": "nfZJVosFWGm7EDcXMTShrh1HydtMHy1j",
 				"nodeType": "luaCommand",
 				"parameters": [ {
-					"name": "dist",
-					"value": "{x = 100, z = 100}"
+					"name": "var",
+					"value": "formPos"
+				}, {
+					"name": "value",
+					"value": "nota_vojguard_notabu.LineFormation()"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			}, {
+				"children": [],
+				"id": "tsR1KugjsBgK6vY1wv4wqxvLD2mMXTIy",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "wind"
+				}, {
+					"name": "value",
+					"value": "map.Wind()"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			}, {
+				"children": [],
+				"id": "kAvfda4stcbLQiUDB87lPqCeHkZNnRvB",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "finalPos"
+				}, {
+					"name": "value",
+					"value": "formation.StaticTransform(formPos, Vec3(wind.normDirX,0, wind.normDirZ) , nil, Vec3(10, 0,10))"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			}, {
+				"children": [],
+				"id": "wmr2CIwvDwQhmuJhGkrsf5tP1ptTz5sd",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "groupDefintion",
+					"value": "formPos"
+				}, {
+					"name": "position",
+					"value": "comPos"
+				}, {
+					"name": "formation",
+					"value": "finalPos"
 				}, {
 					"name": "fight",
 					"value": "false"
 				}, {
 					"name": "scriptName",
-					"value": "Common.relativeMove"
+					"value": "formation.moveCustomGroup"
 				} ],
-				"scriptName": "Common.relativeMove"
-			}, {
-				"children": [],
-				"id": "62nbehgsoHXl3QFmQ20i2TLnysxfSwTN",
-				"nodeType": "luaCommand",
-				"parameters": [ {
-					"name": "msg",
-					"value": "units"
-				}, {
-					"name": "scriptName",
-					"value": "echo"
-				} ],
-				"scriptName": "echo"
+				"scriptName": "formation.moveCustomGroup"
 			} ],
 			"id": "J038Zmfzcwq9ixgvGG593zcQvA7NOzps",
 			"nodeType": "sequence",
