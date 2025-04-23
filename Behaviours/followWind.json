@@ -11,23 +11,23 @@
 	"properties": {
 		"1M7TXHCUYgJBX8HJgO5SUiYk6xt5aXvh": {
 			"height": 90,
-			"title": "luaCondition",
+			"title": "Commander Nil Check",
 			"width": 237,
-			"x": 1096,
+			"x": 1095,
 			"y": 309
 		},
 		"25eHKq9xAEDXcpTMDEaiitztMqarfMj4": {
 			"height": 94,
-			"title": "store",
+			"title": "Store Commander Direction",
 			"width": 331,
-			"x": 834,
+			"x": 833,
 			"y": -157
 		},
 		"J038Zmfzcwq9ixgvGG593zcQvA7NOzps": {
 			"height": 60,
 			"title": "Follower",
 			"width": 143,
-			"x": 542,
+			"x": 541,
 			"y": 297
 		},
 		"LKFaVr7TlN3SL6onOIGokoNpxrVZfHtS": {
@@ -39,100 +39,100 @@
 		},
 		"PiGCqDe8XxYB40BAJj1xE5SsxhcZG0CY": {
 			"height": 94,
-			"title": "store",
+			"title": "Store Commander Position",
 			"width": 328,
-			"x": 840,
+			"x": 839,
 			"y": -256
 		},
 		"RslyLuhyIaVHnB1ggZl7tkl8ci1JBmgI": {
 			"height": 94,
-			"title": "store",
-			"width": 158,
-			"x": 1584,
+			"title": "Default Commander Position",
+			"width": 263,
+			"x": 1583,
 			"y": 265
 		},
 		"UJ4AOldfur2S54yuIH6f7bKE0YF7FdSB": {
 			"height": 94,
-			"title": "store",
-			"width": 158,
-			"x": 1584,
+			"title": "Default Commander Direction",
+			"width": 269,
+			"x": 1583,
 			"y": 358
 		},
 		"bSioY59sycQx2dMLotCu8dR49HxzvnS3": {
 			"height": 60,
 			"title": "Commander",
 			"width": 161,
-			"x": 611,
+			"x": 610,
 			"y": -45
 		},
 		"gwF9ityBtXtIdHQu5MmHOyaUjSiEi3UE": {
 			"height": 60,
-			"title": "default",
-			"width": 143,
-			"x": 1375,
+			"title": "Default Vecs",
+			"width": 161,
+			"x": 1374,
 			"y": 320
 		},
 		"iZKQkhrzHkfYXlq0yjxWiIOtgZq2VjUG": {
 			"height": 90,
-			"title": "Common.relativeMove",
+			"title": "Move Commander by Move Vector",
 			"width": 474,
-			"x": 826,
-			"y": 36
+			"x": 825,
+			"y": 34
 		},
 		"ihL3lu5dhrsTEZqunevAST6G14r95TCv": {
 			"height": 64,
 			"title": "success",
 			"width": 132,
-			"x": 1095,
+			"x": 1094,
 			"y": 393
 		},
 		"kAvfda4stcbLQiUDB87lPqCeHkZNnRvB": {
 			"height": 96,
-			"title": "store",
+			"title": "Store Final Formation",
 			"width": 697,
-			"x": 854,
+			"x": 853,
 			"y": 479
 		},
 		"nf1geFLqti8m90e6Ihu9HVGcD356hNqO": {
 			"height": 70,
-			"title": "selector",
+			"title": "",
 			"width": 131,
-			"x": 850,
+			"x": 849,
 			"y": 316
 		},
 		"nfZJVosFWGm7EDcXMTShrh1HydtMHy1j": {
 			"height": 94,
-			"title": "store",
+			"title": "Store Positions of the Formation",
 			"width": 333,
-			"x": 864,
+			"x": 863,
 			"y": 210
 		},
 		"oGF78zumpeFJILpheh6oK59hJKuF9CKd": {
 			"height": 94,
-			"title": "store",
+			"title": "Store Move Vector",
 			"width": 458,
-			"x": 844,
+			"x": 843,
 			"y": -56
 		},
 		"r9HgPfssZ8E48MmoqZx1ljpfq4n2HVCW": {
 			"height": 94,
-			"title": "store",
-			"width": 195,
-			"x": 842,
+			"title": "Store Wind Direction",
+			"width": 211,
+			"x": 841,
 			"y": -357
 		},
 		"wmr2CIwvDwQhmuJhGkrsf5tP1ptTz5sd": {
 			"height": 132,
-			"title": "formation.moveCustomGroup",
+			"title": "Move Followers ",
 			"width": 397,
-			"x": 861,
+			"x": 860,
 			"y": 632
 		},
 		"ygyUejWUwfFmoql5aZAlR71n8W9zz95B": {
 			"height": 94,
-			"title": "store",
+			"title": "Store Definition of Group Formation",
 			"width": 402,
-			"x": 868,
+			"x": 867,
 			"y": 121
 		}
 	},
