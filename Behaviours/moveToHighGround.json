@@ -1,0 +1,71 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 88,
+			"width": 180
+		}
+	},
+	"inputs": [],
+	"outputs": [],
+	"properties": {
+		"gqSbFrjUIjuBqVoIb5lK6pRnOjuagwFm": {
+			"height": 74,
+			"title": "echo",
+			"width": 323,
+			"x": 404,
+			"y": 87
+		},
+		"ikkTCAxEb1uP5wKGYmjfrboKik66YO8z": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 217,
+			"y": 10
+		},
+		"pFZovyHzV5aPJZT06CMaIlQhplaMb2Aj": {
+			"height": 90,
+			"title": "Common.move",
+			"width": 356,
+			"x": 405,
+			"y": -68
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [],
+			"id": "pFZovyHzV5aPJZT06CMaIlQhplaMb2Aj",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "pos",
+				"value": "{x = Game.mapSizeX, z = Game.mapSizeZ}"
+			}, {
+				"name": "fight",
+				"value": "false"
+			}, {
+				"name": "scriptName",
+				"value": "Common.move"
+			} ],
+			"scriptName": "Common.move"
+		}, {
+			"children": [],
+			"id": "gqSbFrjUIjuBqVoIb5lK6pRnOjuagwFm",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "msg",
+				"value": "Game.mapX"
+			}, {
+				"name": "scriptName",
+				"value": "echo"
+			} ],
+			"scriptName": "echo"
+		} ],
+		"id": "ikkTCAxEb1uP5wKGYmjfrboKik66YO8z",
+		"nodeType": "sequence",
+		"parameters": []
+	}
+}
