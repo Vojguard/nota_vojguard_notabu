@@ -1,5 +1,20 @@
 {
-	"additionalNodes": [],
+	"additionalNodes": [ {
+		"children": [],
+		"id": "pFZovyHzV5aPJZT06CMaIlQhplaMb2Aj",
+		"nodeType": "luaCommand",
+		"parameters": [ {
+			"name": "pos",
+			"value": "{x = Game.mapSizeX, z = Game.mapSizeZ}"
+		}, {
+			"name": "fight",
+			"value": "false"
+		}, {
+			"name": "scriptName",
+			"value": "Common.move"
+		} ],
+		"scriptName": "Common.move"
+	} ],
 	"additionalParameters": {
 		"root": {
 			"height": 88,
@@ -9,12 +24,12 @@
 	"inputs": [],
 	"outputs": [],
 	"properties": {
-		"gqSbFrjUIjuBqVoIb5lK6pRnOjuagwFm": {
-			"height": 74,
-			"title": "echo",
-			"width": 323,
-			"x": 404,
-			"y": 87
+		"d4nE3d9KUF1Exw7Vyk3qSn8e0HAqBAOb": {
+			"height": 94,
+			"title": "store",
+			"width": 329,
+			"x": 432,
+			"y": -163
 		},
 		"ikkTCAxEb1uP5wKGYmjfrboKik66YO8z": {
 			"height": 60,
@@ -29,6 +44,13 @@
 			"width": 356,
 			"x": 405,
 			"y": -68
+		},
+		"xJ7Gv4O53qVHnwFDJjHsZ7F6g2q6akqF": {
+			"height": 72,
+			"title": "echo",
+			"width": 131,
+			"x": 409,
+			"y": 24
 		}
 	},
 	"roles": [ {
@@ -38,26 +60,26 @@
 	"root": {
 		"children": [ {
 			"children": [],
-			"id": "pFZovyHzV5aPJZT06CMaIlQhplaMb2Aj",
+			"id": "d4nE3d9KUF1Exw7Vyk3qSn8e0HAqBAOb",
 			"nodeType": "luaCommand",
 			"parameters": [ {
-				"name": "pos",
-				"value": "{x = Game.mapSizeX, z = Game.mapSizeZ}"
+				"name": "var",
+				"value": "x"
 			}, {
-				"name": "fight",
-				"value": "false"
+				"name": "value",
+				"value": "nota_vojguard_notabu.FindPlatforms()"
 			}, {
 				"name": "scriptName",
-				"value": "Common.move"
+				"value": "store"
 			} ],
-			"scriptName": "Common.move"
+			"scriptName": "store"
 		}, {
 			"children": [],
-			"id": "gqSbFrjUIjuBqVoIb5lK6pRnOjuagwFm",
+			"id": "xJ7Gv4O53qVHnwFDJjHsZ7F6g2q6akqF",
 			"nodeType": "luaCommand",
 			"parameters": [ {
 				"name": "msg",
-				"value": "Game.mapX"
+				"value": "x"
 			}, {
 				"name": "scriptName",
 				"value": "echo"
