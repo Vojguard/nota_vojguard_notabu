@@ -1,5 +1,6 @@
 {
 	"core": "0.8.x",
+	"map": "0.5",
 	"formation": "0.3.x",
   	"nota_commun": "0.3.x"
 }
