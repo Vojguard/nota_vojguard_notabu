@@ -4,7 +4,7 @@ function getInfo()
 		tooltip = "Move each unit to a platform",
 		parameterDefs = {
 			{ 
-				name = "platforms", -- relative formation
+				name = "platforms", -- array of the platforms
 				variableType = "expression",
 				componentType = "editBox",
 				defaultValue = "",
@@ -24,7 +24,6 @@ function Run(self, units, parameter)
 	-- pick the spring command implementing the move
 	local cmdID = CMD.MOVE
 	
-	-- THIS LOGIC IS TEMPORARY, NOT CONSIDERING OTHER UNITS POSITION
 	for i=1, #units do
 		local thisUnitWantedPosition = hills[i]
         Spring.GiveOrderToUnit(units[i], cmdID, thisUnitWantedPosition:AsSpringVector(), {})
