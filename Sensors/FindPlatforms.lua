@@ -14,13 +14,8 @@ function getInfo()
 	}
 end
 
-function pointDistance(a, b)
-    local dx = b.x - a.x
-    local dz = b.z - a.z
-    return math.sqrt(dx * dx + dz * dz)
-end
 
-return function()
+return function(threshold)
     local hills = {}
     local X = Game.mapSizeX
     local Z = Game.mapSizeZ
@@ -33,21 +28,19 @@ return function()
                 local h = Spring.GetGroundHeight(i, j)
                 if h >= maxHeight then
                     local point = Vec3(i, h, j)
-                                     
-                    hills[idx] = Vec3(i, h, j)
-                    idx = idx + 1
+                    local close = false
+                    for _, p in ipairs(hills) do
+                        if point:Distance(p) <= threshold then
+                            close = true
+                        end
+                    end
+                    if close == false then
+                        hills[idx] = Vec3(i, h, j)
+                        idx = idx + 1
+                    end
                 end
             end
         end
-        -- local hills = {}
-
-        --[[
-        for _, point in ipairs(heighPoints) do
-            local close = false
-        end
-        ]]
-        return hills
-    else
-        return {}
     end
+    return hills
 end
