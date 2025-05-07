@@ -1,1 +1,1 @@
-# notabu 0.2.0
+# notabu 0.2.2
