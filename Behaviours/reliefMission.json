@@ -1,0 +1,70 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 108,
+			"width": 216
+		}
+	},
+	"inputs": [ {
+		"command": "BETS_AREA",
+		"name": "SafeArea"
+	} ],
+	"outputs": [],
+	"properties": {
+		"L5qwjShs7TQWYGhAkK80QP6LjGps1Hts": {
+			"height": 72,
+			"title": "echo",
+			"width": 137,
+			"x": 486,
+			"y": -108
+		},
+		"Tq1bvUVvgRNmAFjG8QpvSxD9o5Hwq4f6": {
+			"height": 70,
+			"title": "roleSplit",
+			"width": 202,
+			"x": 530,
+			"y": 13
+		},
+		"WRrpsPxevTRvgrEW7BsJuxHXjpMFq4df": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 273,
+			"y": 17
+		}
+	},
+	"roles": [ {
+		"categories": [ "nota_vojguard_notabu.Transport" ],
+		"name": "Rescuer"
+	}, {
+		"categories": [ "nota_vojguard_notabu.Scout" ],
+		"name": "Scout"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [],
+			"id": "L5qwjShs7TQWYGhAkK80QP6LjGps1Hts",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "msg",
+				"value": "SafeArea"
+			}, {
+				"name": "scriptName",
+				"value": "echo"
+			} ],
+			"scriptName": "echo"
+		}, {
+			"children": [],
+			"id": "Tq1bvUVvgRNmAFjG8QpvSxD9o5Hwq4f6",
+			"nodeType": "roleSplit",
+			"parameters": [ {
+				"name": "mode",
+				"value": "all-success"
+			} ]
+		} ],
+		"id": "WRrpsPxevTRvgrEW7BsJuxHXjpMFq4df",
+		"nodeType": "sequence",
+		"parameters": []
+	}
+}
