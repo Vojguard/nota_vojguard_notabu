@@ -14,13 +14,17 @@ function getInfo()
 	}
 end
 
-return function()
+return function(dropZone)
 	local strandedUnits = {}
 	local allMyUnits = Spring.GetTeamUnits(Spring.GetLocalTeamID())
 	for _, myUnit in ipairs(allMyUnits) do
 		local myUnitDefID = Spring.GetUnitDefID(myUnit)
-    	if UnitDefs[myUnitDefID].isGroundUnit == true and UnitDefs[myUnitDefID].cantBeTransported == false then
-      	table.insert(strandedUnits, myUnit)
+    	if UnitDefs[myUnitDefID].cantBeTransported == false then
+			local basePointX, basePointY, basePointZ = Spring.GetUnitPosition(myUnit)
+			local unitPosVec = Vec3(basePointX, basePointY, basePointZ)
+			if unitPosVec:Distance(dropZone.center) > dropZone.radius then
+      			table.insert(strandedUnits, myUnit)
+			end
     	end
   	end
 	return strandedUnits
