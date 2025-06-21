@@ -1,17 +1,5 @@
 {
-	"additionalNodes": [ {
-		"children": [],
-		"id": "dKvLf3ucOR3V2M0cNAmzdqJoWuAOxuKL",
-		"nodeType": "luaCommand",
-		"parameters": [ {
-			"name": "unitToPick",
-			"value": ""
-		}, {
-			"name": "scriptName",
-			"value": "nota_vojguard_notabu.pickUpUnit"
-		} ],
-		"scriptName": "nota_vojguard_notabu.pickUpUnit"
-	} ],
+	"additionalNodes": [],
 	"additionalParameters": {
 		"root": {
 			"height": 128,
@@ -28,8 +16,15 @@
 			"height": 72,
 			"title": "nota_vojguard_notabu.dropUnit",
 			"width": 262,
-			"x": 975,
-			"y": -12
+			"x": 971,
+			"y": 78
+		},
+		"7tCyhNHKtEHmwFWvlESEKbYVUzIzNodS": {
+			"height": 94,
+			"title": "store",
+			"width": 359,
+			"x": 1153,
+			"y": -102
 		},
 		"BE49ltpSkRBLrMB37FiVWjZEM9UPGcaZ": {
 			"height": 60,
@@ -66,6 +61,13 @@
 			"x": 528,
 			"y": 13
 		},
+		"W5svLIm8rXGzGASjDytln8x7TCTH38CM": {
+			"height": 74,
+			"title": "echo",
+			"width": 388,
+			"x": 1518,
+			"y": -30
+		},
 		"WAX1n0HHv3FYtDRmQdPXQlIge8yPp5hS": {
 			"height": 92,
 			"title": "store",
@@ -91,8 +93,8 @@
 			"height": 72,
 			"title": "nota_vojguard_notabu.pickUpUnit",
 			"width": 276,
-			"x": 1146,
-			"y": -94
+			"x": 1046,
+			"y": 12
 		},
 		"y2MWzYLChdcDDGKsxyA33ZOQzu3H5uwv": {
 			"height": 90,
@@ -127,6 +129,45 @@
 						"value": "store"
 					} ],
 					"scriptName": "store"
+				}, {
+					"children": [],
+					"id": "7tCyhNHKtEHmwFWvlESEKbYVUzIzNodS",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "var",
+						"value": "Rescuee"
+					}, {
+						"name": "value",
+						"value": "nota_vojguard_notabu.FindStrandedUnits()"
+					}, {
+						"name": "scriptName",
+						"value": "store"
+					} ],
+					"scriptName": "store"
+				}, {
+					"children": [],
+					"id": "W5svLIm8rXGzGASjDytln8x7TCTH38CM",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "msg",
+						"value": "#Rescuee"
+					}, {
+						"name": "scriptName",
+						"value": "echo"
+					} ],
+					"scriptName": "echo"
+				}, {
+					"children": [],
+					"id": "dKvLf3ucOR3V2M0cNAmzdqJoWuAOxuKL",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "unitToPick",
+						"value": "Rescuee"
+					}, {
+						"name": "scriptName",
+						"value": "nota_vojguard_notabu.pickUpUnit"
+					} ],
+					"scriptName": "nota_vojguard_notabu.pickUpUnit"
 				}, {
 					"children": [],
 					"id": "1JUdHvDm9jiqJdJm2DAcskfYHr8B0l2l",

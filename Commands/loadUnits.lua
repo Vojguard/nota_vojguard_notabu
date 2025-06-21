@@ -1,7 +1,7 @@
 function getInfo()
 	return {
 		onNoUnits = SUCCESS, -- instant success
-		tooltip = "Move each unit to a platform",
+		tooltip = "Load multiple units",
 		parameterDefs = {
 			{ 
 				name = "unitsToLoad", -- relative formation
