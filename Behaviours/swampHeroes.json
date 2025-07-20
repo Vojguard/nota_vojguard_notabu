@@ -12,7 +12,7 @@
 		"9BEsimaTdwY53Q0oTiiaFhclhQdXnXNU": {
 			"height": 92,
 			"title": "store",
-			"width": 222,
+			"width": 228,
 			"x": 485,
 			"y": -32
 		},
@@ -64,10 +64,10 @@
 			"nodeType": "luaCommand",
 			"parameters": [ {
 				"name": "var",
-				"value": "topCorridor"
+				"value": "midCorridor"
 			}, {
 				"name": "value",
-				"value": "corridors.Top.points"
+				"value": "corridors.Middle.points"
 			}, {
 				"name": "scriptName",
 				"value": "store"
@@ -79,7 +79,7 @@
 			"nodeType": "luaCommand",
 			"parameters": [ {
 				"name": "corridor",
-				"value": "topCorridor"
+				"value": "midCorridor"
 			}, {
 				"name": "scriptName",
 				"value": "nota_vojguard_notabu.followCorridor"
