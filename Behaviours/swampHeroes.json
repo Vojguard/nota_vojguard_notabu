@@ -1,5 +1,17 @@
 {
-	"additionalNodes": [],
+	"additionalNodes": [ {
+		"children": [],
+		"id": "nrAyAUlg8dwCGPKlNgpQ6zWmq95FimtZ",
+		"nodeType": "luaCommand",
+		"parameters": [ {
+			"name": "corridor",
+			"value": "midCorridor"
+		}, {
+			"name": "scriptName",
+			"value": "nota_vojguard_notabu.followCorridor"
+		} ],
+		"scriptName": "nota_vojguard_notabu.followCorridor"
+	} ],
 	"additionalParameters": {
 		"root": {
 			"height": 88,
@@ -30,11 +42,18 @@
 			"x": 223,
 			"y": 10
 		},
+		"hPsTQQAYbndeCpCyMbzFYKkaLHZxNvbp": {
+			"height": 94,
+			"title": "store",
+			"width": 359,
+			"x": 490,
+			"y": -232
+		},
 		"nrAyAUlg8dwCGPKlNgpQ6zWmq95FimtZ": {
 			"height": 72,
 			"title": "nota_vojguard_notabu.followCorridor",
 			"width": 296,
-			"x": 488,
+			"x": 477,
 			"y": 80
 		}
 	},
@@ -44,6 +63,21 @@
 	} ],
 	"root": {
 		"children": [ {
+			"children": [],
+			"id": "hPsTQQAYbndeCpCyMbzFYKkaLHZxNvbp",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "allies"
+			}, {
+				"name": "value",
+				"value": "nota_vojguard_notabu.FindFrontLines()"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
 			"children": [],
 			"id": "9eHXp4jGyoOle15U42iR4iN7h9SgTm6m",
 			"nodeType": "luaCommand",
@@ -73,18 +107,6 @@
 				"value": "store"
 			} ],
 			"scriptName": "store"
-		}, {
-			"children": [],
-			"id": "nrAyAUlg8dwCGPKlNgpQ6zWmq95FimtZ",
-			"nodeType": "luaCommand",
-			"parameters": [ {
-				"name": "corridor",
-				"value": "midCorridor"
-			}, {
-				"name": "scriptName",
-				"value": "nota_vojguard_notabu.followCorridor"
-			} ],
-			"scriptName": "nota_vojguard_notabu.followCorridor"
 		} ],
 		"id": "fxbHgtUwQ1LTn5znpRLclmT7UPKXRULI",
 		"nodeType": "sequence",
