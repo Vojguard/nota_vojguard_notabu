@@ -1,6 +1,6 @@
 local sensorInfo = {
-	name = "FindFrontlines",
-	desc = "Finding lines where some battle is happening",
+	name = "GetAllyUnits",
+	desc = "Return units from each ally",
 	author = "Vojguard",
 	date = "2025-07-23",
 	license = "notAlicense",
@@ -25,13 +25,15 @@ return function()
     end
     local allyUnits = {}
     for _, teamID  in pairs(allies) do
+        local thisAllyUnits = {}
         local teamUnits = Spring.GetTeamUnits(teamID)
         for _, unitID in pairs(teamUnits) do
             local unitDefID = Spring.GetUnitDefID(unitID)
             if not UnitDefs[unitDefID].isBuilding then
-                allyUnits[#allyUnits + 1] = unitID
+                thisAllyUnits[#thisAllyUnits + 1] = unitID
             end
         end
+        allyUnits[teamID] = thisAllyUnits
     end
     return allyUnits
 end

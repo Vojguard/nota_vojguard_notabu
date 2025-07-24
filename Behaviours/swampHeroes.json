@@ -1,6 +1,33 @@
 {
 	"additionalNodes": [ {
 		"children": [],
+		"id": "u1RbDIAKZr49B44BROtdvyzPjIrArG0d",
+		"nodeType": "luaCommand",
+		"parameters": [ {
+			"name": "unitName",
+			"value": "'armmart'"
+		}, {
+			"name": "scriptName",
+			"value": "nota_vojguard_notabu.buyUnits"
+		} ],
+		"scriptName": "nota_vojguard_notabu.buyUnits"
+	}, {
+		"children": [],
+		"id": "puojSfaZrJZickXNvaTVIEhrjBDxgZON",
+		"nodeType": "luaCommand",
+		"parameters": [ {
+			"name": "var",
+			"value": "missionInfo"
+		}, {
+			"name": "value",
+			"value": "core.MissionInfo()"
+		}, {
+			"name": "scriptName",
+			"value": "store"
+		} ],
+		"scriptName": "store"
+	}, {
+		"children": [],
 		"id": "nrAyAUlg8dwCGPKlNgpQ6zWmq95FimtZ",
 		"nodeType": "luaCommand",
 		"parameters": [ {
@@ -46,15 +73,29 @@
 			"height": 94,
 			"title": "store",
 			"width": 359,
-			"x": 490,
-			"y": -232
+			"x": 481,
+			"y": -235
 		},
 		"nrAyAUlg8dwCGPKlNgpQ6zWmq95FimtZ": {
 			"height": 72,
 			"title": "nota_vojguard_notabu.followCorridor",
 			"width": 296,
-			"x": 477,
-			"y": 80
+			"x": 922,
+			"y": -52
+		},
+		"puojSfaZrJZickXNvaTVIEhrjBDxgZON": {
+			"height": 94,
+			"title": "store",
+			"width": 198,
+			"x": 1017,
+			"y": -157
+		},
+		"u1RbDIAKZr49B44BROtdvyzPjIrArG0d": {
+			"height": 72,
+			"title": "nota_vojguard_notabu.buyUnits",
+			"width": 263,
+			"x": 950,
+			"y": 46
 		}
 	},
 	"roles": [ {
@@ -71,7 +112,7 @@
 				"value": "allies"
 			}, {
 				"name": "value",
-				"value": "nota_vojguard_notabu.FindFrontLines()"
+				"value": "nota_vojguard_notabu.GetAllyUnits()"
 			}, {
 				"name": "scriptName",
 				"value": "store"
