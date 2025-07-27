@@ -26,18 +26,6 @@
 			"value": "store"
 		} ],
 		"scriptName": "store"
-	}, {
-		"children": [],
-		"id": "nrAyAUlg8dwCGPKlNgpQ6zWmq95FimtZ",
-		"nodeType": "luaCommand",
-		"parameters": [ {
-			"name": "corridor",
-			"value": "midCorridor"
-		}, {
-			"name": "scriptName",
-			"value": "nota_vojguard_notabu.followCorridor"
-		} ],
-		"scriptName": "nota_vojguard_notabu.followCorridor"
 	} ],
 	"additionalParameters": {
 		"root": {
@@ -77,11 +65,11 @@
 			"y": -235
 		},
 		"nrAyAUlg8dwCGPKlNgpQ6zWmq95FimtZ": {
-			"height": 72,
+			"height": 92,
 			"title": "nota_vojguard_notabu.followCorridor",
 			"width": 296,
-			"x": 922,
-			"y": -52
+			"x": 444,
+			"y": 83
 		},
 		"puojSfaZrJZickXNvaTVIEhrjBDxgZON": {
 			"height": 94,
@@ -148,6 +136,21 @@
 				"value": "store"
 			} ],
 			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "nrAyAUlg8dwCGPKlNgpQ6zWmq95FimtZ",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "corridor",
+				"value": "midCorridor"
+			}, {
+				"name": "cautionRange",
+				"value": "250"
+			}, {
+				"name": "scriptName",
+				"value": "nota_vojguard_notabu.followCorridor"
+			} ],
+			"scriptName": "nota_vojguard_notabu.followCorridor"
 		} ],
 		"id": "fxbHgtUwQ1LTn5znpRLclmT7UPKXRULI",
 		"nodeType": "sequence",
