@@ -26,6 +26,36 @@
 			"value": "store"
 		} ],
 		"scriptName": "store"
+	}, {
+		"children": [],
+		"id": "hPsTQQAYbndeCpCyMbzFYKkaLHZxNvbp",
+		"nodeType": "luaCommand",
+		"parameters": [ {
+			"name": "var",
+			"value": "allies"
+		}, {
+			"name": "value",
+			"value": "nota_vojguard_notabu.GetAllyUnits()"
+		}, {
+			"name": "scriptName",
+			"value": "store"
+		} ],
+		"scriptName": "store"
+	}, {
+		"children": [],
+		"id": "nrAyAUlg8dwCGPKlNgpQ6zWmq95FimtZ",
+		"nodeType": "luaCommand",
+		"parameters": [ {
+			"name": "corridor",
+			"value": "midCorridor"
+		}, {
+			"name": "cautionRange",
+			"value": "250"
+		}, {
+			"name": "scriptName",
+			"value": "nota_vojguard_notabu.followCorridor"
+		} ],
+		"scriptName": "nota_vojguard_notabu.followCorridor"
 	} ],
 	"additionalParameters": {
 		"root": {
@@ -61,29 +91,43 @@
 			"height": 94,
 			"title": "store",
 			"width": 359,
-			"x": 481,
-			"y": -235
+			"x": 1215,
+			"y": -126
 		},
 		"nrAyAUlg8dwCGPKlNgpQ6zWmq95FimtZ": {
 			"height": 92,
 			"title": "nota_vojguard_notabu.followCorridor",
 			"width": 296,
-			"x": 444,
-			"y": 83
+			"x": 925,
+			"y": -133
 		},
 		"puojSfaZrJZickXNvaTVIEhrjBDxgZON": {
 			"height": 94,
 			"title": "store",
 			"width": 198,
-			"x": 1017,
-			"y": -157
+			"x": 923,
+			"y": -227
+		},
+		"tnxnzhxBGEtv7L9wUaIaTLB9nBpkCXui": {
+			"height": 94,
+			"title": "store",
+			"width": 439,
+			"x": 486,
+			"y": 61
 		},
 		"u1RbDIAKZr49B44BROtdvyzPjIrArG0d": {
 			"height": 72,
 			"title": "nota_vojguard_notabu.buyUnits",
 			"width": 263,
-			"x": 950,
-			"y": 46
+			"x": 1189,
+			"y": -200
+		},
+		"vCUbcex7ntmeaJjeGF0NsopBzJj7szfJ": {
+			"height": 94,
+			"title": "store",
+			"width": 374,
+			"x": 489,
+			"y": 147
 		}
 	},
 	"roles": [ {
@@ -92,21 +136,6 @@
 	} ],
 	"root": {
 		"children": [ {
-			"children": [],
-			"id": "hPsTQQAYbndeCpCyMbzFYKkaLHZxNvbp",
-			"nodeType": "luaCommand",
-			"parameters": [ {
-				"name": "var",
-				"value": "allies"
-			}, {
-				"name": "value",
-				"value": "nota_vojguard_notabu.GetAllyUnits()"
-			}, {
-				"name": "scriptName",
-				"value": "store"
-			} ],
-			"scriptName": "store"
-		}, {
 			"children": [],
 			"id": "9eHXp4jGyoOle15U42iR4iN7h9SgTm6m",
 			"nodeType": "luaCommand",
@@ -138,19 +167,34 @@
 			"scriptName": "store"
 		}, {
 			"children": [],
-			"id": "nrAyAUlg8dwCGPKlNgpQ6zWmq95FimtZ",
+			"id": "tnxnzhxBGEtv7L9wUaIaTLB9nBpkCXui",
 			"nodeType": "luaCommand",
 			"parameters": [ {
-				"name": "corridor",
-				"value": "midCorridor"
+				"name": "var",
+				"value": "strongpoints"
 			}, {
-				"name": "cautionRange",
-				"value": "250"
+				"name": "value",
+				"value": "nota_vojguard_notabu.ReturnStrongpoints(midCorridor)"
 			}, {
 				"name": "scriptName",
-				"value": "nota_vojguard_notabu.followCorridor"
+				"value": "store"
 			} ],
-			"scriptName": "nota_vojguard_notabu.followCorridor"
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "vCUbcex7ntmeaJjeGF0NsopBzJj7szfJ",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "contact"
+			}, {
+				"name": "value",
+				"value": "nota_vojguard_notabu.Battleline(midCorridor)"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
 		} ],
 		"id": "fxbHgtUwQ1LTn5znpRLclmT7UPKXRULI",
 		"nodeType": "sequence",

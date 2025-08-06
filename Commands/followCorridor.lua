@@ -30,21 +30,8 @@ function Run(self, units, parameter)
 	
 	for idx, unitID in ipairs(units) do
 
-		local myTeam = Spring.GetUnitTeam(unitID)
         local unitPosX, unitPosY, unitPosZ = Spring.GetUnitPosition(unitID)
         local unitPosVec = Vec3(unitPosX, unitPosY, unitPosZ)
-
-		-- check surroundings
-		local unitsAround = Spring.GetUnitsInSphere(unitPosX, unitPosY, unitPosZ, cautionRange)
-		local dangerCounter = 0
-		for _, uID in ipairs(unitsAround) do
-			local unitTeam = Spring.GetUnitTeam(uID)
-			if Spring.AreTeamsAllied(myTeam, unitTeam) then
-				dangerCounter = dangerCounter - 1
-			else
-				dangerCounter = dangerCounter + 1
-			end
-		end
 
         -- check if unit has command queue
         local hasCmdQueue = Spring.GetUnitCommands(unitID, 1)[1] ~= nil
@@ -62,7 +49,7 @@ function Run(self, units, parameter)
 				else break end
 			end
 			
-			if dangerCounter > 0 and closestPoint > 1 then
+			if Sensors.nota_vojguard_notabu.SurroundingsDangerCounter(unitID, cautionRange) > 0 and closestPoint > 1 then
 				closestPoint = closestPoint - 1
 			end
             -- give order queue to move in the corridor through its points
