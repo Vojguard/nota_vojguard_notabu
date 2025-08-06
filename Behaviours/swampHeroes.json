@@ -28,21 +28,6 @@
 		"scriptName": "store"
 	}, {
 		"children": [],
-		"id": "hPsTQQAYbndeCpCyMbzFYKkaLHZxNvbp",
-		"nodeType": "luaCommand",
-		"parameters": [ {
-			"name": "var",
-			"value": "allies"
-		}, {
-			"name": "value",
-			"value": "nota_vojguard_notabu.GetAllyUnits()"
-		}, {
-			"name": "scriptName",
-			"value": "store"
-		} ],
-		"scriptName": "store"
-	}, {
-		"children": [],
 		"id": "nrAyAUlg8dwCGPKlNgpQ6zWmq95FimtZ",
 		"nodeType": "luaCommand",
 		"parameters": [ {
@@ -87,13 +72,6 @@
 			"x": 223,
 			"y": 10
 		},
-		"hPsTQQAYbndeCpCyMbzFYKkaLHZxNvbp": {
-			"height": 94,
-			"title": "store",
-			"width": 359,
-			"x": 1215,
-			"y": -126
-		},
 		"nrAyAUlg8dwCGPKlNgpQ6zWmq95FimtZ": {
 			"height": 92,
 			"title": "nota_vojguard_notabu.followCorridor",
@@ -108,13 +86,6 @@
 			"x": 923,
 			"y": -227
 		},
-		"tnxnzhxBGEtv7L9wUaIaTLB9nBpkCXui": {
-			"height": 94,
-			"title": "store",
-			"width": 439,
-			"x": 486,
-			"y": 61
-		},
 		"u1RbDIAKZr49B44BROtdvyzPjIrArG0d": {
 			"height": 72,
 			"title": "nota_vojguard_notabu.buyUnits",
@@ -126,8 +97,8 @@
 			"height": 94,
 			"title": "store",
 			"width": 374,
-			"x": 489,
-			"y": 147
+			"x": 479,
+			"y": 55
 		}
 	},
 	"roles": [ {
@@ -160,21 +131,6 @@
 			}, {
 				"name": "value",
 				"value": "corridors.Middle.points"
-			}, {
-				"name": "scriptName",
-				"value": "store"
-			} ],
-			"scriptName": "store"
-		}, {
-			"children": [],
-			"id": "tnxnzhxBGEtv7L9wUaIaTLB9nBpkCXui",
-			"nodeType": "luaCommand",
-			"parameters": [ {
-				"name": "var",
-				"value": "strongpoints"
-			}, {
-				"name": "value",
-				"value": "nota_vojguard_notabu.ReturnStrongpoints(midCorridor)"
 			}, {
 				"name": "scriptName",
 				"value": "store"
