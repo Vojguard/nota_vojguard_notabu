@@ -1,6 +1,21 @@
 {
 	"additionalNodes": [ {
 		"children": [],
+		"id": "nrAyAUlg8dwCGPKlNgpQ6zWmq95FimtZ",
+		"nodeType": "luaCommand",
+		"parameters": [ {
+			"name": "corridor",
+			"value": "midCorridor"
+		}, {
+			"name": "cautionRange",
+			"value": "250"
+		}, {
+			"name": "scriptName",
+			"value": "nota_vojguard_notabu.followCorridor"
+		} ],
+		"scriptName": "nota_vojguard_notabu.followCorridor"
+	}, {
+		"children": [],
 		"id": "u1RbDIAKZr49B44BROtdvyzPjIrArG0d",
 		"nodeType": "luaCommand",
 		"parameters": [ {
@@ -26,21 +41,6 @@
 			"value": "store"
 		} ],
 		"scriptName": "store"
-	}, {
-		"children": [],
-		"id": "nrAyAUlg8dwCGPKlNgpQ6zWmq95FimtZ",
-		"nodeType": "luaCommand",
-		"parameters": [ {
-			"name": "corridor",
-			"value": "midCorridor"
-		}, {
-			"name": "cautionRange",
-			"value": "250"
-		}, {
-			"name": "scriptName",
-			"value": "nota_vojguard_notabu.followCorridor"
-		} ],
-		"scriptName": "nota_vojguard_notabu.followCorridor"
 	} ],
 	"additionalParameters": {
 		"root": {
@@ -64,6 +64,13 @@
 			"width": 258,
 			"x": 488,
 			"y": -139
+		},
+		"aWKhgDQUexQz0MSI9vH7WtsrkGtjiZ1V": {
+			"height": 92,
+			"title": "nota_vojguard_notabu.moveOnBattleline",
+			"width": 320,
+			"x": 481,
+			"y": 156
 		},
 		"fxbHgtUwQ1LTn5znpRLclmT7UPKXRULI": {
 			"height": 60,
@@ -97,8 +104,8 @@
 			"height": 94,
 			"title": "store",
 			"width": 374,
-			"x": 479,
-			"y": 55
+			"x": 483,
+			"y": 59
 		}
 	},
 	"roles": [ {
@@ -151,6 +158,21 @@
 				"value": "store"
 			} ],
 			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "aWKhgDQUexQz0MSI9vH7WtsrkGtjiZ1V",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "corridor",
+				"value": "midCorridor"
+			}, {
+				"name": "distance",
+				"value": "280"
+			}, {
+				"name": "scriptName",
+				"value": "nota_vojguard_notabu.moveOnBattleline"
+			} ],
+			"scriptName": "nota_vojguard_notabu.moveOnBattleline"
 		} ],
 		"id": "fxbHgtUwQ1LTn5znpRLclmT7UPKXRULI",
 		"nodeType": "sequence",

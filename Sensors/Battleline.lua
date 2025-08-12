@@ -54,8 +54,7 @@ return function(corridor)
 				end
 			end
 			-- vector between both bases
-			local battleVec = strongpoints[#strongpoints].position - strongpoints[1].position 
-			battleVec:Normalize()
+			local battleVec = Sensors.nota_vojguard_notabu.Battlevector(corridor)
 			local perp = Vec3(-battleVec.z, battleVec.y, battleVec.x)
 			local conflictPoint = positionProjection(closestUnit, perp, basePos, battleVec)
 			conflictPoint.y = closestUnit.y
