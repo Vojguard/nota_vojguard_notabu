@@ -23,25 +23,23 @@ function Run(self, units, parameter)
 	local distance = parameter.distance
     local corridor = parameter.corridor
 	
+	if #units < 1 then
+		return SUCCESS
+	end
+
 	-- pick the spring command implementing the move
 	local cmdMoveID = CMD.MOVE
 
-    local conflictPoint = Sensors.nota_vojguard_notabu.Battleline(corridor)['conflict']
-    local battlevec = Sensors.nota_vojguard_notabu.Battlevector(corridor)
+	local pointToMove = Sensors.nota_vojguard_notabu.Battleposition(corridor, distance)
+	if pointToMove ~= nil then
+		for idx, unitID in ipairs(units) do
 
-    if conflictPoint ~= nil then
-	
-
-	    for idx, unitID in ipairs(units) do
-
-            local unitPosX, unitPosY, unitPosZ = Spring.GetUnitPosition(unitID)
-            local unitPosVec = Vec3(unitPosX, unitPosY, unitPosZ)
-
-            local pointToMove = conflictPoint - (battlevec * distance)
-            Spring.GiveOrderToUnit(unitID, cmdMoveID, pointToMove:AsSpringVector(), {})
-
-        end
-    end
-		
-    return RUNNING
+    	    local unitPosX, unitPosY, unitPosZ = Spring.GetUnitPosition(unitID)
+    	    local unitPosVec = Vec3(unitPosX, unitPosY, unitPosZ)
+        
+        	Spring.GiveOrderToUnit(unitID, cmdMoveID, pointToMove:AsSpringVector(), {})
+		end
+		return RUNNING
+    end	
+    return SUCCESS
 end
