@@ -58,11 +58,6 @@ return function(corridor)
 			local perp = Vec3(-battleVec.z, battleVec.y, battleVec.x)
 			local conflictPoint = positionProjection(closestUnit, perp, basePos, battleVec)
 			conflictPoint.y = closestUnit.y
-			local battleline = {
-				['start'] = conflictPoint + perp * 500,
-				['conflict'] = conflictPoint,
-				['end'] = conflictPoint - perp * 500
-			}
 			if (Script.LuaUI('exampleDebug_update')) then
 				Script.LuaUI.exampleDebug_update(
 					spIdx,
@@ -75,13 +70,13 @@ return function(corridor)
 				Script.LuaUI.exampleDebug_update(
 					'battle',
 					{
-						startPos = battleline['start'],
-						endPos = battleline['end']
+						startPos = conflictPoint + perp * 500,
+						endPos = conflictPoint - perp * 500
 					}
 
 				)
 			end
-			return battleline
+			return conflictPoint
 		end
 	end
 	return nil
