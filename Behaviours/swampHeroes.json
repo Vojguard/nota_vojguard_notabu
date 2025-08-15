@@ -28,21 +28,6 @@
 		"scriptName": "store"
 	}, {
 		"children": [],
-		"id": "qEAEnq4AtIhemLu2fIA1ndBl2OyVeN5y",
-		"nodeType": "luaCommand",
-		"parameters": [ {
-			"name": "var",
-			"value": "finalForm"
-		}, {
-			"name": "value",
-			"value": "formation.StaticTransform(formPos, conflict, mavBattlePos, Vec3(30,1,30))"
-		}, {
-			"name": "scriptName",
-			"value": "store"
-		} ],
-		"scriptName": "store"
-	}, {
-		"children": [],
 		"id": "nrAyAUlg8dwCGPKlNgpQ6zWmq95FimtZ",
 		"nodeType": "luaCommand",
 		"parameters": [ {
@@ -73,6 +58,21 @@
 		"scriptName": "nota_vojguard_notabu.moveOnBattleline"
 	}, {
 		"children": [],
+		"id": "jZpBHJa6Md6uX8Raoan3R5zZu3HnWQV9",
+		"nodeType": "luaCommand",
+		"parameters": [ {
+			"name": "var",
+			"value": "groupForm"
+		}, {
+			"name": "value",
+			"value": "nota_vojguard_notabu.FormationDefinitions(units)"
+		}, {
+			"name": "scriptName",
+			"value": "store"
+		} ],
+		"scriptName": "store"
+	}, {
+		"children": [],
 		"id": "CWfLtmKB3J4aaU4n06sbNBEdBYwzAYuH",
 		"nodeType": "luaCommand",
 		"parameters": [ {
@@ -88,14 +88,14 @@
 		"scriptName": "store"
 	}, {
 		"children": [],
-		"id": "jZpBHJa6Md6uX8Raoan3R5zZu3HnWQV9",
+		"id": "qEAEnq4AtIhemLu2fIA1ndBl2OyVeN5y",
 		"nodeType": "luaCommand",
 		"parameters": [ {
 			"name": "var",
-			"value": "groupForm"
+			"value": "finalForm"
 		}, {
 			"name": "value",
-			"value": "nota_vojguard_notabu.FormationDefinitions(units)"
+			"value": "formation.StaticTransform(formPos, conflict, mavBattlePos, Vec3(30,1,30))"
 		}, {
 			"name": "scriptName",
 			"value": "store"
@@ -136,49 +136,49 @@
 			"height": 132,
 			"title": "formation.moveCustomGroup",
 			"width": 269,
-			"x": 1055,
+			"x": 1054,
 			"y": 353
 		},
 		"9BEsimaTdwY53Q0oTiiaFhclhQdXnXNU": {
 			"height": 92,
 			"title": "store",
 			"width": 228,
-			"x": 489,
+			"x": 490,
 			"y": -32
 		},
 		"9eHXp4jGyoOle15U42iR4iN7h9SgTm6m": {
 			"height": 94,
 			"title": "store",
 			"width": 258,
-			"x": 492,
+			"x": 493,
 			"y": -139
 		},
 		"CWfLtmKB3J4aaU4n06sbNBEdBYwzAYuH": {
 			"height": 94,
 			"title": "store",
 			"width": 333,
-			"x": 1200,
+			"x": 1199,
 			"y": 354
 		},
 		"GFudG91a9njRbGU784kL5NsdUvaXnYFD": {
 			"height": 94,
 			"title": "store",
 			"width": 511,
-			"x": 485,
+			"x": 486,
 			"y": 53
 		},
 		"QRPxcluSgIdOYbyLFmr54jE6Hha6EOA7": {
 			"height": 94,
 			"title": "store",
 			"width": 453,
-			"x": 487,
+			"x": 488,
 			"y": 234
 		},
 		"aWKhgDQUexQz0MSI9vH7WtsrkGtjiZ1V": {
 			"height": 92,
 			"title": "nota_vojguard_notabu.moveOnBattleline",
 			"width": 320,
-			"x": 891,
+			"x": 890,
 			"y": -35
 		},
 		"fxbHgtUwQ1LTn5znpRLclmT7UPKXRULI": {
@@ -192,49 +192,56 @@
 			"height": 94,
 			"title": "store",
 			"width": 402,
-			"x": 1087,
+			"x": 1086,
 			"y": 284
 		},
 		"nrAyAUlg8dwCGPKlNgpQ6zWmq95FimtZ": {
 			"height": 92,
 			"title": "nota_vojguard_notabu.followCorridor",
 			"width": 296,
-			"x": 925,
+			"x": 924,
 			"y": -133
 		},
 		"puojSfaZrJZickXNvaTVIEhrjBDxgZON": {
 			"height": 94,
 			"title": "store",
 			"width": 198,
-			"x": 923,
+			"x": 922,
 			"y": -227
 		},
 		"qEAEnq4AtIhemLu2fIA1ndBl2OyVeN5y": {
 			"height": 94,
 			"title": "store",
 			"width": 574,
-			"x": 1011,
+			"x": 1010,
 			"y": 294
 		},
 		"r6fFrNWqPT62xO6RpNIy3yj1fafWbAsA": {
 			"height": 94,
 			"title": "store",
 			"width": 453,
-			"x": 906,
+			"x": 905,
 			"y": 160
+		},
+		"tUmAV6Jw7Re5NSFXiwPaylYWmVBuEC2h": {
+			"height": 130,
+			"title": "reference",
+			"width": 316,
+			"x": 492,
+			"y": 323
 		},
 		"u1RbDIAKZr49B44BROtdvyzPjIrArG0d": {
 			"height": 72,
 			"title": "nota_vojguard_notabu.buyUnits",
 			"width": 263,
-			"x": 1189,
+			"x": 1188,
 			"y": -200
 		},
 		"vCUbcex7ntmeaJjeGF0NsopBzJj7szfJ": {
 			"height": 94,
 			"title": "store",
 			"width": 453,
-			"x": 485,
+			"x": 486,
 			"y": 144
 		}
 	},
@@ -333,6 +340,19 @@
 				"value": "store"
 			} ],
 			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "tUmAV6Jw7Re5NSFXiwPaylYWmVBuEC2h",
+			"nodeType": "reference",
+			"parameters": [ {
+				"name": "behaviourName",
+				"value": "nota_vojguard_notabu.peeperCircling"
+			} ],
+			"referenceInputs": [ {
+				"name": "corridor",
+				"value": "midCorridor"
+			} ],
+			"referenceOutputs": []
 		} ],
 		"id": "fxbHgtUwQ1LTn5znpRLclmT7UPKXRULI",
 		"nodeType": "sequence",
