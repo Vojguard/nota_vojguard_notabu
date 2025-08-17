@@ -1,35 +1,5 @@
 {
-	"additionalNodes": [ {
-		"children": [],
-		"id": "i3ROno07zwjCk0PpZxS0jr3dr1VhbADi",
-		"nodeType": "luaCommand",
-		"parameters": [ {
-			"name": "pos",
-			"value": "{x = strongpoint.x + battlevec.z, z = strongpoint.z - battlevec.x}"
-		}, {
-			"name": "fight",
-			"value": "false"
-		}, {
-			"name": "scriptName",
-			"value": "Common.move"
-		} ],
-		"scriptName": "Common.move"
-	}, {
-		"children": [],
-		"id": "FbvTwgI9BZVqM8hmvH7Am9eI9o5bGq28",
-		"nodeType": "luaCommand",
-		"parameters": [ {
-			"name": "spyID",
-			"value": ""
-		}, {
-			"name": "seekPosition",
-			"value": ""
-		}, {
-			"name": "scriptName",
-			"value": "nota_sirwok_exam.spySeekShika"
-		} ],
-		"scriptName": "nota_sirwok_exam.spySeekShika"
-	} ],
+	"additionalNodes": [],
 	"additionalParameters": {
 		"root": {
 			"height": 108,
@@ -49,20 +19,6 @@
 			"x": 490,
 			"y": -144
 		},
-		"FbvTwgI9BZVqM8hmvH7Am9eI9o5bGq28": {
-			"height": 92,
-			"title": "nota_sirwok_exam.spySeekShika",
-			"width": 273,
-			"x": 129,
-			"y": -158
-		},
-		"GUPGxiOi7jDIxK8noHCSG9XZGg1kdSZy": {
-			"height": 90,
-			"title": "Common.move",
-			"width": 471,
-			"x": 484,
-			"y": -31
-		},
 		"fvfuIvq6cz1YLvZxeLXvoDhCkJe6tGD5": {
 			"height": 60,
 			"title": "sequence",
@@ -70,33 +26,12 @@
 			"x": 267,
 			"y": 10
 		},
-		"i3ROno07zwjCk0PpZxS0jr3dr1VhbADi": {
-			"height": 90,
-			"title": "Common.move",
-			"width": 471,
-			"x": 474,
-			"y": 220
-		},
-		"nkNBtIYhzTaReeMhDv2DOkuNbGTKoy0t": {
-			"height": 90,
-			"title": "Common.move",
-			"width": 471,
-			"x": 481,
-			"y": 54
-		},
 		"v64EBoqScw3uVkJT3YwTH2rj7921Hyqr": {
 			"height": 94,
 			"title": "store",
 			"width": 488,
 			"x": 491,
 			"y": -251
-		},
-		"x7k834XYY6T0xJlSFPbRmDGR7uJWZTk1": {
-			"height": 90,
-			"title": "Common.move",
-			"width": 471,
-			"x": 479,
-			"y": 138
 		}
 	},
 	"roles": [ {
@@ -134,51 +69,6 @@
 				"value": "store"
 			} ],
 			"scriptName": "store"
-		}, {
-			"children": [],
-			"id": "GUPGxiOi7jDIxK8noHCSG9XZGg1kdSZy",
-			"nodeType": "luaCommand",
-			"parameters": [ {
-				"name": "pos",
-				"value": "{x = strongpoint.x + battlevec.x, z = strongpoint.z + battlevec.z}"
-			}, {
-				"name": "fight",
-				"value": "false"
-			}, {
-				"name": "scriptName",
-				"value": "Common.move"
-			} ],
-			"scriptName": "Common.move"
-		}, {
-			"children": [],
-			"id": "nkNBtIYhzTaReeMhDv2DOkuNbGTKoy0t",
-			"nodeType": "luaCommand",
-			"parameters": [ {
-				"name": "pos",
-				"value": "{x = strongpoint.x - battlevec.z, z = strongpoint.z + battlevec.x}"
-			}, {
-				"name": "fight",
-				"value": "false"
-			}, {
-				"name": "scriptName",
-				"value": "Common.move"
-			} ],
-			"scriptName": "Common.move"
-		}, {
-			"children": [],
-			"id": "x7k834XYY6T0xJlSFPbRmDGR7uJWZTk1",
-			"nodeType": "luaCommand",
-			"parameters": [ {
-				"name": "pos",
-				"value": "{x = strongpoint.x - battlevec.x, z = strongpoint.z - battlevec.z}"
-			}, {
-				"name": "fight",
-				"value": "false"
-			}, {
-				"name": "scriptName",
-				"value": "Common.move"
-			} ],
-			"scriptName": "Common.move"
 		} ],
 		"id": "fvfuIvq6cz1YLvZxeLXvoDhCkJe6tGD5",
 		"nodeType": "sequence",
