@@ -28,6 +28,21 @@
 		"scriptName": "store"
 	}, {
 		"children": [],
+		"id": "naR0Ox5wvwL5xvgxb96tzBkR4rKRZVAt",
+		"nodeType": "luaCommand",
+		"parameters": [ {
+			"name": "var",
+			"value": "myUnits"
+		}, {
+			"name": "value",
+			"value": "nota_vojguard_notabu.GetMyUnits('armpeep')"
+		}, {
+			"name": "scriptName",
+			"value": "store"
+		} ],
+		"scriptName": "store"
+	}, {
+		"children": [],
 		"id": "nrAyAUlg8dwCGPKlNgpQ6zWmq95FimtZ",
 		"nodeType": "luaCommand",
 		"parameters": [ {
@@ -43,17 +58,25 @@
 		"scriptName": "nota_vojguard_notabu.followCorridor"
 	}, {
 		"children": [],
-		"id": "tUmAV6Jw7Re5NSFXiwPaylYWmVBuEC2h",
-		"nodeType": "reference",
+		"id": "6xqW4z2iG2I03J9qGb4V8NvhVkMV1rP8",
+		"nodeType": "luaCommand",
 		"parameters": [ {
-			"name": "behaviourName",
-			"value": "nota_vojguard_notabu.peeperCircling"
+			"name": "groupDefintion",
+			"value": "groupForm"
+		}, {
+			"name": "position",
+			"value": "mavBattlePos"
+		}, {
+			"name": "formation",
+			"value": "finalForm"
+		}, {
+			"name": "fight",
+			"value": "false"
+		}, {
+			"name": "scriptName",
+			"value": "formation.moveCustomGroup"
 		} ],
-		"referenceInputs": [ {
-			"name": "corridor",
-			"value": "midCorridor"
-		} ],
-		"referenceOutputs": []
+		"scriptName": "formation.moveCustomGroup"
 	}, {
 		"children": [],
 		"id": "jZpBHJa6Md6uX8Raoan3R5zZu3HnWQV9",
@@ -64,21 +87,6 @@
 		}, {
 			"name": "value",
 			"value": "nota_vojguard_notabu.FormationDefinitions(units)"
-		}, {
-			"name": "scriptName",
-			"value": "store"
-		} ],
-		"scriptName": "store"
-	}, {
-		"children": [],
-		"id": "qEAEnq4AtIhemLu2fIA1ndBl2OyVeN5y",
-		"nodeType": "luaCommand",
-		"parameters": [ {
-			"name": "var",
-			"value": "finalForm"
-		}, {
-			"name": "value",
-			"value": "formation.StaticTransform(formPos, conflict, mavBattlePos, Vec3(30,1,30))"
 		}, {
 			"name": "scriptName",
 			"value": "store"
@@ -101,6 +109,21 @@
 		"scriptName": "nota_vojguard_notabu.moveOnBattleline"
 	}, {
 		"children": [],
+		"id": "qEAEnq4AtIhemLu2fIA1ndBl2OyVeN5y",
+		"nodeType": "luaCommand",
+		"parameters": [ {
+			"name": "var",
+			"value": "finalForm"
+		}, {
+			"name": "value",
+			"value": "formation.StaticTransform(formPos, conflict, mavBattlePos, Vec3(30,1,30))"
+		}, {
+			"name": "scriptName",
+			"value": "store"
+		} ],
+		"scriptName": "store"
+	}, {
+		"children": [],
 		"id": "CWfLtmKB3J4aaU4n06sbNBEdBYwzAYuH",
 		"nodeType": "luaCommand",
 		"parameters": [ {
@@ -114,27 +137,6 @@
 			"value": "store"
 		} ],
 		"scriptName": "store"
-	}, {
-		"children": [],
-		"id": "6xqW4z2iG2I03J9qGb4V8NvhVkMV1rP8",
-		"nodeType": "luaCommand",
-		"parameters": [ {
-			"name": "groupDefintion",
-			"value": "groupForm"
-		}, {
-			"name": "position",
-			"value": "mavBattlePos"
-		}, {
-			"name": "formation",
-			"value": "finalForm"
-		}, {
-			"name": "fight",
-			"value": "false"
-		}, {
-			"name": "scriptName",
-			"value": "formation.moveCustomGroup"
-		} ],
-		"scriptName": "formation.moveCustomGroup"
 	} ],
 	"additionalParameters": {
 		"root": {
@@ -184,8 +186,8 @@
 			"height": 94,
 			"title": "store",
 			"width": 453,
-			"x": 488,
-			"y": 234
+			"x": 474,
+			"y": 331
 		},
 		"aWKhgDQUexQz0MSI9vH7WtsrkGtjiZ1V": {
 			"height": 92,
@@ -212,8 +214,8 @@
 			"height": 94,
 			"title": "store",
 			"width": 378,
-			"x": 496,
-			"y": 328
+			"x": 1403,
+			"y": 156
 		},
 		"nrAyAUlg8dwCGPKlNgpQ6zWmq95FimtZ": {
 			"height": 92,
@@ -240,15 +242,15 @@
 			"height": 94,
 			"title": "store",
 			"width": 453,
-			"x": 905,
-			"y": 160
+			"x": 502,
+			"y": 231
 		},
 		"tUmAV6Jw7Re5NSFXiwPaylYWmVBuEC2h": {
 			"height": 130,
 			"title": "reference",
 			"width": 316,
-			"x": 492,
-			"y": 413
+			"x": 474,
+			"y": 419
 		},
 		"u1RbDIAKZr49B44BROtdvyzPjIrArG0d": {
 			"height": 72,
@@ -362,19 +364,17 @@
 			"scriptName": "store"
 		}, {
 			"children": [],
-			"id": "naR0Ox5wvwL5xvgxb96tzBkR4rKRZVAt",
-			"nodeType": "luaCommand",
+			"id": "tUmAV6Jw7Re5NSFXiwPaylYWmVBuEC2h",
+			"nodeType": "reference",
 			"parameters": [ {
-				"name": "var",
-				"value": "myUnits"
-			}, {
-				"name": "value",
-				"value": "nota_vojguard_notabu.GetMyUnits('armpeep')"
-			}, {
-				"name": "scriptName",
-				"value": "store"
+				"name": "behaviourName",
+				"value": "nota_vojguard_notabu.peeperCircling"
 			} ],
-			"scriptName": "store"
+			"referenceInputs": [ {
+				"name": "corridor",
+				"value": "midCorridor"
+			} ],
+			"referenceOutputs": []
 		} ],
 		"id": "fxbHgtUwQ1LTn5znpRLclmT7UPKXRULI",
 		"nodeType": "sequence",

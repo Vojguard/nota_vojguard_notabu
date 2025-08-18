@@ -2,7 +2,7 @@
 	"additionalNodes": [],
 	"additionalParameters": {
 		"root": {
-			"height": 108,
+			"height": 128,
 			"width": 216
 		}
 	},
@@ -12,26 +12,26 @@
 	} ],
 	"outputs": [],
 	"properties": {
-		"ElmQGnPRnY5lzdJUK6SegYDNBSWA4He6": {
-			"height": 94,
-			"title": "store",
-			"width": 458,
-			"x": 490,
-			"y": -144
+		"FvfHjYR16JYjovvGzlcT686jHFjwM498": {
+			"height": 92,
+			"title": "nota_vojguard_notabu.peeperStrongpointCirculement",
+			"width": 402,
+			"x": 488,
+			"y": 44
 		},
 		"fvfuIvq6cz1YLvZxeLXvoDhCkJe6tGD5": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 267,
-			"y": 10
+			"x": 284,
+			"y": 16
 		},
-		"v64EBoqScw3uVkJT3YwTH2rj7921Hyqr": {
+		"kzgB3LrC1K8O70XAJ0ggAcdbj7D5DbOc": {
 			"height": 94,
 			"title": "store",
-			"width": 488,
-			"x": 491,
-			"y": -251
+			"width": 394,
+			"x": 490,
+			"y": -47
 		}
 	},
 	"roles": [ {
@@ -41,14 +41,14 @@
 	"root": {
 		"children": [ {
 			"children": [],
-			"id": "v64EBoqScw3uVkJT3YwTH2rj7921Hyqr",
+			"id": "kzgB3LrC1K8O70XAJ0ggAcdbj7D5DbOc",
 			"nodeType": "luaCommand",
 			"parameters": [ {
 				"name": "var",
-				"value": "strongpoint"
+				"value": "peeper"
 			}, {
 				"name": "value",
-				"value": "nota_vojguard_notabu.FirstEnemyStrongpoint(corridor).position"
+				"value": "nota_vojguard_notabu.GetMyUnits('armpeep')[1]"
 			}, {
 				"name": "scriptName",
 				"value": "store"
@@ -56,19 +56,19 @@
 			"scriptName": "store"
 		}, {
 			"children": [],
-			"id": "ElmQGnPRnY5lzdJUK6SegYDNBSWA4He6",
+			"id": "FvfHjYR16JYjovvGzlcT686jHFjwM498",
 			"nodeType": "luaCommand",
 			"parameters": [ {
-				"name": "var",
-				"value": "battlevec"
+				"name": "peeperID",
+				"value": "peeper"
 			}, {
-				"name": "value",
-				"value": "nota_vojguard_notabu.Battlevector(corridor) * 100"
+				"name": "corridor",
+				"value": "corridor"
 			}, {
 				"name": "scriptName",
-				"value": "store"
+				"value": "nota_vojguard_notabu.peeperStrongpointCirculement"
 			} ],
-			"scriptName": "store"
+			"scriptName": "nota_vojguard_notabu.peeperStrongpointCirculement"
 		} ],
 		"id": "fvfuIvq6cz1YLvZxeLXvoDhCkJe6tGD5",
 		"nodeType": "sequence",
