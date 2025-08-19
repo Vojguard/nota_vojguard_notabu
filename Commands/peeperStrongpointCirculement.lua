@@ -38,7 +38,8 @@ function Run(self, units, parameter)
 
     if strongpoint ~= nil then
         Spring.GiveOrderToUnit(peepID, CMD.STOP,{},{})
-        Spring.GiveOrderToUnit(peepID, CMD.MOVE,{strongpoint.x + 300,strongpoint.y,strongpoint.z - 300},{})
+        Spring.GiveOrderToUnit(peepID, CMD.MOVE,{strongpoint.x - 150,strongpoint.y,strongpoint.z + 150},{"shift"})
+		Spring.GiveOrderToUnit(peepID, CMD.MOVE,{strongpoint.x - 900,strongpoint.y,strongpoint.z + 900},{"shift"})
 		return SUCCESS
 	end
 	return RUNNING
