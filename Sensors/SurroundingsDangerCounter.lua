@@ -22,9 +22,7 @@ return function(unitID, cautionRange)
 	local dangerCounter = 0
 	for _, uID in ipairs(unitsAround) do
 		local unitTeam = Spring.GetUnitTeam(uID)
-		if Spring.AreTeamsAllied(myTeam, unitTeam) then
-			dangerCounter = dangerCounter - 1
-		else
+		if not Spring.AreTeamsAllied(myTeam, unitTeam) then
 			dangerCounter = dangerCounter + 1
 		end
 	end

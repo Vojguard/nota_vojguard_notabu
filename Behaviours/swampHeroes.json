@@ -28,21 +28,6 @@
 		"scriptName": "store"
 	}, {
 		"children": [],
-		"id": "naR0Ox5wvwL5xvgxb96tzBkR4rKRZVAt",
-		"nodeType": "luaCommand",
-		"parameters": [ {
-			"name": "var",
-			"value": "myUnits"
-		}, {
-			"name": "value",
-			"value": "nota_vojguard_notabu.GetMyUnits('armpeep')"
-		}, {
-			"name": "scriptName",
-			"value": "store"
-		} ],
-		"scriptName": "store"
-	}, {
-		"children": [],
 		"id": "nrAyAUlg8dwCGPKlNgpQ6zWmq95FimtZ",
 		"nodeType": "luaCommand",
 		"parameters": [ {
@@ -58,25 +43,19 @@
 		"scriptName": "nota_vojguard_notabu.followCorridor"
 	}, {
 		"children": [],
-		"id": "6xqW4z2iG2I03J9qGb4V8NvhVkMV1rP8",
+		"id": "naR0Ox5wvwL5xvgxb96tzBkR4rKRZVAt",
 		"nodeType": "luaCommand",
 		"parameters": [ {
-			"name": "groupDefintion",
-			"value": "groupForm"
+			"name": "var",
+			"value": "myUnits"
 		}, {
-			"name": "position",
-			"value": "mavBattlePos"
-		}, {
-			"name": "formation",
-			"value": "finalForm"
-		}, {
-			"name": "fight",
-			"value": "false"
+			"name": "value",
+			"value": "nota_vojguard_notabu.GetMyUnits('armpeep')"
 		}, {
 			"name": "scriptName",
-			"value": "formation.moveCustomGroup"
+			"value": "store"
 		} ],
-		"scriptName": "formation.moveCustomGroup"
+		"scriptName": "store"
 	}, {
 		"children": [],
 		"id": "jZpBHJa6Md6uX8Raoan3R5zZu3HnWQV9",
@@ -87,6 +66,21 @@
 		}, {
 			"name": "value",
 			"value": "nota_vojguard_notabu.FormationDefinitions(units)"
+		}, {
+			"name": "scriptName",
+			"value": "store"
+		} ],
+		"scriptName": "store"
+	}, {
+		"children": [],
+		"id": "qEAEnq4AtIhemLu2fIA1ndBl2OyVeN5y",
+		"nodeType": "luaCommand",
+		"parameters": [ {
+			"name": "var",
+			"value": "finalForm"
+		}, {
+			"name": "value",
+			"value": "formation.StaticTransform(formPos, conflict, mavBattlePos, Vec3(30,1,30))"
 		}, {
 			"name": "scriptName",
 			"value": "store"
@@ -109,21 +103,6 @@
 		"scriptName": "nota_vojguard_notabu.moveOnBattleline"
 	}, {
 		"children": [],
-		"id": "qEAEnq4AtIhemLu2fIA1ndBl2OyVeN5y",
-		"nodeType": "luaCommand",
-		"parameters": [ {
-			"name": "var",
-			"value": "finalForm"
-		}, {
-			"name": "value",
-			"value": "formation.StaticTransform(formPos, conflict, mavBattlePos, Vec3(30,1,30))"
-		}, {
-			"name": "scriptName",
-			"value": "store"
-		} ],
-		"scriptName": "store"
-	}, {
-		"children": [],
 		"id": "CWfLtmKB3J4aaU4n06sbNBEdBYwzAYuH",
 		"nodeType": "luaCommand",
 		"parameters": [ {
@@ -137,6 +116,27 @@
 			"value": "store"
 		} ],
 		"scriptName": "store"
+	}, {
+		"children": [],
+		"id": "6xqW4z2iG2I03J9qGb4V8NvhVkMV1rP8",
+		"nodeType": "luaCommand",
+		"parameters": [ {
+			"name": "groupDefintion",
+			"value": "groupForm"
+		}, {
+			"name": "position",
+			"value": "mavBattlePos"
+		}, {
+			"name": "formation",
+			"value": "finalForm"
+		}, {
+			"name": "fight",
+			"value": "false"
+		}, {
+			"name": "scriptName",
+			"value": "formation.moveCustomGroup"
+		} ],
+		"scriptName": "formation.moveCustomGroup"
 	} ],
 	"additionalParameters": {
 		"root": {
@@ -168,6 +168,13 @@
 			"x": 493,
 			"y": -139
 		},
+		"A9yQyFPNrJ9OZpiVGu5H4JG01E9YMpj0": {
+			"height": 70,
+			"title": "parallel",
+			"width": 202,
+			"x": 397,
+			"y": 510
+		},
 		"CWfLtmKB3J4aaU4n06sbNBEdBYwzAYuH": {
 			"height": 94,
 			"title": "store",
@@ -181,6 +188,13 @@
 			"width": 511,
 			"x": 486,
 			"y": 53
+		},
+		"GUUntzIx5BGYxM1APBDiNWUc2htTFDd4": {
+			"height": 130,
+			"title": "reference",
+			"width": 318,
+			"x": 684,
+			"y": 560
 		},
 		"QRPxcluSgIdOYbyLFmr54jE6Hha6EOA7": {
 			"height": 94,
@@ -221,7 +235,7 @@
 			"height": 92,
 			"title": "nota_vojguard_notabu.followCorridor",
 			"width": 296,
-			"x": 924,
+			"x": 925,
 			"y": -133
 		},
 		"puojSfaZrJZickXNvaTVIEhrjBDxgZON": {
@@ -249,8 +263,8 @@
 			"height": 130,
 			"title": "reference",
 			"width": 316,
-			"x": 474,
-			"y": 419
+			"x": 679,
+			"y": 425
 		},
 		"u1RbDIAKZr49B44BROtdvyzPjIrArG0d": {
 			"height": 72,
@@ -363,18 +377,39 @@
 			} ],
 			"scriptName": "store"
 		}, {
-			"children": [],
-			"id": "tUmAV6Jw7Re5NSFXiwPaylYWmVBuEC2h",
-			"nodeType": "reference",
+			"children": [ {
+				"children": [],
+				"id": "tUmAV6Jw7Re5NSFXiwPaylYWmVBuEC2h",
+				"nodeType": "reference",
+				"parameters": [ {
+					"name": "behaviourName",
+					"value": "nota_vojguard_notabu.peeperCircling"
+				} ],
+				"referenceInputs": [ {
+					"name": "corridor",
+					"value": "midCorridor"
+				} ],
+				"referenceOutputs": []
+			}, {
+				"children": [],
+				"id": "GUUntzIx5BGYxM1APBDiNWUc2htTFDd4",
+				"nodeType": "reference",
+				"parameters": [ {
+					"name": "behaviourName",
+					"value": "nota_vojguard_notabu.farkReclaiming"
+				} ],
+				"referenceInputs": [ {
+					"name": "corridor",
+					"value": "midCorridor"
+				} ],
+				"referenceOutputs": []
+			} ],
+			"id": "A9yQyFPNrJ9OZpiVGu5H4JG01E9YMpj0",
+			"nodeType": "parallel",
 			"parameters": [ {
-				"name": "behaviourName",
-				"value": "nota_vojguard_notabu.peeperCircling"
-			} ],
-			"referenceInputs": [ {
-				"name": "corridor",
-				"value": "midCorridor"
-			} ],
-			"referenceOutputs": []
+				"name": "mode",
+				"value": "all-success"
+			} ]
 		} ],
 		"id": "fxbHgtUwQ1LTn5znpRLclmT7UPKXRULI",
 		"nodeType": "sequence",
