@@ -41,18 +41,18 @@ function Run(self, units, parameter)
     local farkID = parameter.farkID
 
     if farkID == nil then
-		return FAILURE
+		return SUCCESS
 	end
 
     if Spring.ValidUnitID(farkID) then
         local reclaimArea = parameter.reclaimPosition:AsSpringVector()
         reclaimArea[4] = parameter.reclaimRadius
         local metal = getMetalInArea(reclaimArea)
-        local areaSafe = Sensors.nota_vojguard_notabu.SurroundingsDangerCounter(farkID, reclaimArea[4])
+        local dangerCounter = Sensors.nota_vojguard_notabu.SurroundingsDangerCounter(farkID, reclaimArea[4])
         if metal == 0 then
             return SUCCESS
         end
-        if not areaSafe then
+        if dangerCounter > 0 then
             Spring.GiveOrderToUnit(farkID, CMD.STOP, {}, {})
             Spring.GiveOrderToUnit(farkID, CMD.MOVE, {reclaimArea[1], reclaimArea[2], reclaimArea[3]}, {"shift"})
             return SUCCESS

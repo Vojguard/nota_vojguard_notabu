@@ -19,15 +19,11 @@ function getInfo()
 	}
 end
 
-function Reset(self)
-	self.init = false
-end
-
 function Run(self, units, parameter)
     local strongpoint = Sensors.nota_vojguard_notabu.FirstEnemyStrongpoint(parameter.corridor)
     local peepID = parameter.peeperID
 	if peepID == nil then
-		return FAILURE
+		return SUCCESS
 	end
 
 	if not Spring.ValidUnitID(peepID) then

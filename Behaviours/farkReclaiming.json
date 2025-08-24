@@ -23,8 +23,8 @@
 			"height": 90,
 			"title": "luaCondition",
 			"width": 194,
-			"x": 527,
-			"y": 59
+			"x": 532,
+			"y": 111
 		},
 		"LmuOLuWfgVA7cCLmsaAw7wMZWtBKY6oB": {
 			"height": 112,
@@ -39,6 +39,13 @@
 			"width": 143,
 			"x": 248,
 			"y": 17
+		},
+		"hqVsuJRDljaDCuVfiRvM48PyRgj6shqM": {
+			"height": 54,
+			"title": "success",
+			"width": 132,
+			"x": 793,
+			"y": 177
 		},
 		"uVCO1P8yUkdTbWmI4AfliFyoueJccHYq": {
 			"height": 94,
@@ -102,6 +109,11 @@
 					"value": "nota_vojguard_notabu.farkMetalReclaiming"
 				} ],
 				"scriptName": "nota_vojguard_notabu.farkMetalReclaiming"
+			}, {
+				"children": [],
+				"id": "hqVsuJRDljaDCuVfiRvM48PyRgj6shqM",
+				"nodeType": "success",
+				"parameters": []
 			} ],
 			"id": "4rQWFbWgl6ViJaWWyv5XenO2H5VK1bx6",
 			"nodeType": "luaCondition",
