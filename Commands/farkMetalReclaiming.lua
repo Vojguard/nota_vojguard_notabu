@@ -1,5 +1,4 @@
-local commandInfo = {}
-
+--inspired by Commands.nota_sirwok_exam.reclaimMetal()
 function getInfo()
     return {
         tooltip = "Collect metal at battleposition",

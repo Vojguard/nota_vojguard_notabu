@@ -1,3 +1,4 @@
+--inspired by Commands.nota_sirwok_exam.spySeekShika()
 function getInfo()
 	return {
 		onNoUnits = SUCCESS, -- instant success
