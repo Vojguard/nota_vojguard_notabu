@@ -76,6 +76,6 @@ function Run(self, units, parameter)
     else
         return SUCCESS
     end
-    return RUNNING
+    return SUCCESS
     
 end
