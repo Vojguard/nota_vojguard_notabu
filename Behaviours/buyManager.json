@@ -1,39 +1,5 @@
 {
-	"additionalNodes": [ {
-		"children": [ {
-			"children": [ {
-				"children": [],
-				"id": "pH7MmrvEWukBc42WMi6Of1Cn75fdoNLU",
-				"nodeType": "luaCommand",
-				"parameters": [ {
-					"name": "unitName",
-					"value": "'armmart'"
-				}, {
-					"name": "scriptName",
-					"value": "nota_vojguard_notabu.buyUnits"
-				} ],
-				"scriptName": "nota_vojguard_notabu.buyUnits"
-			} ],
-			"id": "ZLiTDYluFoymLz4pBBGtESi3hRk8kBAO",
-			"nodeType": "luaCondition",
-			"parameters": [ {
-				"name": "expression",
-				"value": "metalCount.currentLevel > lugerCost"
-			}, {
-				"name": "repeat",
-				"value": "false"
-			} ]
-		} ],
-		"id": "DYV1UpIPBB6v0uq3nvVBi13JPAnD1GLU",
-		"nodeType": "luaCondition",
-		"parameters": [ {
-			"name": "expression",
-			"value": "#lug < 7"
-		}, {
-			"name": "repeat",
-			"value": "false"
-		} ]
-	} ],
+	"additionalNodes": [],
 	"additionalParameters": {
 		"root": {
 			"height": 168,
@@ -341,6 +307,40 @@
 				"parameters": [ {
 					"name": "expression",
 					"value": "#fark < 1"
+				}, {
+					"name": "repeat",
+					"value": "false"
+				} ]
+			}, {
+				"children": [ {
+					"children": [ {
+						"children": [],
+						"id": "pH7MmrvEWukBc42WMi6Of1Cn75fdoNLU",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "unitName",
+							"value": "'armmart'"
+						}, {
+							"name": "scriptName",
+							"value": "nota_vojguard_notabu.buyUnits"
+						} ],
+						"scriptName": "nota_vojguard_notabu.buyUnits"
+					} ],
+					"id": "ZLiTDYluFoymLz4pBBGtESi3hRk8kBAO",
+					"nodeType": "luaCondition",
+					"parameters": [ {
+						"name": "expression",
+						"value": "metalCount.currentLevel > lugerCost"
+					}, {
+						"name": "repeat",
+						"value": "false"
+					} ]
+				} ],
+				"id": "DYV1UpIPBB6v0uq3nvVBi13JPAnD1GLU",
+				"nodeType": "luaCondition",
+				"parameters": [ {
+					"name": "expression",
+					"value": "#lug < 7"
 				}, {
 					"name": "repeat",
 					"value": "false"

@@ -36,13 +36,20 @@ function Run(self, units, parameter)
     local battlePos = parameter.battlePosition:AsSpringVector()
     local retreatPos = parameter.retreatPosition:AsSpringVector()
     local strongpointPos = parameter.closestStrongpoint
-    local strongpointRange = 700
+    local strongpointRange = 900
+
+    local battlePosVec = Vec3(battlePos[1],battlePos[2], battlePos[3])
+    local retreatPosVec = Vec3(retreatPos[1], retreatPos[2], retreatPos[3])
+    local battlevec = battlePosVec - retreatPosVec
+    battlevec:Normalize()
+    local perp = Vec3(-battlevec.z, battlevec.y, battlevec.x)
+    
 
     if #unitIDs == 0 then
         return SUCCESS
     end
 
-    for _, unitID in ipairs(unitIDs) do
+    for i, unitID in ipairs(unitIDs) do
         if Spring.ValidUnitID(unitID) then
             local unitPosX, unitPosY, unitPosZ = Spring.GetUnitPosition(unitID)
             local unitPos = Vec3(unitPosX,unitPosY,unitPosZ)
@@ -56,12 +63,17 @@ function Run(self, units, parameter)
                 death = true
             end
 
+            local thisRetreatPos = battlePosVec + (perp * (100 * (i - 1)))
+
             if death then
                 Spring.GiveOrderToUnit(unitID, CMD.STOP, {}, {})
-                Spring.GiveOrderToUnit(unitID, CMD.MOVE, {retreatPos[1], retreatPos[2], retreatPos[3]}, {"shift"})
+                Spring.GiveOrderToUnit(unitID, CMD.MOVE, thisRetreatPos:AsSpringVector(), {"shift"})
             end
+            
+            local thisBattlePos = battlePosVec + (perp * (100 * (i - 1)))
+
             Spring.GiveOrderToUnit(unitID, CMD.STOP, {}, {})
-            Spring.GiveOrderToUnit(unitID, CMD.MOVE, {battlePos[1], battlePos[2], battlePos[3]}, {"shift"})
+            Spring.GiveOrderToUnit(unitID, CMD.MOVE, thisBattlePos:AsSpringVector(), {"shift"})
         end
     end
     return SUCCESS
