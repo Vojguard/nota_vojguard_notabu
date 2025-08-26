@@ -37,21 +37,6 @@
 		"scriptName": "formation.moveCustomGroup"
 	}, {
 		"children": [],
-		"id": "QRPxcluSgIdOYbyLFmr54jE6Hha6EOA7",
-		"nodeType": "luaCommand",
-		"parameters": [ {
-			"name": "var",
-			"value": "lugBattlePos"
-		}, {
-			"name": "value",
-			"value": "nota_vojguard_notabu.Battleposition(midCorridor, 675)"
-		}, {
-			"name": "scriptName",
-			"value": "store"
-		} ],
-		"scriptName": "store"
-	}, {
-		"children": [],
 		"id": "qEAEnq4AtIhemLu2fIA1ndBl2OyVeN5y",
 		"nodeType": "luaCommand",
 		"parameters": [ {
@@ -132,6 +117,21 @@
 		}, {
 			"name": "value",
 			"value": "nota_vojguard_notabu.FormationDefinitions(units)"
+		}, {
+			"name": "scriptName",
+			"value": "store"
+		} ],
+		"scriptName": "store"
+	}, {
+		"children": [],
+		"id": "QRPxcluSgIdOYbyLFmr54jE6Hha6EOA7",
+		"nodeType": "luaCommand",
+		"parameters": [ {
+			"name": "var",
+			"value": "lugBattlePos"
+		}, {
+			"name": "value",
+			"value": "nota_vojguard_notabu.Battleposition(midCorridor, 675)"
 		}, {
 			"name": "scriptName",
 			"value": "store"
@@ -248,6 +248,13 @@
 			"width": 202,
 			"x": 895,
 			"y": 300
+		},
+		"BnrEHrqKHyUngBfGF6jyCzmk5oth6of9": {
+			"height": 130,
+			"title": "reference",
+			"width": 309,
+			"x": 1175,
+			"y": 566
 		},
 		"CWfLtmKB3J4aaU4n06sbNBEdBYwzAYuH": {
 			"height": 94,
@@ -552,6 +559,19 @@
 						"parameters": [ {
 							"name": "behaviourName",
 							"value": "nota_vojguard_notabu.farkReclaiming"
+						} ],
+						"referenceInputs": [ {
+							"name": "corridor",
+							"value": "midCorridor"
+						} ],
+						"referenceOutputs": []
+					}, {
+						"children": [],
+						"id": "BnrEHrqKHyUngBfGF6jyCzmk5oth6of9",
+						"nodeType": "reference",
+						"parameters": [ {
+							"name": "behaviourName",
+							"value": "nota_vojguard_notabu.mavAttacking"
 						} ],
 						"referenceInputs": [ {
 							"name": "corridor",

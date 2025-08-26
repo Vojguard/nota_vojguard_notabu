@@ -58,7 +58,7 @@ function Run(self, units, parameter)
         local retreatPos = parameter.retreatPosition:AsSpringVector()
         reclaimArea[4] = parameter.reclaimRadius
         local metal = getMetalInArea(reclaimArea)
-        local dangerCounter = Sensors.nota_vojguard_notabu.SurroundingsDangerCounter(farkID, reclaimArea[4] * 2)
+        local dangerCounter = Sensors.nota_vojguard_notabu.SurroundingsDangerCounter(farkID, reclaimArea[4] * 2, true)
         
         if dangerCounter > 0 then
             Spring.GiveOrderToUnit(farkID, CMD.STOP, {}, {})

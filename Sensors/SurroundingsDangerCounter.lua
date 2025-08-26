@@ -15,7 +15,7 @@ function getInfo()
 end
 
 
-return function(unitID, cautionRange)
+return function(unitID, cautionRange, first)
 	local myTeam = 0
     local unitPosX, unitPosY, unitPosZ = Spring.GetUnitPosition(unitID)
 	local unitsAround = Spring.GetUnitsInSphere(unitPosX, unitPosY, unitPosZ, cautionRange)
@@ -23,7 +23,12 @@ return function(unitID, cautionRange)
 	for _, uID in ipairs(unitsAround) do
 		local unitTeam = Spring.GetUnitTeam(uID)
 		if not Spring.AreTeamsAllied(myTeam, unitTeam) then
+			if first then
+				return 1
+			end
 			dangerCounter = dangerCounter + 1
+		else
+			dangerCounter = dangerCounter - 1
 		end
 	end
     return dangerCounter

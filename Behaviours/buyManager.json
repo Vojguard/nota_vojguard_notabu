@@ -1,5 +1,39 @@
 {
-	"additionalNodes": [],
+	"additionalNodes": [ {
+		"children": [ {
+			"children": [ {
+				"children": [],
+				"id": "pH7MmrvEWukBc42WMi6Of1Cn75fdoNLU",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "unitName",
+					"value": "'armmart'"
+				}, {
+					"name": "scriptName",
+					"value": "nota_vojguard_notabu.buyUnits"
+				} ],
+				"scriptName": "nota_vojguard_notabu.buyUnits"
+			} ],
+			"id": "ZLiTDYluFoymLz4pBBGtESi3hRk8kBAO",
+			"nodeType": "luaCondition",
+			"parameters": [ {
+				"name": "expression",
+				"value": "metalCount.currentLevel > lugerCost"
+			}, {
+				"name": "repeat",
+				"value": "false"
+			} ]
+		} ],
+		"id": "DYV1UpIPBB6v0uq3nvVBi13JPAnD1GLU",
+		"nodeType": "luaCondition",
+		"parameters": [ {
+			"name": "expression",
+			"value": "#lug < 7"
+		}, {
+			"name": "repeat",
+			"value": "false"
+		} ]
+	} ],
 	"additionalParameters": {
 		"root": {
 			"height": 168,
@@ -315,40 +349,6 @@
 				"children": [ {
 					"children": [ {
 						"children": [],
-						"id": "pH7MmrvEWukBc42WMi6Of1Cn75fdoNLU",
-						"nodeType": "luaCommand",
-						"parameters": [ {
-							"name": "unitName",
-							"value": "'armmart'"
-						}, {
-							"name": "scriptName",
-							"value": "nota_vojguard_notabu.buyUnits"
-						} ],
-						"scriptName": "nota_vojguard_notabu.buyUnits"
-					} ],
-					"id": "ZLiTDYluFoymLz4pBBGtESi3hRk8kBAO",
-					"nodeType": "luaCondition",
-					"parameters": [ {
-						"name": "expression",
-						"value": "metalCount.currentLevel > lugerCost"
-					}, {
-						"name": "repeat",
-						"value": "false"
-					} ]
-				} ],
-				"id": "DYV1UpIPBB6v0uq3nvVBi13JPAnD1GLU",
-				"nodeType": "luaCondition",
-				"parameters": [ {
-					"name": "expression",
-					"value": "#lug < 7"
-				}, {
-					"name": "repeat",
-					"value": "false"
-				} ]
-			}, {
-				"children": [ {
-					"children": [ {
-						"children": [],
 						"id": "PvncFpmloksce2useq2ObTajkqpVWMa2",
 						"nodeType": "luaCommand",
 						"parameters": [ {
@@ -374,7 +374,7 @@
 				"nodeType": "luaCondition",
 				"parameters": [ {
 					"name": "expression",
-					"value": "#mav < 5"
+					"value": "#mav < 12"
 				}, {
 					"name": "repeat",
 					"value": "false"
