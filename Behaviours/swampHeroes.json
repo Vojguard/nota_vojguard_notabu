@@ -1,14 +1,116 @@
 {
 	"additionalNodes": [ {
 		"children": [],
-		"id": "vCUbcex7ntmeaJjeGF0NsopBzJj7szfJ",
+		"id": "naR0Ox5wvwL5xvgxb96tzBkR4rKRZVAt",
 		"nodeType": "luaCommand",
 		"parameters": [ {
 			"name": "var",
-			"value": "mavBattlePos"
+			"value": "myUnits"
 		}, {
 			"name": "value",
-			"value": "nota_vojguard_notabu.Battleposition(midCorridor, 285)"
+			"value": "nota_vojguard_notabu.GetMyUnits('armpeep')"
+		}, {
+			"name": "scriptName",
+			"value": "store"
+		} ],
+		"scriptName": "store"
+	}, {
+		"children": [],
+		"id": "puojSfaZrJZickXNvaTVIEhrjBDxgZON",
+		"nodeType": "luaCommand",
+		"parameters": [ {
+			"name": "var",
+			"value": "missionInfo"
+		}, {
+			"name": "value",
+			"value": "core.MissionInfo()"
+		}, {
+			"name": "scriptName",
+			"value": "store"
+		} ],
+		"scriptName": "store"
+	}, {
+		"children": [],
+		"id": "u1RbDIAKZr49B44BROtdvyzPjIrArG0d",
+		"nodeType": "luaCommand",
+		"parameters": [ {
+			"name": "unitName",
+			"value": "'armmart'"
+		}, {
+			"name": "scriptName",
+			"value": "nota_vojguard_notabu.buyUnits"
+		} ],
+		"scriptName": "nota_vojguard_notabu.buyUnits"
+	}, {
+		"children": [],
+		"id": "QRPxcluSgIdOYbyLFmr54jE6Hha6EOA7",
+		"nodeType": "luaCommand",
+		"parameters": [ {
+			"name": "var",
+			"value": "lugBattlePos"
+		}, {
+			"name": "value",
+			"value": "nota_vojguard_notabu.Battleposition(midCorridor, 675)"
+		}, {
+			"name": "scriptName",
+			"value": "store"
+		} ],
+		"scriptName": "store"
+	}, {
+		"children": [],
+		"id": "jZpBHJa6Md6uX8Raoan3R5zZu3HnWQV9",
+		"nodeType": "luaCommand",
+		"parameters": [ {
+			"name": "var",
+			"value": "groupForm"
+		}, {
+			"name": "value",
+			"value": "nota_vojguard_notabu.FormationDefinitions(units)"
+		}, {
+			"name": "scriptName",
+			"value": "store"
+		} ],
+		"scriptName": "store"
+	}, {
+		"children": [],
+		"id": "nrAyAUlg8dwCGPKlNgpQ6zWmq95FimtZ",
+		"nodeType": "luaCommand",
+		"parameters": [ {
+			"name": "corridor",
+			"value": "midCorridor"
+		}, {
+			"name": "cautionRange",
+			"value": "250"
+		}, {
+			"name": "scriptName",
+			"value": "nota_vojguard_notabu.followCorridor"
+		} ],
+		"scriptName": "nota_vojguard_notabu.followCorridor"
+	}, {
+		"children": [],
+		"id": "GFudG91a9njRbGU784kL5NsdUvaXnYFD",
+		"nodeType": "luaCommand",
+		"parameters": [ {
+			"name": "var",
+			"value": "conflict"
+		}, {
+			"name": "value",
+			"value": "nota_vojguard_notabu.Battleline(midCorridor)"
+		}, {
+			"name": "scriptName",
+			"value": "store"
+		} ],
+		"scriptName": "store"
+	}, {
+		"children": [],
+		"id": "qEAEnq4AtIhemLu2fIA1ndBl2OyVeN5y",
+		"nodeType": "luaCommand",
+		"parameters": [ {
+			"name": "var",
+			"value": "finalForm"
+		}, {
+			"name": "value",
+			"value": "formation.StaticTransform(formPos, conflict, mavBattlePos, Vec3(30,1,30))"
 		}, {
 			"name": "scriptName",
 			"value": "store"
@@ -35,123 +137,6 @@
 			"value": "formation.moveCustomGroup"
 		} ],
 		"scriptName": "formation.moveCustomGroup"
-	}, {
-		"children": [],
-		"id": "puojSfaZrJZickXNvaTVIEhrjBDxgZON",
-		"nodeType": "luaCommand",
-		"parameters": [ {
-			"name": "var",
-			"value": "missionInfo"
-		}, {
-			"name": "value",
-			"value": "core.MissionInfo()"
-		}, {
-			"name": "scriptName",
-			"value": "store"
-		} ],
-		"scriptName": "store"
-	}, {
-		"children": [],
-		"id": "QRPxcluSgIdOYbyLFmr54jE6Hha6EOA7",
-		"nodeType": "luaCommand",
-		"parameters": [ {
-			"name": "var",
-			"value": "lugBattlePos"
-		}, {
-			"name": "value",
-			"value": "nota_vojguard_notabu.Battleposition(midCorridor, 675)"
-		}, {
-			"name": "scriptName",
-			"value": "store"
-		} ],
-		"scriptName": "store"
-	}, {
-		"children": [],
-		"id": "qEAEnq4AtIhemLu2fIA1ndBl2OyVeN5y",
-		"nodeType": "luaCommand",
-		"parameters": [ {
-			"name": "var",
-			"value": "finalForm"
-		}, {
-			"name": "value",
-			"value": "formation.StaticTransform(formPos, conflict, mavBattlePos, Vec3(30,1,30))"
-		}, {
-			"name": "scriptName",
-			"value": "store"
-		} ],
-		"scriptName": "store"
-	}, {
-		"children": [],
-		"id": "GFudG91a9njRbGU784kL5NsdUvaXnYFD",
-		"nodeType": "luaCommand",
-		"parameters": [ {
-			"name": "var",
-			"value": "conflict"
-		}, {
-			"name": "value",
-			"value": "nota_vojguard_notabu.Battleline(midCorridor)"
-		}, {
-			"name": "scriptName",
-			"value": "store"
-		} ],
-		"scriptName": "store"
-	}, {
-		"children": [],
-		"id": "nrAyAUlg8dwCGPKlNgpQ6zWmq95FimtZ",
-		"nodeType": "luaCommand",
-		"parameters": [ {
-			"name": "corridor",
-			"value": "midCorridor"
-		}, {
-			"name": "cautionRange",
-			"value": "250"
-		}, {
-			"name": "scriptName",
-			"value": "nota_vojguard_notabu.followCorridor"
-		} ],
-		"scriptName": "nota_vojguard_notabu.followCorridor"
-	}, {
-		"children": [],
-		"id": "jZpBHJa6Md6uX8Raoan3R5zZu3HnWQV9",
-		"nodeType": "luaCommand",
-		"parameters": [ {
-			"name": "var",
-			"value": "groupForm"
-		}, {
-			"name": "value",
-			"value": "nota_vojguard_notabu.FormationDefinitions(units)"
-		}, {
-			"name": "scriptName",
-			"value": "store"
-		} ],
-		"scriptName": "store"
-	}, {
-		"children": [],
-		"id": "u1RbDIAKZr49B44BROtdvyzPjIrArG0d",
-		"nodeType": "luaCommand",
-		"parameters": [ {
-			"name": "unitName",
-			"value": "'armmart'"
-		}, {
-			"name": "scriptName",
-			"value": "nota_vojguard_notabu.buyUnits"
-		} ],
-		"scriptName": "nota_vojguard_notabu.buyUnits"
-	}, {
-		"children": [],
-		"id": "naR0Ox5wvwL5xvgxb96tzBkR4rKRZVAt",
-		"nodeType": "luaCommand",
-		"parameters": [ {
-			"name": "var",
-			"value": "myUnits"
-		}, {
-			"name": "value",
-			"value": "nota_vojguard_notabu.GetMyUnits('armpeep')"
-		}, {
-			"name": "scriptName",
-			"value": "store"
-		} ],
-		"scriptName": "store"
 	}, {
 		"children": [],
 		"id": "r6fFrNWqPT62xO6RpNIy3yj1fafWbAsA",
@@ -182,6 +167,21 @@
 			"value": "nota_vojguard_notabu.moveOnBattleline"
 		} ],
 		"scriptName": "nota_vojguard_notabu.moveOnBattleline"
+	}, {
+		"children": [],
+		"id": "vCUbcex7ntmeaJjeGF0NsopBzJj7szfJ",
+		"nodeType": "luaCommand",
+		"parameters": [ {
+			"name": "var",
+			"value": "mavBattlePos"
+		}, {
+			"name": "value",
+			"value": "nota_vojguard_notabu.Battleposition(midCorridor, 285)"
+		}, {
+			"name": "scriptName",
+			"value": "store"
+		} ],
+		"scriptName": "store"
 	}, {
 		"children": [],
 		"id": "CWfLtmKB3J4aaU4n06sbNBEdBYwzAYuH",

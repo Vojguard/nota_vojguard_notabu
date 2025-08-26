@@ -63,14 +63,14 @@ function Run(self, units, parameter)
                 death = true
             end
 
-            local thisRetreatPos = battlePosVec + (perp * (100 * (i - 1)))
+            local thisRetreatPos = battlePosVec + (perp * (100 * (i - 1)) * ((-1) ^ i))
 
             if death then
                 Spring.GiveOrderToUnit(unitID, CMD.STOP, {}, {})
                 Spring.GiveOrderToUnit(unitID, CMD.MOVE, thisRetreatPos:AsSpringVector(), {"shift"})
             end
             
-            local thisBattlePos = battlePosVec + (perp * (100 * (i - 1)))
+            local thisBattlePos = battlePosVec + (perp * (100 * (i - 1)) * ((-1) ^ i))
 
             Spring.GiveOrderToUnit(unitID, CMD.STOP, {}, {})
             Spring.GiveOrderToUnit(unitID, CMD.MOVE, thisBattlePos:AsSpringVector(), {"shift"})

@@ -98,7 +98,7 @@
 				"value": "battlePos"
 			}, {
 				"name": "value",
-				"value": "nota_vojguard_notabu.Battleposition(corridor, 570)"
+				"value": "nota_vojguard_notabu.Battleposition(corridor, 470)"
 			}, {
 				"name": "scriptName",
 				"value": "store"
