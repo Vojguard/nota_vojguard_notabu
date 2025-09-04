@@ -1,5 +1,20 @@
 {
-	"additionalNodes": [],
+	"additionalNodes": [ {
+		"children": [],
+		"id": "ZPOGVbnBLzmOYvQGeSRmBybOY8T8GbR7",
+		"nodeType": "luaCommand",
+		"parameters": [ {
+			"name": "unitIDs",
+			"value": "lugs"
+		}, {
+			"name": "positionToSiege",
+			"value": "closestStrongpoint"
+		}, {
+			"name": "scriptName",
+			"value": "nota_vojguard_notabu.positionSiege"
+		} ],
+		"scriptName": "nota_vojguard_notabu.positionSiege"
+	} ],
 	"additionalParameters": {
 		"root": {
 			"height": 108,
@@ -40,12 +55,26 @@
 			"x": 554,
 			"y": 63
 		},
+		"PmobZGNQhFAxmYdXzMIIphl6jw819SAz": {
+			"height": 71,
+			"title": "sequence",
+			"width": 147,
+			"x": 805,
+			"y": 228
+		},
 		"UwE3WpOYf20TGU5QMmLGhwd2HbjSARHh": {
 			"height": 172,
 			"title": "nota_vojguard_notabu.attackersOnBattleline",
 			"width": 343,
-			"x": 808,
-			"y": 180
+			"x": 1142,
+			"y": 193
+		},
+		"ZPOGVbnBLzmOYvQGeSRmBybOY8T8GbR7": {
+			"height": 92,
+			"title": "nota_vojguard_notabu.positionSiege",
+			"width": 293,
+			"x": 1150,
+			"y": 363
 		},
 		"pwIX3VsZLf3usWhijjQTCYerEyzNvUk3": {
 			"height": 54,
@@ -136,32 +165,37 @@
 			"scriptName": "store"
 		}, {
 			"children": [ {
-				"children": [],
-				"id": "UwE3WpOYf20TGU5QMmLGhwd2HbjSARHh",
-				"nodeType": "luaCommand",
-				"parameters": [ {
-					"name": "unitIDs",
-					"value": "lugs"
-				}, {
-					"name": "battlePosition",
-					"value": "battlePos"
-				}, {
-					"name": "retreatPosition",
-					"value": "retreatPos"
-				}, {
-					"name": "closestStrongpoint",
-					"value": "closestStrongpoint"
-				}, {
-					"name": "cautionRange",
-					"value": 450
-				}, {
-					"name": "formationOffset",
-					"value": 50
-				}, {
-					"name": "scriptName",
-					"value": "nota_vojguard_notabu.attackersOnBattleline"
+				"children": [ {
+					"children": [],
+					"id": "UwE3WpOYf20TGU5QMmLGhwd2HbjSARHh",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "unitIDs",
+						"value": "lugs"
+					}, {
+						"name": "battlePosition",
+						"value": "battlePos"
+					}, {
+						"name": "retreatPosition",
+						"value": "retreatPos"
+					}, {
+						"name": "closestStrongpoint",
+						"value": "closestStrongpoint"
+					}, {
+						"name": "cautionRange",
+						"value": 450
+					}, {
+						"name": "formationOffset",
+						"value": 50
+					}, {
+						"name": "scriptName",
+						"value": "nota_vojguard_notabu.attackersOnBattleline"
+					} ],
+					"scriptName": "nota_vojguard_notabu.attackersOnBattleline"
 				} ],
-				"scriptName": "nota_vojguard_notabu.attackersOnBattleline"
+				"id": "PmobZGNQhFAxmYdXzMIIphl6jw819SAz",
+				"nodeType": "sequence",
+				"parameters": []
 			}, {
 				"children": [],
 				"id": "pwIX3VsZLf3usWhijjQTCYerEyzNvUk3",

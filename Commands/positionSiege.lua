@@ -39,5 +39,5 @@ function Run(self, units, parameter)
 		self.init = true
 	end
 
-	return RUNNING
+	return SUCCESS
 end
