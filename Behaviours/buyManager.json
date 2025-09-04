@@ -1,0 +1,399 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 168,
+			"width": 216
+		}
+	},
+	"inputs": [ {
+		"command": "Variable",
+		"name": "peepCost"
+	}, {
+		"command": "Variable",
+		"name": "farkCost"
+	}, {
+		"command": "Variable",
+		"name": "lugerCost"
+	}, {
+		"command": "Variable",
+		"name": "mavCost"
+	} ],
+	"outputs": [],
+	"properties": {
+		"0rn8LKSFasxLdv6328uibx1qO6MYpupp": {
+			"height": 72,
+			"title": "nota_vojguard_notabu.buyUnits",
+			"width": 263,
+			"x": 1294,
+			"y": 132
+		},
+		"56xmalulcKi5V0VdZEz7caG6ToVvER1A": {
+			"height": 94,
+			"title": "store",
+			"width": 300,
+			"x": 450,
+			"y": -396
+		},
+		"5xEGLIqyS7v7XWjozvnQtrPDedTtLu37": {
+			"height": 59,
+			"title": "sequence",
+			"width": 143,
+			"x": 234,
+			"y": 10
+		},
+		"84zQ3Xde06zvfcvAw562EhepsZymVoTS": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 194,
+			"x": 653,
+			"y": 125
+		},
+		"A1bWEJ0TAdfPgnFMb3OfQviFInBWt8fb": {
+			"height": 72,
+			"title": "nota_vojguard_notabu.buyUnits",
+			"width": 263,
+			"x": 1293,
+			"y": 216
+		},
+		"DYV1UpIPBB6v0uq3nvVBi13JPAnD1GLU": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 194,
+			"x": 651,
+			"y": 295
+		},
+		"EJWYfZB8s33xlxuslajkwUvXMxBzgMYk": {
+			"height": 94,
+			"title": "store",
+			"width": 394,
+			"x": 448,
+			"y": -39
+		},
+		"FmYlqHAew8CmTOCyWOwWeIB56sweZIME": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 194,
+			"x": 650,
+			"y": 373
+		},
+		"LLKLn1ED2yV3vvgZkKLt1af1ikpcuUrU": {
+			"height": 94,
+			"title": "store",
+			"width": 394,
+			"x": 447,
+			"y": -306
+		},
+		"PvncFpmloksce2useq2ObTajkqpVWMa2": {
+			"height": 72,
+			"title": "nota_vojguard_notabu.buyUnits",
+			"width": 263,
+			"x": 1287,
+			"y": 379
+		},
+		"VZsJn8TBYtgdbV5I47EjiTykRCQvzFVP": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 269,
+			"x": 961,
+			"y": 209
+		},
+		"ZLiTDYluFoymLz4pBBGtESi3hRk8kBAO": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 277,
+			"x": 960,
+			"y": 296
+		},
+		"Zl63W6GJVqI2naJIB8y60AvkOc7PvNr9": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 272,
+			"x": 963,
+			"y": 374
+		},
+		"e3PB8mqx9BD6oxeVtx0CaIOyWwswxUFH": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 194,
+			"x": 654,
+			"y": 210
+		},
+		"ndDxSApuVUtTMzQRltbzWDojlnOp0x0v": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 277,
+			"x": 954,
+			"y": 125
+		},
+		"pH7MmrvEWukBc42WMi6Of1Cn75fdoNLU": {
+			"height": 72,
+			"title": "nota_vojguard_notabu.buyUnits",
+			"width": 263,
+			"x": 1283,
+			"y": 301
+		},
+		"pbfzlkslRdvITg1SpvAfVC5oMHZreOwx": {
+			"height": 54,
+			"title": "success",
+			"width": 132,
+			"x": 650,
+			"y": 459
+		},
+		"sh6Y8MX0w3KSTLKE0a4DdW0NIB6u7WLI": {
+			"height": 94,
+			"title": "store",
+			"width": 394,
+			"x": 447,
+			"y": -217
+		},
+		"tBcZQ9pm4ugeQKmpy30vjwO89Vohxggg": {
+			"height": 94,
+			"title": "store",
+			"width": 394,
+			"x": 448,
+			"y": -128
+		},
+		"wvwyute88Er4oqMyRaEAq29iK4OWhZud": {
+			"height": 70,
+			"title": "selector",
+			"width": 131,
+			"x": 438,
+			"y": 262
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [],
+			"id": "56xmalulcKi5V0VdZEz7caG6ToVvER1A",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "metalCount"
+			}, {
+				"name": "value",
+				"value": "core.TeamMetal()"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "LLKLn1ED2yV3vvgZkKLt1af1ikpcuUrU",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "fark"
+			}, {
+				"name": "value",
+				"value": "nota_vojguard_notabu.GetMyUnits('armfark')"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "sh6Y8MX0w3KSTLKE0a4DdW0NIB6u7WLI",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "peep"
+			}, {
+				"name": "value",
+				"value": "nota_vojguard_notabu.GetMyUnits('armpeep')"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "tBcZQ9pm4ugeQKmpy30vjwO89Vohxggg",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "lug"
+			}, {
+				"name": "value",
+				"value": "nota_vojguard_notabu.GetMyUnits('armmart')"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "EJWYfZB8s33xlxuslajkwUvXMxBzgMYk",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "mav"
+			}, {
+				"name": "value",
+				"value": "nota_vojguard_notabu.GetMyUnits('armmav')"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [ {
+				"children": [ {
+					"children": [ {
+						"children": [],
+						"id": "0rn8LKSFasxLdv6328uibx1qO6MYpupp",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "unitName",
+							"value": "'armpeep'"
+						}, {
+							"name": "scriptName",
+							"value": "nota_vojguard_notabu.buyUnits"
+						} ],
+						"scriptName": "nota_vojguard_notabu.buyUnits"
+					} ],
+					"id": "ndDxSApuVUtTMzQRltbzWDojlnOp0x0v",
+					"nodeType": "luaCondition",
+					"parameters": [ {
+						"name": "expression",
+						"value": "metalCount.currentLevel > peepCost"
+					}, {
+						"name": "repeat",
+						"value": "false"
+					} ]
+				} ],
+				"id": "84zQ3Xde06zvfcvAw562EhepsZymVoTS",
+				"nodeType": "luaCondition",
+				"parameters": [ {
+					"name": "expression",
+					"value": "#peep < 1"
+				}, {
+					"name": "repeat",
+					"value": "false"
+				} ]
+			}, {
+				"children": [ {
+					"children": [ {
+						"children": [],
+						"id": "A1bWEJ0TAdfPgnFMb3OfQviFInBWt8fb",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "unitName",
+							"value": "'armfark'"
+						}, {
+							"name": "scriptName",
+							"value": "nota_vojguard_notabu.buyUnits"
+						} ],
+						"scriptName": "nota_vojguard_notabu.buyUnits"
+					} ],
+					"id": "VZsJn8TBYtgdbV5I47EjiTykRCQvzFVP",
+					"nodeType": "luaCondition",
+					"parameters": [ {
+						"name": "expression",
+						"value": "metalCount.currentLevel > farkCost"
+					}, {
+						"name": "repeat",
+						"value": "false"
+					} ]
+				} ],
+				"id": "e3PB8mqx9BD6oxeVtx0CaIOyWwswxUFH",
+				"nodeType": "luaCondition",
+				"parameters": [ {
+					"name": "expression",
+					"value": "#fark < 2"
+				}, {
+					"name": "repeat",
+					"value": "false"
+				} ]
+			}, {
+				"children": [ {
+					"children": [ {
+						"children": [],
+						"id": "pH7MmrvEWukBc42WMi6Of1Cn75fdoNLU",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "unitName",
+							"value": "'armmart'"
+						}, {
+							"name": "scriptName",
+							"value": "nota_vojguard_notabu.buyUnits"
+						} ],
+						"scriptName": "nota_vojguard_notabu.buyUnits"
+					} ],
+					"id": "ZLiTDYluFoymLz4pBBGtESi3hRk8kBAO",
+					"nodeType": "luaCondition",
+					"parameters": [ {
+						"name": "expression",
+						"value": "metalCount.currentLevel > lugerCost"
+					}, {
+						"name": "repeat",
+						"value": "false"
+					} ]
+				} ],
+				"id": "DYV1UpIPBB6v0uq3nvVBi13JPAnD1GLU",
+				"nodeType": "luaCondition",
+				"parameters": [ {
+					"name": "expression",
+					"value": "#lug < 7"
+				}, {
+					"name": "repeat",
+					"value": "false"
+				} ]
+			}, {
+				"children": [ {
+					"children": [ {
+						"children": [],
+						"id": "PvncFpmloksce2useq2ObTajkqpVWMa2",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "unitName",
+							"value": "'armmav'"
+						}, {
+							"name": "scriptName",
+							"value": "nota_vojguard_notabu.buyUnits"
+						} ],
+						"scriptName": "nota_vojguard_notabu.buyUnits"
+					} ],
+					"id": "Zl63W6GJVqI2naJIB8y60AvkOc7PvNr9",
+					"nodeType": "luaCondition",
+					"parameters": [ {
+						"name": "expression",
+						"value": "metalCount.currentLevel > mavCost"
+					}, {
+						"name": "repeat",
+						"value": "false"
+					} ]
+				} ],
+				"id": "FmYlqHAew8CmTOCyWOwWeIB56sweZIME",
+				"nodeType": "luaCondition",
+				"parameters": [ {
+					"name": "expression",
+					"value": "#mav < 12"
+				}, {
+					"name": "repeat",
+					"value": "false"
+				} ]
+			}, {
+				"children": [],
+				"id": "pbfzlkslRdvITg1SpvAfVC5oMHZreOwx",
+				"nodeType": "success",
+				"parameters": []
+			} ],
+			"id": "wvwyute88Er4oqMyRaEAq29iK4OWhZud",
+			"nodeType": "selector",
+			"parameters": [ {
+				"name": "active",
+				"value": "true"
+			} ]
+		} ],
+		"id": "5xEGLIqyS7v7XWjozvnQtrPDedTtLu37",
+		"nodeType": "sequence",
+		"parameters": []
+	}
+}

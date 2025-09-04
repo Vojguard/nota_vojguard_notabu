@@ -1,0 +1,185 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 108,
+			"width": 216
+		}
+	},
+	"inputs": [ {
+		"command": "Variable",
+		"name": "corridor"
+	} ],
+	"outputs": [],
+	"properties": {
+		"5IAE0ZiLs6pPF4St7dlvrCI0xQqa6Ai7": {
+			"height": 94,
+			"title": "store",
+			"width": 453,
+			"x": 553,
+			"y": -118
+		},
+		"84zLGdJFpLSObYbEgM64q2gDnP7VZpK1": {
+			"height": 94,
+			"title": "store",
+			"width": 453,
+			"x": 552,
+			"y": -26
+		},
+		"AlIQqiWA8X4mH7Xuf1HQVeWMvwzrnwT4": {
+			"height": 94,
+			"title": "store",
+			"width": 394,
+			"x": 557,
+			"y": -225
+		},
+		"FQGmhHeJ28azMu4G3Xx8ligMVZmUGgHC": {
+			"height": 94,
+			"title": "store",
+			"width": 435,
+			"x": 554,
+			"y": 63
+		},
+		"UwE3WpOYf20TGU5QMmLGhwd2HbjSARHh": {
+			"height": 172,
+			"title": "nota_vojguard_notabu.attackersOnBattleline",
+			"width": 343,
+			"x": 808,
+			"y": 180
+		},
+		"pwIX3VsZLf3usWhijjQTCYerEyzNvUk3": {
+			"height": 54,
+			"title": "success",
+			"width": 132,
+			"x": 809,
+			"y": 347
+		},
+		"q60tTpgL73XffshAADdcXoZWSuQe8ya9": {
+			"height": 93,
+			"title": "luaCondition",
+			"width": 198,
+			"x": 544,
+			"y": 220
+		},
+		"rfW9nvi8dMf62AKu8CFpH8Kd9ZUtq7Bq": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 286,
+			"y": 16
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [],
+			"id": "AlIQqiWA8X4mH7Xuf1HQVeWMvwzrnwT4",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "lugs"
+			}, {
+				"name": "value",
+				"value": "nota_vojguard_notabu.GetMyUnits('armmart')"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "5IAE0ZiLs6pPF4St7dlvrCI0xQqa6Ai7",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "battlePos"
+			}, {
+				"name": "value",
+				"value": "nota_vojguard_notabu.Battleposition(corridor, 1200)"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "84zLGdJFpLSObYbEgM64q2gDnP7VZpK1",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "retreatPos"
+			}, {
+				"name": "value",
+				"value": "nota_vojguard_notabu.Battleposition(corridor, 1700)"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "FQGmhHeJ28azMu4G3Xx8ligMVZmUGgHC",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "closestStrongpoint"
+			}, {
+				"name": "value",
+				"value": "nota_vojguard_notabu.FirstEnemyStrongpoint(corridor)"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [ {
+				"children": [],
+				"id": "UwE3WpOYf20TGU5QMmLGhwd2HbjSARHh",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "unitIDs",
+					"value": "lugs"
+				}, {
+					"name": "battlePosition",
+					"value": "battlePos"
+				}, {
+					"name": "retreatPosition",
+					"value": "retreatPos"
+				}, {
+					"name": "closestStrongpoint",
+					"value": "closestStrongpoint"
+				}, {
+					"name": "cautionRange",
+					"value": 450
+				}, {
+					"name": "formationOffset",
+					"value": 50
+				}, {
+					"name": "scriptName",
+					"value": "nota_vojguard_notabu.attackersOnBattleline"
+				} ],
+				"scriptName": "nota_vojguard_notabu.attackersOnBattleline"
+			}, {
+				"children": [],
+				"id": "pwIX3VsZLf3usWhijjQTCYerEyzNvUk3",
+				"nodeType": "success",
+				"parameters": []
+			} ],
+			"id": "q60tTpgL73XffshAADdcXoZWSuQe8ya9",
+			"nodeType": "luaCondition",
+			"parameters": [ {
+				"name": "expression",
+				"value": "battlePos ~= nil"
+			}, {
+				"name": "repeat",
+				"value": "false"
+			} ]
+		} ],
+		"id": "rfW9nvi8dMf62AKu8CFpH8Kd9ZUtq7Bq",
+		"nodeType": "sequence",
+		"parameters": []
+	}
+}

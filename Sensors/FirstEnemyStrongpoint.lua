@@ -1,5 +1,5 @@
 local sensorInfo = {
-	name = "FindFirstEnemyStrongpoint",
+	name = "FirstEnemyStrongpoint",
 	desc = "Return Strongpoints in given corridor",
 	author = "Vojguard",
 	date = "2025-08-06",
@@ -21,9 +21,9 @@ return function(corridor)
         local point = corridor[corIdx]
 		if point.isStrongpoint then
             if point.ownerAllyID ~= myTeam then
-			    return point
+			    return point.position
             end
 		end
 	end
-    return nil
+    return corridor[#corridor].position
 end
