@@ -1,3 +1,4 @@
+----inspired by Commands.nota_sirwok_exam.GroupAttackEnemyUnit()
 function getInfo()
 	return {
 		parameterDefs = {
