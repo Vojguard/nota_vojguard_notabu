@@ -16,49 +16,77 @@
 			"height": 94,
 			"title": "store",
 			"width": 394,
-			"x": 524,
+			"x": 518,
 			"y": -221
 		},
 		"1tWhOE6BHI0OHwRrlUhFqDdzlnne26Xi": {
 			"height": 94,
 			"title": "store",
 			"width": 485,
-			"x": 521,
+			"x": 520,
 			"y": -46
 		},
 		"4rQWFbWgl6ViJaWWyv5XenO2H5VK1bx6": {
 			"height": 90,
 			"title": "luaCondition",
 			"width": 194,
-			"x": 532,
+			"x": 531,
 			"y": 111
 		},
 		"LmuOLuWfgVA7cCLmsaAw7wMZWtBKY6oB": {
 			"height": 132,
 			"title": "nota_vojguard_notabu.farkMetalReclaiming",
 			"width": 337,
-			"x": 791,
-			"y": 63
+			"x": 1060,
+			"y": 37
+		},
+		"MUuTs6xp13ZxerhJUNnZ6yHBITxwQgKZ": {
+			"height": 54,
+			"title": "success",
+			"width": 132,
+			"x": 1246,
+			"y": 300
 		},
 		"OmY5rgHnB0Ld1yvyw9oBUs1A4BLgpPm1": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 248,
+			"x": 247,
 			"y": 17
+		},
+		"SLK8HdtKQ3yge8jD2tE3rFCUXCOmRR9A": {
+			"height": 132,
+			"title": "nota_vojguard_notabu.farkMetalReclaiming",
+			"width": 337,
+			"x": 1245,
+			"y": 172
 		},
 		"hqVsuJRDljaDCuVfiRvM48PyRgj6shqM": {
 			"height": 54,
 			"title": "success",
 			"width": 132,
-			"x": 793,
+			"x": 792,
+			"y": 186
+		},
+		"myhlpfJjEk4sjr02IWXVnmI9xiV2YFib": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 791,
+			"y": 121
+		},
+		"svB6v6BurWA7OkUnik5e2Ozoa5hoO01P": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 194,
+			"x": 981,
 			"y": 186
 		},
 		"uVCO1P8yUkdTbWmI4AfliFyoueJccHYq": {
 			"height": 94,
 			"title": "store",
 			"width": 453,
-			"x": 520,
+			"x": 519,
 			"y": -131
 		}
 	},
@@ -76,7 +104,7 @@
 				"value": "fark"
 			}, {
 				"name": "value",
-				"value": "nota_vojguard_notabu.GetMyUnits('armfark')[1]"
+				"value": "nota_vojguard_notabu.GetMyUnits('armfark')"
 			}, {
 				"name": "scriptName",
 				"value": "store"
@@ -114,26 +142,68 @@
 			"scriptName": "store"
 		}, {
 			"children": [ {
-				"children": [],
-				"id": "LmuOLuWfgVA7cCLmsaAw7wMZWtBKY6oB",
-				"nodeType": "luaCommand",
-				"parameters": [ {
-					"name": "farkID",
-					"value": "fark"
+				"children": [ {
+					"children": [],
+					"id": "LmuOLuWfgVA7cCLmsaAw7wMZWtBKY6oB",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "farkID",
+						"value": "fark[1]"
+					}, {
+						"name": "reclaimPosition",
+						"value": "battlePos"
+					}, {
+						"name": "reclaimRadius",
+						"value": "200"
+					}, {
+						"name": "retreatPosition",
+						"value": "retreatPos"
+					}, {
+						"name": "scriptName",
+						"value": "nota_vojguard_notabu.farkMetalReclaiming"
+					} ],
+					"scriptName": "nota_vojguard_notabu.farkMetalReclaiming"
 				}, {
-					"name": "reclaimPosition",
-					"value": "battlePos"
-				}, {
-					"name": "reclaimRadius",
-					"value": "200"
-				}, {
-					"name": "retreatPosition",
-					"value": "retreatPos"
-				}, {
-					"name": "scriptName",
-					"value": "nota_vojguard_notabu.farkMetalReclaiming"
+					"children": [ {
+						"children": [],
+						"id": "SLK8HdtKQ3yge8jD2tE3rFCUXCOmRR9A",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "farkID",
+							"value": "fark[2]"
+						}, {
+							"name": "reclaimPosition",
+							"value": "battlePos"
+						}, {
+							"name": "reclaimRadius",
+							"value": "200"
+						}, {
+							"name": "retreatPosition",
+							"value": "retreatPos"
+						}, {
+							"name": "scriptName",
+							"value": "nota_vojguard_notabu.farkMetalReclaiming"
+						} ],
+						"scriptName": "nota_vojguard_notabu.farkMetalReclaiming"
+					}, {
+						"children": [],
+						"id": "MUuTs6xp13ZxerhJUNnZ6yHBITxwQgKZ",
+						"nodeType": "success",
+						"parameters": []
+					} ],
+					"id": "svB6v6BurWA7OkUnik5e2Ozoa5hoO01P",
+					"nodeType": "luaCondition",
+					"parameters": [ {
+						"name": "expression",
+						"value": "#fark > 1"
+					}, {
+						"name": "repeat",
+						"value": "false"
+					} ]
 				} ],
-				"scriptName": "nota_vojguard_notabu.farkMetalReclaiming"
+				"id": "myhlpfJjEk4sjr02IWXVnmI9xiV2YFib",
+				"nodeType": "sequence",
+				"parameters": []
 			}, {
 				"children": [],
 				"id": "hqVsuJRDljaDCuVfiRvM48PyRgj6shqM",

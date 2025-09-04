@@ -26,6 +26,18 @@ function getInfo()
                 variableType = "expression",
                 componentType = "editBox",
                 defaultValue = ""
+            },
+            {
+                name = "cautionRange",
+                variableType = "number",
+                componentType = "editBox",
+                defaultValue = "300"
+            },
+            {
+                name = "formationOffset",
+                variableType = "number",
+                componentType = "editBox",
+                defaultValue = "50"
             }
         }
     }
@@ -37,6 +49,8 @@ function Run(self, units, parameter)
     local retreatPos = parameter.retreatPosition:AsSpringVector()
     local strongpointPos = parameter.closestStrongpoint
     local strongpointRange = 900
+    local caution = parameter.cautionRange
+    local formOffset = parameter.formationOffset
 
     local battlePosVec = Vec3(battlePos[1],battlePos[2], battlePos[3])
     local retreatPosVec = Vec3(retreatPos[1], retreatPos[2], retreatPos[3])
@@ -53,7 +67,7 @@ function Run(self, units, parameter)
         if Spring.ValidUnitID(unitID) then
             local unitPosX, unitPosY, unitPosZ = Spring.GetUnitPosition(unitID)
             local unitPos = Vec3(unitPosX,unitPosY,unitPosZ)
-            local dangerCounter = Sensors.nota_vojguard_notabu.SurroundingsDangerCounter(unitID, 300, false)
+            local dangerCounter = Sensors.nota_vojguard_notabu.SurroundingsDangerCounter(unitID, caution, false)
             local death = false
 
             if dangerCounter > 0 then
@@ -63,14 +77,14 @@ function Run(self, units, parameter)
                 death = true
             end
 
-            local thisRetreatPos = battlePosVec + (perp * (100 * (i - 1)) * ((-1) ^ i))
+            local thisRetreatPos = battlePosVec + (perp * (formOffset * (i - 1)) * ((-1) ^ i))
 
             if death then
                 Spring.GiveOrderToUnit(unitID, CMD.STOP, {}, {})
                 Spring.GiveOrderToUnit(unitID, CMD.MOVE, thisRetreatPos:AsSpringVector(), {"shift"})
             end
             
-            local thisBattlePos = battlePosVec + (perp * (100 * (i - 1)) * ((-1) ^ i))
+            local thisBattlePos = battlePosVec + (perp * (formOffset * (i - 1)) * ((-1) ^ i))
 
             Spring.GiveOrderToUnit(unitID, CMD.STOP, {}, {})
             Spring.GiveOrderToUnit(unitID, CMD.MOVE, thisBattlePos:AsSpringVector(), {"shift"})

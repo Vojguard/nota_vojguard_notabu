@@ -1,19 +1,37 @@
 {
 	"additionalNodes": [ {
 		"children": [],
-		"id": "naR0Ox5wvwL5xvgxb96tzBkR4rKRZVAt",
+		"id": "u1RbDIAKZr49B44BROtdvyzPjIrArG0d",
 		"nodeType": "luaCommand",
 		"parameters": [ {
-			"name": "var",
-			"value": "myUnits"
-		}, {
-			"name": "value",
-			"value": "nota_vojguard_notabu.GetMyUnits('armpeep')"
+			"name": "unitName",
+			"value": "'armmart'"
 		}, {
 			"name": "scriptName",
-			"value": "store"
+			"value": "nota_vojguard_notabu.buyUnits"
 		} ],
-		"scriptName": "store"
+		"scriptName": "nota_vojguard_notabu.buyUnits"
+	}, {
+		"children": [],
+		"id": "6xqW4z2iG2I03J9qGb4V8NvhVkMV1rP8",
+		"nodeType": "luaCommand",
+		"parameters": [ {
+			"name": "groupDefintion",
+			"value": "groupForm"
+		}, {
+			"name": "position",
+			"value": "mavBattlePos"
+		}, {
+			"name": "formation",
+			"value": "finalForm"
+		}, {
+			"name": "fight",
+			"value": "false"
+		}, {
+			"name": "scriptName",
+			"value": "formation.moveCustomGroup"
+		} ],
+		"scriptName": "formation.moveCustomGroup"
 	}, {
 		"children": [],
 		"id": "puojSfaZrJZickXNvaTVIEhrjBDxgZON",
@@ -29,18 +47,6 @@
 			"value": "store"
 		} ],
 		"scriptName": "store"
-	}, {
-		"children": [],
-		"id": "u1RbDIAKZr49B44BROtdvyzPjIrArG0d",
-		"nodeType": "luaCommand",
-		"parameters": [ {
-			"name": "unitName",
-			"value": "'armmart'"
-		}, {
-			"name": "scriptName",
-			"value": "nota_vojguard_notabu.buyUnits"
-		} ],
-		"scriptName": "nota_vojguard_notabu.buyUnits"
 	}, {
 		"children": [],
 		"id": "QRPxcluSgIdOYbyLFmr54jE6Hha6EOA7",
@@ -73,19 +79,19 @@
 		"scriptName": "store"
 	}, {
 		"children": [],
-		"id": "nrAyAUlg8dwCGPKlNgpQ6zWmq95FimtZ",
+		"id": "qEAEnq4AtIhemLu2fIA1ndBl2OyVeN5y",
 		"nodeType": "luaCommand",
 		"parameters": [ {
-			"name": "corridor",
-			"value": "midCorridor"
+			"name": "var",
+			"value": "finalForm"
 		}, {
-			"name": "cautionRange",
-			"value": "250"
+			"name": "value",
+			"value": "formation.StaticTransform(formPos, conflict, mavBattlePos, Vec3(30,1,30))"
 		}, {
 			"name": "scriptName",
-			"value": "nota_vojguard_notabu.followCorridor"
+			"value": "store"
 		} ],
-		"scriptName": "nota_vojguard_notabu.followCorridor"
+		"scriptName": "store"
 	}, {
 		"children": [],
 		"id": "GFudG91a9njRbGU784kL5NsdUvaXnYFD",
@@ -103,40 +109,34 @@
 		"scriptName": "store"
 	}, {
 		"children": [],
-		"id": "qEAEnq4AtIhemLu2fIA1ndBl2OyVeN5y",
+		"id": "nrAyAUlg8dwCGPKlNgpQ6zWmq95FimtZ",
+		"nodeType": "luaCommand",
+		"parameters": [ {
+			"name": "corridor",
+			"value": "midCorridor"
+		}, {
+			"name": "cautionRange",
+			"value": "250"
+		}, {
+			"name": "scriptName",
+			"value": "nota_vojguard_notabu.followCorridor"
+		} ],
+		"scriptName": "nota_vojguard_notabu.followCorridor"
+	}, {
+		"children": [],
+		"id": "naR0Ox5wvwL5xvgxb96tzBkR4rKRZVAt",
 		"nodeType": "luaCommand",
 		"parameters": [ {
 			"name": "var",
-			"value": "finalForm"
+			"value": "myUnits"
 		}, {
 			"name": "value",
-			"value": "formation.StaticTransform(formPos, conflict, mavBattlePos, Vec3(30,1,30))"
+			"value": "nota_vojguard_notabu.GetMyUnits('armpeep')"
 		}, {
 			"name": "scriptName",
 			"value": "store"
 		} ],
 		"scriptName": "store"
-	}, {
-		"children": [],
-		"id": "6xqW4z2iG2I03J9qGb4V8NvhVkMV1rP8",
-		"nodeType": "luaCommand",
-		"parameters": [ {
-			"name": "groupDefintion",
-			"value": "groupForm"
-		}, {
-			"name": "position",
-			"value": "mavBattlePos"
-		}, {
-			"name": "formation",
-			"value": "finalForm"
-		}, {
-			"name": "fight",
-			"value": "false"
-		}, {
-			"name": "scriptName",
-			"value": "formation.moveCustomGroup"
-		} ],
-		"scriptName": "formation.moveCustomGroup"
 	}, {
 		"children": [],
 		"id": "r6fFrNWqPT62xO6RpNIy3yj1fafWbAsA",
@@ -218,7 +218,7 @@
 			"height": 132,
 			"title": "formation.moveCustomGroup",
 			"width": 269,
-			"x": 2721,
+			"x": 2716,
 			"y": -252
 		},
 		"8FDLk63YrVGAwW3YRqdCHbr4LeR9wXnf": {
@@ -253,21 +253,21 @@
 			"height": 130,
 			"title": "reference",
 			"width": 292,
-			"x": 1182,
+			"x": 1181,
 			"y": 691
 		},
 		"BnrEHrqKHyUngBfGF6jyCzmk5oth6of9": {
 			"height": 130,
 			"title": "reference",
 			"width": 309,
-			"x": 1174,
+			"x": 1173,
 			"y": 566
 		},
 		"CWfLtmKB3J4aaU4n06sbNBEdBYwzAYuH": {
 			"height": 94,
 			"title": "store",
 			"width": 333,
-			"x": 2510,
+			"x": 2506,
 			"y": 22
 		},
 		"Fm9mMsWxi5ZjafcJhHqiPv7k8dLurUQn": {
@@ -281,14 +281,14 @@
 			"height": 94,
 			"title": "store",
 			"width": 511,
-			"x": 2221,
+			"x": 2217,
 			"y": -240
 		},
 		"GUUntzIx5BGYxM1APBDiNWUc2htTFDd4": {
 			"height": 130,
 			"title": "reference",
 			"width": 318,
-			"x": 1169,
+			"x": 1168,
 			"y": 444
 		},
 		"OIq7LtyLYzrcYyAqYSYyK6rW37Fqrye7": {
@@ -302,14 +302,14 @@
 			"height": 94,
 			"title": "store",
 			"width": 453,
-			"x": 2514,
+			"x": 2510,
 			"y": 6
 		},
 		"aWKhgDQUexQz0MSI9vH7WtsrkGtjiZ1V": {
 			"height": 92,
 			"title": "nota_vojguard_notabu.moveOnBattleline",
 			"width": 320,
-			"x": 2401,
+			"x": 2397,
 			"y": -15
 		},
 		"fxbHgtUwQ1LTn5znpRLclmT7UPKXRULI": {
@@ -323,7 +323,7 @@
 			"height": 94,
 			"title": "store",
 			"width": 402,
-			"x": 2817,
+			"x": 2812,
 			"y": 130
 		},
 		"jiUybmazTJRWGLwYDpSaGe4ht1JJbhNR": {
@@ -351,63 +351,63 @@
 			"height": 94,
 			"title": "store",
 			"width": 378,
-			"x": 2832,
+			"x": 2827,
 			"y": 284
 		},
 		"nrAyAUlg8dwCGPKlNgpQ6zWmq95FimtZ": {
 			"height": 92,
 			"title": "nota_vojguard_notabu.followCorridor",
 			"width": 296,
-			"x": 2460,
+			"x": 2456,
 			"y": 109
 		},
 		"puojSfaZrJZickXNvaTVIEhrjBDxgZON": {
 			"height": 94,
 			"title": "store",
 			"width": 198,
-			"x": 2903,
+			"x": 2898,
 			"y": 3
 		},
 		"qEAEnq4AtIhemLu2fIA1ndBl2OyVeN5y": {
 			"height": 94,
 			"title": "store",
 			"width": 574,
-			"x": 2477,
+			"x": 2473,
 			"y": 54
 		},
 		"r6fFrNWqPT62xO6RpNIy3yj1fafWbAsA": {
 			"height": 94,
 			"title": "store",
 			"width": 453,
-			"x": 2630,
+			"x": 2625,
 			"y": 206
 		},
 		"tUmAV6Jw7Re5NSFXiwPaylYWmVBuEC2h": {
 			"height": 130,
 			"title": "reference",
 			"width": 316,
-			"x": 1167,
+			"x": 1166,
 			"y": 303
 		},
 		"u1RbDIAKZr49B44BROtdvyzPjIrArG0d": {
 			"height": 72,
 			"title": "nota_vojguard_notabu.buyUnits",
 			"width": 263,
-			"x": 2395,
+			"x": 2391,
 			"y": -136
 		},
 		"vCUbcex7ntmeaJjeGF0NsopBzJj7szfJ": {
 			"height": 94,
 			"title": "store",
 			"width": 453,
-			"x": 2834,
+			"x": 2829,
 			"y": -83
 		},
 		"wFOKFA04CcZ4GPuPHjukZf2BDfZhsjG3": {
 			"height": 193,
 			"title": "reference",
 			"width": 304,
-			"x": 1168,
+			"x": 1167,
 			"y": 96
 		}
 	},

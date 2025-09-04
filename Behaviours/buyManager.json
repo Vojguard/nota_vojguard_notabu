@@ -306,7 +306,7 @@
 				"nodeType": "luaCondition",
 				"parameters": [ {
 					"name": "expression",
-					"value": "#fark < 1"
+					"value": "#fark < 2"
 				}, {
 					"name": "repeat",
 					"value": "false"

@@ -44,8 +44,8 @@
 			"height": 54,
 			"title": "success",
 			"width": 132,
-			"x": 814,
-			"y": 296
+			"x": 810,
+			"y": 351
 		},
 		"g8zfnOTydz5xiXQZlYbdFydGiLIwCzTc": {
 			"height": 94,
@@ -55,7 +55,7 @@
 			"y": -224
 		},
 		"ggcYnZ5iOMRiqXiSxl7KRAJkItFDUK3L": {
-			"height": 132,
+			"height": 172,
 			"title": "nota_vojguard_notabu.attackersOnBattleline",
 			"width": 343,
 			"x": 817,
@@ -151,6 +151,12 @@
 				}, {
 					"name": "closestStrongpoint",
 					"value": "closestStrongpoint"
+				}, {
+					"name": "cautionRange",
+					"value": 300
+				}, {
+					"name": "formationOffset",
+					"value": 25
 				}, {
 					"name": "scriptName",
 					"value": "nota_vojguard_notabu.attackersOnBattleline"
