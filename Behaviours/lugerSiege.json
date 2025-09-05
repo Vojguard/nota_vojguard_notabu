@@ -16,42 +16,42 @@
 			"height": 94,
 			"title": "store",
 			"width": 218,
-			"x": 460,
+			"x": 461,
 			"y": -40
 		},
 		"5IAE0ZiLs6pPF4St7dlvrCI0xQqa6Ai7": {
 			"height": 94,
 			"title": "store",
 			"width": 453,
-			"x": 1842,
+			"x": 1843,
 			"y": -287
 		},
 		"5TbofteQg74GN0SzQMNxoIjCytk33PSY": {
 			"height": 60,
 			"title": "repeat",
 			"width": 131,
-			"x": 1378,
+			"x": 1379,
 			"y": -47
 		},
 		"84zLGdJFpLSObYbEgM64q2gDnP7VZpK1": {
 			"height": 94,
 			"title": "store",
 			"width": 453,
-			"x": 1841,
+			"x": 1842,
 			"y": -195
 		},
 		"AlIQqiWA8X4mH7Xuf1HQVeWMvwzrnwT4": {
 			"height": 94,
 			"title": "store",
 			"width": 394,
-			"x": 956,
-			"y": -125
+			"x": 1024,
+			"y": -143
 		},
 		"Bdmjz70RFMsfkeetqLZkw1vd068ggE4b": {
 			"height": 90,
 			"title": "luaCondition",
 			"width": 194,
-			"x": 799,
+			"x": 800,
 			"y": 40
 		},
 		"JczZ5p2uk5TWGfsNdZ1Yl9uZ1JHrYnze": {
@@ -65,92 +65,92 @@
 			"height": 90,
 			"title": "luaCondition",
 			"width": 194,
-			"x": 1484,
+			"x": 1485,
 			"y": 188
 		},
 		"bswt1dpfNBuniM6N3w2dwyStX59GifuA": {
 			"height": 70,
 			"title": "parallel",
 			"width": 202,
-			"x": 460,
+			"x": 461,
 			"y": 47
 		},
 		"dxbiNDWkiwrASPRwx1frMIs0dWCM05oI": {
 			"height": 94,
 			"title": "store",
 			"width": 465,
-			"x": 1839,
+			"x": 1840,
 			"y": -103
 		},
 		"k560fL0Oq00az8y8P39UUf7I3P3D6B7E": {
 			"height": 94,
 			"title": "store",
 			"width": 218,
-			"x": 452,
+			"x": 453,
 			"y": -126
 		},
 		"kjDwF3poPdWEYWDXFjjhENXP0jNMhBXH": {
 			"height": 92,
 			"title": "nota_vojguard_notabu.positionSiege",
 			"width": 293,
-			"x": 2231,
+			"x": 2232,
 			"y": 299
 		},
 		"kkGZsYNb24Lc1Nq2cDqPwj99zHJ9Ne7o": {
 			"height": 90,
 			"title": "luaCondition",
 			"width": 194,
-			"x": 1896,
+			"x": 1897,
 			"y": 299
 		},
 		"mnZRDpKbDn6IW6wQ04GEi5Y3Fhbo88fN": {
 			"height": 132,
 			"title": "nota_vojguard_notabu.moveOnBattleline",
 			"width": 320,
-			"x": 1773,
+			"x": 1774,
 			"y": 170
 		},
 		"rdddDxPRIUtHYMGWSrrlwnZ2pz5OzBHa": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 269,
+			"x": 270,
 			"y": 17
 		},
 		"rfW9nvi8dMf62AKu8CFpH8Kd9ZUtq7Bq": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 1597,
+			"x": 1598,
 			"y": -47
 		},
 		"u3hvUPXrjvIyAkEvsECDBL9n5OFKELPn": {
 			"height": 70,
 			"title": "parallel",
 			"width": 202,
-			"x": 1094,
+			"x": 1095,
 			"y": 47
 		},
 		"x45ltlFjUPA8pmcVFfPdWzgfvqVQGqLG": {
 			"height": 54,
 			"title": "success",
 			"width": 132,
-			"x": 1100,
+			"x": 1101,
 			"y": 116
 		},
 		"xVsCPEYZnbHZTIPNlBSZRfP2xpQt1Vmu": {
 			"height": 94,
 			"title": "store",
 			"width": 435,
-			"x": 1838,
+			"x": 1839,
 			"y": -11
 		},
 		"xdixgs1RDoojWYqZm3Zfc706R02GBraC": {
 			"height": 60,
 			"title": "repeat",
 			"width": 131,
-			"x": 711,
-			"y": -113
+			"x": 807,
+			"y": -131
 		}
 	},
 	"roles": [ {
@@ -222,7 +222,7 @@
 									"value": "battlePos"
 								}, {
 									"name": "value",
-									"value": "Battleposition(corridor, 1200)"
+									"value": "Battleposition(corridor, 1000)"
 								}, {
 									"name": "scriptName",
 									"value": "store"
@@ -237,7 +237,7 @@
 									"value": "retreatPos"
 								}, {
 									"name": "value",
-									"value": "Battleposition(corridor, 1500)"
+									"value": "Battleposition(corridor, 1200)"
 								}, {
 									"name": "scriptName",
 									"value": "store"

@@ -186,7 +186,7 @@
 									"value": "battlePos"
 								}, {
 									"name": "value",
-									"value": "Battleposition(corridor, 2000)"
+									"value": "Battleposition(corridor, 1500)"
 								}, {
 									"name": "scriptName",
 									"value": "store"
@@ -201,7 +201,7 @@
 									"value": "retreatPos"
 								}, {
 									"name": "value",
-									"value": "Battleposition(corridor, 2500)"
+									"value": "Battleposition(corridor, 2000)"
 								}, {
 									"name": "scriptName",
 									"value": "store"
