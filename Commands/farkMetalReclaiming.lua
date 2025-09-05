@@ -59,10 +59,13 @@ function Run(self, units, parameter)
                 self.orderGiven = true
             else
                 Spring.GiveOrderToUnit(farkID, CMD.MOVE, reclaimArea, {})
-                self.orderGiven = true
+                self.orderGiven = false
             end
         else
-            if metal == 0 or math.abs(unitPosX - reclaimPos.x) < 100 and math.abs(unitPosZ - reclaimPos.z) < 100 then
+            if self.orderGiven == true  and metal == 0 then
+                return SUCCESS
+            end
+            if self.orderGiven == false and math.abs(unitPosX - reclaimPos.x) < 100 and math.abs(unitPosZ - reclaimPos.z) < 100 then
                 return SUCCESS
             end
         end

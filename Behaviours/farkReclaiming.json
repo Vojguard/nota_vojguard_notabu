@@ -16,14 +16,14 @@
 			"height": 94,
 			"title": "store",
 			"width": 435,
-			"x": 1724,
+			"x": 1723,
 			"y": -88
 		},
 		"1tWhOE6BHI0OHwRrlUhFqDdzlnne26Xi": {
 			"height": 94,
 			"title": "store",
 			"width": 485,
-			"x": 1728,
+			"x": 1727,
 			"y": -268
 		},
 		"CVTpReh8DTlz8o8CHDuGVUJEicvo3iQP": {
@@ -51,7 +51,7 @@
 			"height": 54,
 			"title": "success",
 			"width": 132,
-			"x": 1956,
+			"x": 1955,
 			"y": 46
 		},
 		"MCDXsupjbFXXr3XztIpRMMnLEFpP7Ky3": {
@@ -65,7 +65,7 @@
 			"height": 54,
 			"title": "success",
 			"width": 132,
-			"x": 1726,
+			"x": 1725,
 			"y": 542
 		},
 		"OmY5rgHnB0Ld1yvyw9oBUs1A4BLgpPm1": {
@@ -100,7 +100,7 @@
 			"height": 94,
 			"title": "store",
 			"width": 435,
-			"x": 2194,
+			"x": 2193,
 			"y": -24
 		},
 		"is6Lry7cLuNJc9fqGlc4JHaCw9mzlKaU": {
@@ -114,35 +114,35 @@
 			"height": 112,
 			"title": "nota_vojguard_notabu.farkMetalReclaiming",
 			"width": 337,
-			"x": 2078,
+			"x": 2077,
 			"y": 371
 		},
 		"kiwTDw8cDW75HIBPFDW3gst16w6HL9gq": {
 			"height": 112,
 			"title": "nota_vojguard_notabu.farkMetalReclaiming",
 			"width": 337,
-			"x": 1800,
+			"x": 1799,
 			"y": 208
 		},
 		"p2LXmsZ4HY00ha6VKhDmyk3MRlVbAFAK": {
 			"height": 112,
 			"title": "nota_vojguard_notabu.farkMetalReclaiming",
 			"width": 337,
-			"x": 1803,
+			"x": 1802,
 			"y": 103
 		},
 		"rFXT22Abg7KkqDTzhceKGLpGfIxQHWXB": {
 			"height": 90,
 			"title": "luaCondition",
 			"width": 220,
-			"x": 1761,
+			"x": 1760,
 			"y": 422
 		},
 		"sdAFMRxRYdOpRn0EqB2UUbxy6LdT7R5D": {
 			"height": 90,
 			"title": "luaCondition",
 			"width": 194,
-			"x": 1725,
+			"x": 1724,
 			"y": 2
 		},
 		"svB6v6BurWA7OkUnik5e2Ozoa5hoO01P": {
@@ -156,21 +156,21 @@
 			"height": 112,
 			"title": "nota_vojguard_notabu.farkMetalReclaiming",
 			"width": 337,
-			"x": 2075,
+			"x": 2074,
 			"y": 476
 		},
 		"uVCO1P8yUkdTbWmI4AfliFyoueJccHYq": {
 			"height": 94,
 			"title": "store",
 			"width": 453,
-			"x": 1735,
+			"x": 1734,
 			"y": -381
 		},
 		"vW2Cv15TefxMVOPqiFfY8UmurEdz45qV": {
 			"height": 94,
 			"title": "store",
 			"width": 465,
-			"x": 1727,
+			"x": 1726,
 			"y": -182
 		}
 	},
@@ -257,7 +257,7 @@
 								"value": "dangerCounterFarkOne"
 							}, {
 								"name": "value",
-								"value": "SurroundingsDangerCounter(fark[1], 800, true)"
+								"value": "SurroundingsDangerCounter(fark[1], 700, true)"
 							}, {
 								"name": "scriptName",
 								"value": "store"
@@ -273,7 +273,7 @@
 									"value": "dangerCounterFarkTwo"
 								}, {
 									"name": "value",
-									"value": "SurroundingsDangerCounter(fark[2], 800, true)"
+									"value": "SurroundingsDangerCounter(fark[2], 700, true)"
 								}, {
 									"name": "scriptName",
 									"value": "store"
