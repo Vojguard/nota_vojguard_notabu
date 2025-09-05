@@ -42,13 +42,14 @@ end
 
 function Run(self, units, parameter)
     local farkID = parameter.farkID
-
+    local unitPosX, _, unitPosZ = Spring.GetUnitPosition(farkID)
     if farkID == nil then
 		return FAILURE
 	end
 
     if Spring.ValidUnitID(farkID) then
         local reclaimArea = parameter.reclaimPosition:AsSpringVector()
+        local reclaimPos = Vec3(reclaimArea[1],reclaimArea[2], reclaimArea[3])
         reclaimArea[4] = parameter.reclaimRadius
         local metal = getMetalInArea(reclaimArea)
 
@@ -59,6 +60,10 @@ function Run(self, units, parameter)
             else
                 Spring.GiveOrderToUnit(farkID, CMD.MOVE, reclaimArea, {})
                 self.orderGiven = true
+            end
+        else
+            if metal == 0 or math.abs(unitPosX - reclaimPos.x) < 100 and math.abs(unitPosZ - reclaimPos.z) < 100 then
+                return SUCCESS
             end
         end
     else
