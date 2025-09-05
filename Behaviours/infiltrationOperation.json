@@ -1,0 +1,102 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 108,
+			"width": 216
+		}
+	},
+	"inputs": [ {
+		"command": "Variable",
+		"name": "corridor"
+	} ],
+	"outputs": [],
+	"properties": {
+		"5yvY077SxyzObicj9FRcxqAALyecbzX1": {
+			"height": 94,
+			"title": "store",
+			"width": 435,
+			"x": 551,
+			"y": 38
+		},
+		"73oi48KeZ4EpazrC3noozK1FbYXAEKKY": {
+			"height": 112,
+			"title": "nota_vojguard_notabu.infiltrateStrongpoint",
+			"width": 331,
+			"x": 548,
+			"y": 135
+		},
+		"Ongql4QUtjkRlZoQVviTdhfwCApX6hgW": {
+			"height": 94,
+			"title": "store",
+			"width": 394,
+			"x": 543,
+			"y": -46
+		},
+		"qpC7VM8D84hUPtdGwY1flJ3mRJK7o0x6": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 337,
+			"y": 17
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [],
+			"id": "Ongql4QUtjkRlZoQVviTdhfwCApX6hgW",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "infiltrator"
+			}, {
+				"name": "value",
+				"value": "nota_vojguard_notabu.GetMyUnits('armspy')[1]"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "5yvY077SxyzObicj9FRcxqAALyecbzX1",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "strongpoint"
+			}, {
+				"name": "value",
+				"value": "nota_vojguard_notabu.FirstEnemyStrongpoint(corridor)"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "73oi48KeZ4EpazrC3noozK1FbYXAEKKY",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "infiltratorID",
+				"value": "infiltrator"
+			}, {
+				"name": "corridor",
+				"value": "corridor"
+			}, {
+				"name": "infiltrationPosition",
+				"value": "strongpoint"
+			}, {
+				"name": "scriptName",
+				"value": "nota_vojguard_notabu.infiltrateStrongpoint"
+			} ],
+			"scriptName": "nota_vojguard_notabu.infiltrateStrongpoint"
+		} ],
+		"id": "qpC7VM8D84hUPtdGwY1flJ3mRJK7o0x6",
+		"nodeType": "sequence",
+		"parameters": []
+	}
+}

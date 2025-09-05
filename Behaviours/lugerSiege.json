@@ -1,20 +1,5 @@
 {
-	"additionalNodes": [ {
-		"children": [],
-		"id": "ZPOGVbnBLzmOYvQGeSRmBybOY8T8GbR7",
-		"nodeType": "luaCommand",
-		"parameters": [ {
-			"name": "unitIDs",
-			"value": "lugs"
-		}, {
-			"name": "positionToSiege",
-			"value": "closestStrongpoint"
-		}, {
-			"name": "scriptName",
-			"value": "nota_vojguard_notabu.positionSiege"
-		} ],
-		"scriptName": "nota_vojguard_notabu.positionSiege"
-	} ],
+	"additionalNodes": [],
 	"additionalParameters": {
 		"root": {
 			"height": 108,
@@ -31,70 +16,77 @@
 			"height": 94,
 			"title": "store",
 			"width": 453,
-			"x": 553,
+			"x": 552,
 			"y": -118
 		},
 		"84zLGdJFpLSObYbEgM64q2gDnP7VZpK1": {
 			"height": 94,
 			"title": "store",
 			"width": 453,
-			"x": 552,
+			"x": 551,
 			"y": -26
 		},
 		"AlIQqiWA8X4mH7Xuf1HQVeWMvwzrnwT4": {
 			"height": 94,
 			"title": "store",
 			"width": 394,
-			"x": 557,
+			"x": 556,
 			"y": -225
 		},
 		"FQGmhHeJ28azMu4G3Xx8ligMVZmUGgHC": {
 			"height": 94,
 			"title": "store",
 			"width": 435,
-			"x": 554,
+			"x": 553,
 			"y": 63
-		},
-		"PmobZGNQhFAxmYdXzMIIphl6jw819SAz": {
-			"height": 71,
-			"title": "sequence",
-			"width": 147,
-			"x": 805,
-			"y": 228
 		},
 		"UwE3WpOYf20TGU5QMmLGhwd2HbjSARHh": {
 			"height": 172,
 			"title": "nota_vojguard_notabu.attackersOnBattleline",
 			"width": 343,
-			"x": 1142,
+			"x": 1140,
 			"y": 193
+		},
+		"WM2eAI2s4MOoVfAMRpDJhdb324qfIf6Z": {
+			"height": 94,
+			"title": "store",
+			"width": 465,
+			"x": 551,
+			"y": 140
 		},
 		"ZPOGVbnBLzmOYvQGeSRmBybOY8T8GbR7": {
 			"height": 92,
 			"title": "nota_vojguard_notabu.positionSiege",
 			"width": 293,
-			"x": 1143,
-			"y": 359
+			"x": 1133,
+			"y": 355
+		},
+		"hXNEAXPsYdwyJGdsDGqir00lq2QosZg6": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 824,
+			"y": 251
 		},
 		"pwIX3VsZLf3usWhijjQTCYerEyzNvUk3": {
 			"height": 54,
 			"title": "success",
 			"width": 132,
-			"x": 809,
+			"x": 808,
 			"y": 347
 		},
 		"q60tTpgL73XffshAADdcXoZWSuQe8ya9": {
 			"height": 93,
 			"title": "luaCondition",
 			"width": 198,
-			"x": 544,
+			"x": 543,
 			"y": 220
 		},
 		"rfW9nvi8dMf62AKu8CFpH8Kd9ZUtq7Bq": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 286,
+			"x": 285,
 			"y": 16
 		}
 	},
@@ -164,6 +156,21 @@
 			} ],
 			"scriptName": "store"
 		}, {
+			"children": [],
+			"id": "WM2eAI2s4MOoVfAMRpDJhdb324qfIf6Z",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "shikaPos"
+			}, {
+				"name": "value",
+				"value": "nota_vojguard_notabu.FindEnemyShika(closestStrongpoint)"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
 			"children": [ {
 				"children": [ {
 					"children": [],
@@ -192,8 +199,23 @@
 						"value": "nota_vojguard_notabu.attackersOnBattleline"
 					} ],
 					"scriptName": "nota_vojguard_notabu.attackersOnBattleline"
+				}, {
+					"children": [],
+					"id": "ZPOGVbnBLzmOYvQGeSRmBybOY8T8GbR7",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "unitIDs",
+						"value": "lugs"
+					}, {
+						"name": "positionToSiege",
+						"value": "closestStrongpoint"
+					}, {
+						"name": "scriptName",
+						"value": "nota_vojguard_notabu.positionSiege"
+					} ],
+					"scriptName": "nota_vojguard_notabu.positionSiege"
 				} ],
-				"id": "PmobZGNQhFAxmYdXzMIIphl6jw819SAz",
+				"id": "hXNEAXPsYdwyJGdsDGqir00lq2QosZg6",
 				"nodeType": "sequence",
 				"parameters": []
 			}, {

@@ -58,38 +58,51 @@ function Run(self, units, parameter)
     local battlevec = battlePosVec - retreatPosVec
     battlevec:Normalize()
     local perp = Vec3(-battlevec.z, battlevec.y, battlevec.x)
-    
+    local finalPosVec = Vec3(0,0,0)
+    local death = false
 
     if #unitIDs == 0 then
         return SUCCESS
     end
 
-    for i, unitID in ipairs(unitIDs) do
+    for _, unitID in ipairs(unitIDs) do
         if Spring.ValidUnitID(unitID) then
             local unitPosX, unitPosY, unitPosZ = Spring.GetUnitPosition(unitID)
             local unitPos = Vec3(unitPosX,unitPosY,unitPosZ)
+                 
             local dangerCounter = Sensors.nota_vojguard_notabu.SurroundingsDangerCounter(unitID, caution, false)
-            local death = false
-
-            if dangerCounter > 0 then
+            if dangerCounter > 0 or unitPos:Distance(strongpointPos) < strongpointRange then
                 death = true
+                break
             end
-            if unitPos:Distance(strongpointPos) < strongpointRange then
-                death = true
-            end
+        end
+    end
 
-            local thisRetreatPos = battlePosVec + (perp * (formOffset * (i - 1)) * ((-1) ^ i))
+    if death then
+        finalPosVec = retreatPosVec
+    else
+        finalPosVec = battlePosVec
+    end
 
-            if death then
-                Spring.GiveOrderToUnit(unitID, CMD.STOP, {}, {})
-                Spring.GiveOrderToUnit(unitID, CMD.MOVE, thisRetreatPos:AsSpringVector(), {"shift"})
-            end
-            
-            local thisBattlePos = battlePosVec + (perp * (formOffset * (i - 1)) * ((-1) ^ i))
+    for i, unitID in ipairs(unitIDs) do
+        if Spring.ValidUnitID(unitID) then
+            local unitPosX, unitPosY, unitPosZ = Spring.GetUnitPosition(unitID)
+            local unitPos = Vec3(unitPosX,unitPosY,unitPosZ)            
+            local thisBattlePos = finalPosVec + (perp * (formOffset * (i - 1)) * ((-1) ^ i))
 
             Spring.GiveOrderToUnit(unitID, CMD.STOP, {}, {})
             Spring.GiveOrderToUnit(unitID, CMD.MOVE, thisBattlePos:AsSpringVector(), {"shift"})
         end
     end
-    return SUCCESS
+
+    for _, unitID in ipairs(unitIDs) do
+        if Spring.ValidUnitID(unitID) then
+            local unitPosX, unitPosY, unitPosZ = Spring.GetUnitPosition(unitID)
+            if math.abs(unitPosX - finalPosVec.x) < 200 and math.abs(unitPosZ - finalPosVec.z) < 200 then
+                return SUCCESS
+            end
+        end
+    end
+
+    return RUNNING
 end

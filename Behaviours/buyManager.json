@@ -8,7 +8,7 @@
 	},
 	"inputs": [ {
 		"command": "Variable",
-		"name": "peepCost"
+		"name": "spyCost"
 	}, {
 		"command": "Variable",
 		"name": "farkCost"
@@ -25,7 +25,7 @@
 			"height": 72,
 			"title": "nota_vojguard_notabu.buyUnits",
 			"width": 263,
-			"x": 1294,
+			"x": 1293,
 			"y": 132
 		},
 		"56xmalulcKi5V0VdZEz7caG6ToVvER1A": {
@@ -53,7 +53,7 @@
 			"height": 72,
 			"title": "nota_vojguard_notabu.buyUnits",
 			"width": 263,
-			"x": 1293,
+			"x": 1292,
 			"y": 216
 		},
 		"DYV1UpIPBB6v0uq3nvVBi13JPAnD1GLU": {
@@ -88,7 +88,7 @@
 			"height": 72,
 			"title": "nota_vojguard_notabu.buyUnits",
 			"width": 263,
-			"x": 1287,
+			"x": 1286,
 			"y": 379
 		},
 		"VZsJn8TBYtgdbV5I47EjiTykRCQvzFVP": {
@@ -130,7 +130,7 @@
 			"height": 72,
 			"title": "nota_vojguard_notabu.buyUnits",
 			"width": 263,
-			"x": 1283,
+			"x": 1282,
 			"y": 301
 		},
 		"pbfzlkslRdvITg1SpvAfVC5oMHZreOwx": {
@@ -203,10 +203,10 @@
 			"nodeType": "luaCommand",
 			"parameters": [ {
 				"name": "var",
-				"value": "peep"
+				"value": "spy"
 			}, {
 				"name": "value",
-				"value": "nota_vojguard_notabu.GetMyUnits('armpeep')"
+				"value": "nota_vojguard_notabu.GetMyUnits('armspy')"
 			}, {
 				"name": "scriptName",
 				"value": "store"
@@ -251,7 +251,7 @@
 						"nodeType": "luaCommand",
 						"parameters": [ {
 							"name": "unitName",
-							"value": "'armpeep'"
+							"value": "'armspy'"
 						}, {
 							"name": "scriptName",
 							"value": "nota_vojguard_notabu.buyUnits"
@@ -262,7 +262,7 @@
 					"nodeType": "luaCondition",
 					"parameters": [ {
 						"name": "expression",
-						"value": "metalCount.currentLevel > peepCost"
+						"value": "metalCount.currentLevel > spyCost"
 					}, {
 						"name": "repeat",
 						"value": "false"
@@ -272,7 +272,7 @@
 				"nodeType": "luaCondition",
 				"parameters": [ {
 					"name": "expression",
-					"value": "#peep < 1"
+					"value": "#spy < 1"
 				}, {
 					"name": "repeat",
 					"value": "false"

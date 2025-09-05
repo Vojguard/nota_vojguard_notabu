@@ -25,20 +25,21 @@ end
 function Run(self, units, parameter)
     local unitIDs = parameter.unitIDs
     local posToSiege = parameter.positionToSiege
+	local shika = Sensors.nota_vojguard_notabu.FindEnemyShika(posToSiege)
 
-	if posToSiege == nil then
+	if shika == nil then
 		return SUCCESS
 	end
 
 	if not self.init then
         for _, unitID in pairs(unitIDs) do
             if Spring.ValidUnitID(unitID) then
-			    Spring.GiveOrderToUnit(unitID, CMD.FIRE_STATE,0, {})
-                Spring.GiveOrderToUnit(unitID, CMD.ATTACK,posToSiege, {"shift"})
+			    Spring.GiveOrderToUnit(unitID, CMD.FIRE_STATE,{0}, {})
+                Spring.GiveOrderToUnit(unitID, CMD.ATTACK,shika:AsSpringVector(), {"shift"})
             end
         end
 		self.init = true
 	end
 
-	return SUCCESS
+	return RUNNING
 end
