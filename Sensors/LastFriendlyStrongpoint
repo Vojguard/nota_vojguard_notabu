@@ -1,0 +1,29 @@
+local sensorInfo = {
+	name = "LastFriendlyStrongpoint",
+	desc = "Return Last friendly Strongpoint in given corridor",
+	author = "Vojguard",
+	date = "2025-09-05",
+	license = "notAlicense",
+}
+
+local EVAL_PERIOD_DEFAULT = -1 -- instant, no caching
+
+function getInfo()
+	return {
+		period = EVAL_PERIOD_DEFAULT
+	}
+end
+
+
+return function(corridor)
+    local myTeam = 0
+    for corIdx = 1, #corridor, 1 do
+        local point = corridor[corIdx]
+		if point.isStrongpoint then
+            if point.ownerAllyID ~= myTeam then
+			    return corridor[corIdx - 1].position
+            end
+		end
+	end
+    return corridor[#corridor].position
+end

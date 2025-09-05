@@ -12,68 +12,145 @@
 	} ],
 	"outputs": [],
 	"properties": {
+		"4108577SrkiYmVjDPJ4AFhcZofMoMWdn": {
+			"height": 94,
+			"title": "store",
+			"width": 218,
+			"x": 460,
+			"y": -40
+		},
 		"5IAE0ZiLs6pPF4St7dlvrCI0xQqa6Ai7": {
 			"height": 94,
 			"title": "store",
 			"width": 453,
-			"x": 909,
-			"y": -117
+			"x": 1842,
+			"y": -287
+		},
+		"5TbofteQg74GN0SzQMNxoIjCytk33PSY": {
+			"height": 60,
+			"title": "repeat",
+			"width": 131,
+			"x": 1378,
+			"y": -47
 		},
 		"84zLGdJFpLSObYbEgM64q2gDnP7VZpK1": {
 			"height": 94,
 			"title": "store",
 			"width": 453,
-			"x": 908,
-			"y": -25
+			"x": 1841,
+			"y": -195
 		},
 		"AlIQqiWA8X4mH7Xuf1HQVeWMvwzrnwT4": {
 			"height": 94,
 			"title": "store",
 			"width": 394,
-			"x": 913,
-			"y": -224
+			"x": 956,
+			"y": -125
 		},
-		"FQGmhHeJ28azMu4G3Xx8ligMVZmUGgHC": {
-			"height": 94,
-			"title": "store",
-			"width": 435,
-			"x": 910,
-			"y": 64
+		"Bdmjz70RFMsfkeetqLZkw1vd068ggE4b": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 194,
+			"x": 799,
+			"y": 40
 		},
-		"UwE3WpOYf20TGU5QMmLGhwd2HbjSARHh": {
-			"height": 172,
-			"title": "nota_vojguard_notabu.attackersOnBattleline",
-			"width": 343,
-			"x": 904,
-			"y": 155
+		"JczZ5p2uk5TWGfsNdZ1Yl9uZ1JHrYnze": {
+			"height": 132,
+			"title": "nota_vojguard_notabu.moveOnBattleline",
+			"width": 320,
+			"x": 2232,
+			"y": 174
+		},
+		"bl9FnRQlRJSEIOJxwDG9lVeeL8QvFPSB": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 194,
+			"x": 1484,
+			"y": 188
 		},
 		"bswt1dpfNBuniM6N3w2dwyStX59GifuA": {
 			"height": 70,
 			"title": "parallel",
 			"width": 202,
-			"x": 261,
-			"y": 13
+			"x": 460,
+			"y": 47
 		},
 		"dxbiNDWkiwrASPRwx1frMIs0dWCM05oI": {
 			"height": 94,
 			"title": "store",
 			"width": 465,
-			"x": 883,
-			"y": 383
+			"x": 1839,
+			"y": -103
+		},
+		"k560fL0Oq00az8y8P39UUf7I3P3D6B7E": {
+			"height": 94,
+			"title": "store",
+			"width": 218,
+			"x": 452,
+			"y": -126
 		},
 		"kjDwF3poPdWEYWDXFjjhENXP0jNMhBXH": {
 			"height": 92,
 			"title": "nota_vojguard_notabu.positionSiege",
 			"width": 293,
-			"x": 894,
-			"y": 484
+			"x": 2231,
+			"y": 299
+		},
+		"kkGZsYNb24Lc1Nq2cDqPwj99zHJ9Ne7o": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 194,
+			"x": 1896,
+			"y": 299
+		},
+		"mnZRDpKbDn6IW6wQ04GEi5Y3Fhbo88fN": {
+			"height": 132,
+			"title": "nota_vojguard_notabu.moveOnBattleline",
+			"width": 320,
+			"x": 1773,
+			"y": 170
+		},
+		"rdddDxPRIUtHYMGWSrrlwnZ2pz5OzBHa": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 269,
+			"y": 17
 		},
 		"rfW9nvi8dMf62AKu8CFpH8Kd9ZUtq7Bq": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 655,
-			"y": 17
+			"x": 1597,
+			"y": -47
+		},
+		"u3hvUPXrjvIyAkEvsECDBL9n5OFKELPn": {
+			"height": 70,
+			"title": "parallel",
+			"width": 202,
+			"x": 1094,
+			"y": 47
+		},
+		"x45ltlFjUPA8pmcVFfPdWzgfvqVQGqLG": {
+			"height": 54,
+			"title": "success",
+			"width": 132,
+			"x": 1100,
+			"y": 116
+		},
+		"xVsCPEYZnbHZTIPNlBSZRfP2xpQt1Vmu": {
+			"height": 94,
+			"title": "store",
+			"width": 435,
+			"x": 1838,
+			"y": -11
+		},
+		"xdixgs1RDoojWYqZm3Zfc706R02GBraC": {
+			"height": 60,
+			"title": "repeat",
+			"width": 131,
+			"x": 711,
+			"y": -113
 		}
 	},
 	"roles": [ {
@@ -82,107 +159,15 @@
 	} ],
 	"root": {
 		"children": [ {
-			"children": [ {
-				"children": [],
-				"id": "AlIQqiWA8X4mH7Xuf1HQVeWMvwzrnwT4",
-				"nodeType": "luaCommand",
-				"parameters": [ {
-					"name": "var",
-					"value": "lugs"
-				}, {
-					"name": "value",
-					"value": "nota_vojguard_notabu.GetMyUnits('armmart')"
-				}, {
-					"name": "scriptName",
-					"value": "store"
-				} ],
-				"scriptName": "store"
-			}, {
-				"children": [],
-				"id": "5IAE0ZiLs6pPF4St7dlvrCI0xQqa6Ai7",
-				"nodeType": "luaCommand",
-				"parameters": [ {
-					"name": "var",
-					"value": "battlePos"
-				}, {
-					"name": "value",
-					"value": "nota_vojguard_notabu.Battleposition(corridor, 1200)"
-				}, {
-					"name": "scriptName",
-					"value": "store"
-				} ],
-				"scriptName": "store"
-			}, {
-				"children": [],
-				"id": "84zLGdJFpLSObYbEgM64q2gDnP7VZpK1",
-				"nodeType": "luaCommand",
-				"parameters": [ {
-					"name": "var",
-					"value": "retreatPos"
-				}, {
-					"name": "value",
-					"value": "nota_vojguard_notabu.Battleposition(corridor, 1700)"
-				}, {
-					"name": "scriptName",
-					"value": "store"
-				} ],
-				"scriptName": "store"
-			}, {
-				"children": [],
-				"id": "FQGmhHeJ28azMu4G3Xx8ligMVZmUGgHC",
-				"nodeType": "luaCommand",
-				"parameters": [ {
-					"name": "var",
-					"value": "closestStrongpoint"
-				}, {
-					"name": "value",
-					"value": "nota_vojguard_notabu.FirstEnemyStrongpoint(corridor)"
-				}, {
-					"name": "scriptName",
-					"value": "store"
-				} ],
-				"scriptName": "store"
-			}, {
-				"children": [],
-				"id": "UwE3WpOYf20TGU5QMmLGhwd2HbjSARHh",
-				"nodeType": "luaCommand",
-				"parameters": [ {
-					"name": "unitIDs",
-					"value": "lugs"
-				}, {
-					"name": "battlePosition",
-					"value": "battlePos"
-				}, {
-					"name": "retreatPosition",
-					"value": "retreatPos"
-				}, {
-					"name": "closestStrongpoint",
-					"value": "closestStrongpoint"
-				}, {
-					"name": "cautionRange",
-					"value": 450
-				}, {
-					"name": "formationOffset",
-					"value": 50
-				}, {
-					"name": "scriptName",
-					"value": "nota_vojguard_notabu.attackersOnBattleline"
-				} ],
-				"scriptName": "nota_vojguard_notabu.attackersOnBattleline"
-			} ],
-			"id": "rfW9nvi8dMf62AKu8CFpH8Kd9ZUtq7Bq",
-			"nodeType": "sequence",
-			"parameters": []
-		}, {
 			"children": [],
-			"id": "dxbiNDWkiwrASPRwx1frMIs0dWCM05oI",
+			"id": "k560fL0Oq00az8y8P39UUf7I3P3D6B7E",
 			"nodeType": "luaCommand",
 			"parameters": [ {
 				"name": "var",
-				"value": "shikaPos"
+				"value": "battleVec"
 			}, {
 				"name": "value",
-				"value": "nota_vojguard_notabu.ReturnFirstEnemyShika(corridor)"
+				"value": "Battlevector(corridor)"
 			}, {
 				"name": "scriptName",
 				"value": "store"
@@ -190,25 +175,223 @@
 			"scriptName": "store"
 		}, {
 			"children": [],
-			"id": "kjDwF3poPdWEYWDXFjjhENXP0jNMhBXH",
+			"id": "4108577SrkiYmVjDPJ4AFhcZofMoMWdn",
 			"nodeType": "luaCommand",
 			"parameters": [ {
-				"name": "unitIDs",
-				"value": "lugs"
+				"name": "var",
+				"value": "formationOffset"
 			}, {
-				"name": "positionToSiege",
-				"value": "shikaPos"
+				"name": "value",
+				"value": "50"
 			}, {
 				"name": "scriptName",
-				"value": "nota_vojguard_notabu.positionSiege"
+				"value": "store"
 			} ],
-			"scriptName": "nota_vojguard_notabu.positionSiege"
+			"scriptName": "store"
+		}, {
+			"children": [ {
+				"children": [ {
+					"children": [],
+					"id": "AlIQqiWA8X4mH7Xuf1HQVeWMvwzrnwT4",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "var",
+						"value": "lugs"
+					}, {
+						"name": "value",
+						"value": "GetMyUnits('armmart')"
+					}, {
+						"name": "scriptName",
+						"value": "store"
+					} ],
+					"scriptName": "store"
+				} ],
+				"id": "xdixgs1RDoojWYqZm3Zfc706R02GBraC",
+				"nodeType": "repeat",
+				"parameters": []
+			}, {
+				"children": [ {
+					"children": [ {
+						"children": [ {
+							"children": [ {
+								"children": [],
+								"id": "5IAE0ZiLs6pPF4St7dlvrCI0xQqa6Ai7",
+								"nodeType": "luaCommand",
+								"parameters": [ {
+									"name": "var",
+									"value": "battlePos"
+								}, {
+									"name": "value",
+									"value": "Battleposition(corridor, 1200)"
+								}, {
+									"name": "scriptName",
+									"value": "store"
+								} ],
+								"scriptName": "store"
+							}, {
+								"children": [],
+								"id": "84zLGdJFpLSObYbEgM64q2gDnP7VZpK1",
+								"nodeType": "luaCommand",
+								"parameters": [ {
+									"name": "var",
+									"value": "retreatPos"
+								}, {
+									"name": "value",
+									"value": "Battleposition(corridor, 1500)"
+								}, {
+									"name": "scriptName",
+									"value": "store"
+								} ],
+								"scriptName": "store"
+							}, {
+								"children": [],
+								"id": "dxbiNDWkiwrASPRwx1frMIs0dWCM05oI",
+								"nodeType": "luaCommand",
+								"parameters": [ {
+									"name": "var",
+									"value": "shikaPos"
+								}, {
+									"name": "value",
+									"value": "nota_vojguard_notabu.ReturnFirstEnemyShika(corridor)"
+								}, {
+									"name": "scriptName",
+									"value": "store"
+								} ],
+								"scriptName": "store"
+							}, {
+								"children": [],
+								"id": "xVsCPEYZnbHZTIPNlBSZRfP2xpQt1Vmu",
+								"nodeType": "luaCommand",
+								"parameters": [ {
+									"name": "var",
+									"value": "dangerCounter"
+								}, {
+									"name": "value",
+									"value": "groupSDC(lugs, 500, true, shikaPos)"
+								}, {
+									"name": "scriptName",
+									"value": "store"
+								} ],
+								"scriptName": "store"
+							} ],
+							"id": "rfW9nvi8dMf62AKu8CFpH8Kd9ZUtq7Bq",
+							"nodeType": "sequence",
+							"parameters": []
+						} ],
+						"id": "5TbofteQg74GN0SzQMNxoIjCytk33PSY",
+						"nodeType": "repeat",
+						"parameters": []
+					}, {
+						"children": [ {
+							"children": [],
+							"id": "mnZRDpKbDn6IW6wQ04GEi5Y3Fhbo88fN",
+							"nodeType": "luaCommand",
+							"parameters": [ {
+								"name": "unitIDs",
+								"value": "lugs"
+							}, {
+								"name": "battlePosition",
+								"value": "retreatPos"
+							}, {
+								"name": "battleVector",
+								"value": "battleVec"
+							}, {
+								"name": "formationOffset",
+								"value": "formationOffset"
+							}, {
+								"name": "scriptName",
+								"value": "nota_vojguard_notabu.moveOnBattleline"
+							} ],
+							"scriptName": "nota_vojguard_notabu.moveOnBattleline"
+						}, {
+							"children": [ {
+								"children": [],
+								"id": "JczZ5p2uk5TWGfsNdZ1Yl9uZ1JHrYnze",
+								"nodeType": "luaCommand",
+								"parameters": [ {
+									"name": "unitIDs",
+									"value": "lugs"
+								}, {
+									"name": "battlePosition",
+									"value": "battlePos"
+								}, {
+									"name": "battleVector",
+									"value": "battleVec"
+								}, {
+									"name": "formationOffset",
+									"value": "formationOffset"
+								}, {
+									"name": "scriptName",
+									"value": "nota_vojguard_notabu.moveOnBattleline"
+								} ],
+								"scriptName": "nota_vojguard_notabu.moveOnBattleline"
+							}, {
+								"children": [],
+								"id": "kjDwF3poPdWEYWDXFjjhENXP0jNMhBXH",
+								"nodeType": "luaCommand",
+								"parameters": [ {
+									"name": "unitIDs",
+									"value": "lugs"
+								}, {
+									"name": "positionToSiege",
+									"value": "shikaPos"
+								}, {
+									"name": "scriptName",
+									"value": "nota_vojguard_notabu.positionSiege"
+								} ],
+								"scriptName": "nota_vojguard_notabu.positionSiege"
+							} ],
+							"id": "kkGZsYNb24Lc1Nq2cDqPwj99zHJ9Ne7o",
+							"nodeType": "luaCondition",
+							"parameters": [ {
+								"name": "expression",
+								"value": "shikaPos == nil"
+							}, {
+								"name": "repeat",
+								"value": "true"
+							} ]
+						} ],
+						"id": "bl9FnRQlRJSEIOJxwDG9lVeeL8QvFPSB",
+						"nodeType": "luaCondition",
+						"parameters": [ {
+							"name": "expression",
+							"value": "dangerCounter == true"
+						}, {
+							"name": "repeat",
+							"value": "true"
+						} ]
+					} ],
+					"id": "u3hvUPXrjvIyAkEvsECDBL9n5OFKELPn",
+					"nodeType": "parallel",
+					"parameters": [ {
+						"name": "mode",
+						"value": "any-success"
+					} ]
+				}, {
+					"children": [],
+					"id": "x45ltlFjUPA8pmcVFfPdWzgfvqVQGqLG",
+					"nodeType": "success",
+					"parameters": []
+				} ],
+				"id": "Bdmjz70RFMsfkeetqLZkw1vd068ggE4b",
+				"nodeType": "luaCondition",
+				"parameters": [ {
+					"name": "expression",
+					"value": "#lugs > 0"
+				}, {
+					"name": "repeat",
+					"value": "true"
+				} ]
+			} ],
+			"id": "bswt1dpfNBuniM6N3w2dwyStX59GifuA",
+			"nodeType": "parallel",
+			"parameters": [ {
+				"name": "mode",
+				"value": "any-success"
+			} ]
 		} ],
-		"id": "bswt1dpfNBuniM6N3w2dwyStX59GifuA",
-		"nodeType": "parallel",
-		"parameters": [ {
-			"name": "mode",
-			"value": "all-success"
-		} ]
+		"id": "rdddDxPRIUtHYMGWSrrlwnZ2pz5OzBHa",
+		"nodeType": "sequence",
+		"parameters": []
 	}
 }

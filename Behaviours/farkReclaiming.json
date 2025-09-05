@@ -12,131 +12,166 @@
 	} ],
 	"outputs": [],
 	"properties": {
+		"0FvGVuwiQuuNQlPa8QPesqqET4oqXcia": {
+			"height": 94,
+			"title": "store",
+			"width": 435,
+			"x": 1724,
+			"y": -88
+		},
 		"1tWhOE6BHI0OHwRrlUhFqDdzlnne26Xi": {
 			"height": 94,
 			"title": "store",
 			"width": 485,
-			"x": 1583,
-			"y": -138
+			"x": 1728,
+			"y": -268
 		},
 		"CVTpReh8DTlz8o8CHDuGVUJEicvo3iQP": {
 			"height": 60,
 			"title": "repeat",
 			"width": 131,
-			"x": 1174,
-			"y": -240
+			"x": 1309,
+			"y": -271
 		},
 		"FX4vgSGeB8UQApcmPCVD6OpGdtOOcn0q": {
 			"height": 90,
 			"title": "luaCondition",
-			"width": 194,
-			"x": 1384,
-			"y": 180
+			"width": 220,
+			"x": 1517,
+			"y": 149
 		},
 		"Ip3VjhZkM3KoOiI6JSqZX0s88p7QnhvU": {
 			"height": 90,
 			"title": "luaCondition",
 			"width": 194,
-			"x": 567,
-			"y": 135
+			"x": 704,
+			"y": 128
+		},
+		"JJ1JaWlrkbqFAVFh8D7v47xPSEcDuBbA": {
+			"height": 54,
+			"title": "success",
+			"width": 132,
+			"x": 1956,
+			"y": 46
 		},
 		"MCDXsupjbFXXr3XztIpRMMnLEFpP7Ky3": {
 			"height": 94,
 			"title": "store",
 			"width": 394,
-			"x": 769,
+			"x": 772,
 			"y": -132
 		},
 		"MUuTs6xp13ZxerhJUNnZ6yHBITxwQgKZ": {
 			"height": 54,
 			"title": "success",
 			"width": 132,
-			"x": 1593,
-			"y": 573
+			"x": 1726,
+			"y": 542
 		},
 		"OmY5rgHnB0Ld1yvyw9oBUs1A4BLgpPm1": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 1343,
-			"y": -38
+			"x": 1500,
+			"y": -271
 		},
 		"RXeIXYBy7QMJShyXsemf7fbvoOUj0Bne": {
 			"height": 70,
 			"title": "parallel",
 			"width": 202,
-			"x": 299,
+			"x": 302,
 			"y": 13
+		},
+		"Tb7Cx2CB57LcBCyoGzr9FFYVZbhL1qrX": {
+			"height": 54,
+			"title": "success",
+			"width": 132,
+			"x": 955,
+			"y": 211
 		},
 		"Xo3p8G5vuOcGFS1kAsOygDzp91h210Nc": {
 			"height": 70,
 			"title": "parallel",
 			"width": 202,
-			"x": 820,
-			"y": 166
+			"x": 955,
+			"y": 135
+		},
+		"hFA6O6BMv61xDnrJZMjG2LZwpeYEOQEy": {
+			"height": 94,
+			"title": "store",
+			"width": 435,
+			"x": 2194,
+			"y": -24
 		},
 		"is6Lry7cLuNJc9fqGlc4JHaCw9mzlKaU": {
 			"height": 60,
 			"title": "repeat",
 			"width": 131,
-			"x": 543,
+			"x": 546,
 			"y": -120
 		},
 		"kHxH8VfMhdIQhLHb4aMiIMx84EPGVksB": {
 			"height": 112,
 			"title": "nota_vojguard_notabu.farkMetalReclaiming",
 			"width": 337,
-			"x": 1947,
-			"y": 402
+			"x": 2078,
+			"y": 371
 		},
 		"kiwTDw8cDW75HIBPFDW3gst16w6HL9gq": {
 			"height": 112,
 			"title": "nota_vojguard_notabu.farkMetalReclaiming",
 			"width": 337,
-			"x": 1667,
-			"y": 239
+			"x": 1800,
+			"y": 208
 		},
 		"p2LXmsZ4HY00ha6VKhDmyk3MRlVbAFAK": {
 			"height": 112,
 			"title": "nota_vojguard_notabu.farkMetalReclaiming",
 			"width": 337,
-			"x": 1670,
-			"y": 134
-		},
-		"qqgC3nDpCBwfzRzfvvNpqIIHulelHYi5": {
-			"height": 94,
-			"title": "store",
-			"width": 382,
-			"x": 1578,
-			"y": -38
+			"x": 1803,
+			"y": 103
 		},
 		"rFXT22Abg7KkqDTzhceKGLpGfIxQHWXB": {
 			"height": 90,
 			"title": "luaCondition",
+			"width": 220,
+			"x": 1761,
+			"y": 422
+		},
+		"sdAFMRxRYdOpRn0EqB2UUbxy6LdT7R5D": {
+			"height": 90,
+			"title": "luaCondition",
 			"width": 194,
-			"x": 1657,
-			"y": 439
+			"x": 1725,
+			"y": 2
 		},
 		"svB6v6BurWA7OkUnik5e2Ozoa5hoO01P": {
 			"height": 90,
 			"title": "luaCondition",
 			"width": 194,
-			"x": 1371,
-			"y": 380
+			"x": 1504,
+			"y": 349
 		},
 		"uNWFpx9KSEtXZ1gO8jynWDp6VtZTnjZP": {
 			"height": 112,
 			"title": "nota_vojguard_notabu.farkMetalReclaiming",
 			"width": 337,
-			"x": 1944,
-			"y": 507
+			"x": 2075,
+			"y": 476
 		},
 		"uVCO1P8yUkdTbWmI4AfliFyoueJccHYq": {
 			"height": 94,
 			"title": "store",
 			"width": 453,
-			"x": 1590,
-			"y": -251
+			"x": 1735,
+			"y": -381
+		},
+		"vW2Cv15TefxMVOPqiFfY8UmurEdz45qV": {
+			"height": 94,
+			"title": "store",
+			"width": 465,
+			"x": 1727,
+			"y": -182
 		}
 	},
 	"roles": [ {
@@ -200,11 +235,26 @@
 							"scriptName": "store"
 						}, {
 							"children": [],
-							"id": "qqgC3nDpCBwfzRzfvvNpqIIHulelHYi5",
+							"id": "vW2Cv15TefxMVOPqiFfY8UmurEdz45qV",
 							"nodeType": "luaCommand",
 							"parameters": [ {
 								"name": "var",
-								"value": "dangerCount"
+								"value": "shikaPos"
+							}, {
+								"name": "value",
+								"value": "nota_vojguard_notabu.ReturnFirstEnemyShika(corridor)"
+							}, {
+								"name": "scriptName",
+								"value": "store"
+							} ],
+							"scriptName": "store"
+						}, {
+							"children": [],
+							"id": "0FvGVuwiQuuNQlPa8QPesqqET4oqXcia",
+							"nodeType": "luaCommand",
+							"parameters": [ {
+								"name": "var",
+								"value": "dangerCounterFarkOne"
 							}, {
 								"name": "value",
 								"value": "SurroundingsDangerCounter(fark[1], 800, true)"
@@ -213,6 +263,37 @@
 								"value": "store"
 							} ],
 							"scriptName": "store"
+						}, {
+							"children": [ {
+								"children": [],
+								"id": "hFA6O6BMv61xDnrJZMjG2LZwpeYEOQEy",
+								"nodeType": "luaCommand",
+								"parameters": [ {
+									"name": "var",
+									"value": "dangerCounterFarkTwo"
+								}, {
+									"name": "value",
+									"value": "SurroundingsDangerCounter(fark[2], 800, true)"
+								}, {
+									"name": "scriptName",
+									"value": "store"
+								} ],
+								"scriptName": "store"
+							}, {
+								"children": [],
+								"id": "JJ1JaWlrkbqFAVFh8D7v47xPSEcDuBbA",
+								"nodeType": "success",
+								"parameters": []
+							} ],
+							"id": "sdAFMRxRYdOpRn0EqB2UUbxy6LdT7R5D",
+							"nodeType": "luaCondition",
+							"parameters": [ {
+								"name": "expression",
+								"value": "#fark > 1"
+							}, {
+								"name": "repeat",
+								"value": "true"
+							} ]
 						} ],
 						"id": "OmY5rgHnB0Ld1yvyw9oBUs1A4BLgpPm1",
 						"nodeType": "sequence",
@@ -263,7 +344,7 @@
 					"nodeType": "luaCondition",
 					"parameters": [ {
 						"name": "expression",
-						"value": "dangerCount > 0"
+						"value": "dangerCounterFarkOne > 0"
 					}, {
 						"name": "repeat",
 						"value": "true"
@@ -311,7 +392,7 @@
 						"nodeType": "luaCondition",
 						"parameters": [ {
 							"name": "expression",
-							"value": "dangerCount > 0"
+							"value": "dangerCounterFarkTwo > 0"
 						}, {
 							"name": "repeat",
 							"value": "true"
@@ -329,7 +410,7 @@
 						"value": "#fark > 1"
 					}, {
 						"name": "repeat",
-						"value": "false"
+						"value": "true"
 					} ]
 				} ],
 				"id": "Xo3p8G5vuOcGFS1kAsOygDzp91h210Nc",
@@ -338,6 +419,11 @@
 					"name": "mode",
 					"value": "any-success"
 				} ]
+			}, {
+				"children": [],
+				"id": "Tb7Cx2CB57LcBCyoGzr9FFYVZbhL1qrX",
+				"nodeType": "success",
+				"parameters": []
 			} ],
 			"id": "Ip3VjhZkM3KoOiI6JSqZX0s88p7QnhvU",
 			"nodeType": "luaCondition",

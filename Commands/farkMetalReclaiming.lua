@@ -58,6 +58,7 @@ function Run(self, units, parameter)
                 self.orderGiven = true
             else
                 Spring.GiveOrderToUnit(farkID, CMD.MOVE, reclaimArea, {})
+                self.orderGiven = true
             end
         end
     else

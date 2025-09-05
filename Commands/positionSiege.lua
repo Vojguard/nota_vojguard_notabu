@@ -31,14 +31,14 @@ function Run(self, units, parameter)
 	end
 
 	if posToSiege == nil then
-		return SUCCESS
+		return FAILURE
 	end
 
 	if not self.init then
         for _, unitID in pairs(unitIDs) do
             if Spring.ValidUnitID(unitID) then
 			    Spring.GiveOrderToUnit(unitID, CMD.FIRE_STATE,{0}, {})
-                Spring.GiveOrderToUnit(unitID, CMD.ATTACK,posToSiege:AsSpringVector(), {"shift"})
+                Spring.GiveOrderToUnit(unitID, CMD.ATTACK,posToSiege:AsSpringVector(), {})
             end
         end
 		self.init = true

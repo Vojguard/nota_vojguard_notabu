@@ -311,7 +311,7 @@
 						"value": "metalCount.currentLevel > spyCost"
 					}, {
 						"name": "repeat",
-						"value": "false"
+						"value": "true"
 					} ]
 				} ],
 				"id": "84zQ3Xde06zvfcvAw562EhepsZymVoTS",
@@ -321,7 +321,7 @@
 					"value": "#spy < 1"
 				}, {
 					"name": "repeat",
-					"value": "false"
+					"value": "true"
 				} ]
 			}, {
 				"children": [ {
@@ -345,7 +345,7 @@
 						"value": "metalCount.currentLevel > seerCost"
 					}, {
 						"name": "repeat",
-						"value": "false"
+						"value": "true"
 					} ]
 				} ],
 				"id": "kvLGX6cCLK6WHitOmZJKai6Saf4jrM4A",
@@ -355,7 +355,7 @@
 					"value": "#seer < 1"
 				}, {
 					"name": "repeat",
-					"value": "false"
+					"value": "true"
 				} ]
 			}, {
 				"children": [ {
@@ -379,7 +379,7 @@
 						"value": "metalCount.currentLevel > farkCost"
 					}, {
 						"name": "repeat",
-						"value": "false"
+						"value": "true"
 					} ]
 				} ],
 				"id": "e3PB8mqx9BD6oxeVtx0CaIOyWwswxUFH",
@@ -389,7 +389,7 @@
 					"value": "#fark < 2"
 				}, {
 					"name": "repeat",
-					"value": "false"
+					"value": "true"
 				} ]
 			}, {
 				"children": [ {
@@ -413,7 +413,7 @@
 						"value": "metalCount.currentLevel > lugerCost"
 					}, {
 						"name": "repeat",
-						"value": "false"
+						"value": "true"
 					} ]
 				} ],
 				"id": "DYV1UpIPBB6v0uq3nvVBi13JPAnD1GLU",
@@ -423,7 +423,7 @@
 					"value": "#lug < 7"
 				}, {
 					"name": "repeat",
-					"value": "false"
+					"value": "true"
 				} ]
 			}, {
 				"children": [ {
@@ -447,7 +447,7 @@
 						"value": "metalCount.currentLevel > mavCost"
 					}, {
 						"name": "repeat",
-						"value": "false"
+						"value": "true"
 					} ]
 				} ],
 				"id": "FmYlqHAew8CmTOCyWOwWeIB56sweZIME",
@@ -457,7 +457,7 @@
 					"value": "#mav < 12"
 				}, {
 					"name": "repeat",
-					"value": "false"
+					"value": "true"
 				} ]
 			}, {
 				"children": [],
