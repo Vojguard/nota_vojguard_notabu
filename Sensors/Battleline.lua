@@ -37,11 +37,10 @@ function positionProjection(enemyPos, perpVec, basePos, battleVec)
 end
 
 return function(corridor)
-	local strongpoints = Sensors.nota_vojguard_notabu.ReturnStrongpoints(corridor)
-	local basePos = strongpoints[1].position
-    for spIdx = 1, #strongpoints, 1 do
-		local strongpointPos = strongpoints[spIdx].position
-		local units = Sensors.nota_vojguard_notabu.EnemyUnitsInArea(strongpointPos, 1500)
+	local basePos = corridor[1].position
+    for corIdx = 1, #corridor, 1 do
+		local corPos = corridor[corIdx].position
+		local units = Sensors.nota_vojguard_notabu.EnemyUnitsInArea(corPos, 1500)
 		if #units > 0 then
 			local upX, upY, upZ = Spring.GetUnitPosition(units[1])
         	local closestUnit = Vec3(upX, upY, upZ)
@@ -60,7 +59,7 @@ return function(corridor)
 			conflictPoint.y = closestUnit.y
 			if (Script.LuaUI('exampleDebug_update')) then
 				Script.LuaUI.exampleDebug_update(
-					spIdx,
+					corIdx,
 					{
 						startPos = conflictPoint - battleVec * 1000,
 						endPos = conflictPoint + battleVec * 100
@@ -79,5 +78,5 @@ return function(corridor)
 			return conflictPoint
 		end
 	end
-	return nil
+	return corridor[#corridor].position
 end

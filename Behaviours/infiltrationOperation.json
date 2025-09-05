@@ -67,10 +67,10 @@
 			"nodeType": "luaCommand",
 			"parameters": [ {
 				"name": "var",
-				"value": "strongpoint"
+				"value": "enemyBase"
 			}, {
 				"name": "value",
-				"value": "nota_vojguard_notabu.FirstEnemyStrongpoint(corridor)"
+				"value": "corridor[#corridor].position"
 			}, {
 				"name": "scriptName",
 				"value": "store"
@@ -88,7 +88,7 @@
 				"value": "corridor"
 			}, {
 				"name": "infiltrationPosition",
-				"value": "strongpoint"
+				"value": "enemyBase"
 			}, {
 				"name": "scriptName",
 				"value": "nota_vojguard_notabu.infiltrateStrongpoint"

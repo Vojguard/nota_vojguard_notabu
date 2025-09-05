@@ -12,82 +12,131 @@
 	} ],
 	"outputs": [],
 	"properties": {
-		"0I1O0fLCWNMsfHGUvLJDRPcYdHIyL7kH": {
-			"height": 94,
-			"title": "store",
-			"width": 394,
-			"x": 518,
-			"y": -221
-		},
 		"1tWhOE6BHI0OHwRrlUhFqDdzlnne26Xi": {
 			"height": 94,
 			"title": "store",
 			"width": 485,
-			"x": 520,
-			"y": -46
+			"x": 1583,
+			"y": -138
 		},
-		"4rQWFbWgl6ViJaWWyv5XenO2H5VK1bx6": {
+		"CVTpReh8DTlz8o8CHDuGVUJEicvo3iQP": {
+			"height": 60,
+			"title": "repeat",
+			"width": 131,
+			"x": 1174,
+			"y": -240
+		},
+		"FX4vgSGeB8UQApcmPCVD6OpGdtOOcn0q": {
 			"height": 90,
 			"title": "luaCondition",
 			"width": 194,
-			"x": 531,
-			"y": 111
+			"x": 1384,
+			"y": 180
 		},
-		"LmuOLuWfgVA7cCLmsaAw7wMZWtBKY6oB": {
-			"height": 132,
-			"title": "nota_vojguard_notabu.farkMetalReclaiming",
-			"width": 337,
-			"x": 1060,
-			"y": 37
+		"Ip3VjhZkM3KoOiI6JSqZX0s88p7QnhvU": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 194,
+			"x": 567,
+			"y": 135
+		},
+		"MCDXsupjbFXXr3XztIpRMMnLEFpP7Ky3": {
+			"height": 94,
+			"title": "store",
+			"width": 394,
+			"x": 769,
+			"y": -132
 		},
 		"MUuTs6xp13ZxerhJUNnZ6yHBITxwQgKZ": {
 			"height": 54,
 			"title": "success",
 			"width": 132,
-			"x": 1246,
-			"y": 300
+			"x": 1593,
+			"y": 573
 		},
 		"OmY5rgHnB0Ld1yvyw9oBUs1A4BLgpPm1": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 247,
-			"y": 17
+			"x": 1343,
+			"y": -38
 		},
-		"SLK8HdtKQ3yge8jD2tE3rFCUXCOmRR9A": {
-			"height": 132,
+		"RXeIXYBy7QMJShyXsemf7fbvoOUj0Bne": {
+			"height": 70,
+			"title": "parallel",
+			"width": 202,
+			"x": 299,
+			"y": 13
+		},
+		"Xo3p8G5vuOcGFS1kAsOygDzp91h210Nc": {
+			"height": 70,
+			"title": "parallel",
+			"width": 202,
+			"x": 820,
+			"y": 166
+		},
+		"is6Lry7cLuNJc9fqGlc4JHaCw9mzlKaU": {
+			"height": 60,
+			"title": "repeat",
+			"width": 131,
+			"x": 543,
+			"y": -120
+		},
+		"kHxH8VfMhdIQhLHb4aMiIMx84EPGVksB": {
+			"height": 112,
 			"title": "nota_vojguard_notabu.farkMetalReclaiming",
 			"width": 337,
-			"x": 1245,
-			"y": 172
+			"x": 1947,
+			"y": 402
 		},
-		"hqVsuJRDljaDCuVfiRvM48PyRgj6shqM": {
-			"height": 54,
-			"title": "success",
-			"width": 132,
-			"x": 792,
-			"y": 186
+		"kiwTDw8cDW75HIBPFDW3gst16w6HL9gq": {
+			"height": 112,
+			"title": "nota_vojguard_notabu.farkMetalReclaiming",
+			"width": 337,
+			"x": 1667,
+			"y": 239
 		},
-		"myhlpfJjEk4sjr02IWXVnmI9xiV2YFib": {
-			"height": 60,
-			"title": "sequence",
-			"width": 143,
-			"x": 791,
-			"y": 121
+		"p2LXmsZ4HY00ha6VKhDmyk3MRlVbAFAK": {
+			"height": 112,
+			"title": "nota_vojguard_notabu.farkMetalReclaiming",
+			"width": 337,
+			"x": 1670,
+			"y": 134
+		},
+		"qqgC3nDpCBwfzRzfvvNpqIIHulelHYi5": {
+			"height": 94,
+			"title": "store",
+			"width": 382,
+			"x": 1578,
+			"y": -38
+		},
+		"rFXT22Abg7KkqDTzhceKGLpGfIxQHWXB": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 194,
+			"x": 1657,
+			"y": 439
 		},
 		"svB6v6BurWA7OkUnik5e2Ozoa5hoO01P": {
 			"height": 90,
 			"title": "luaCondition",
 			"width": 194,
-			"x": 981,
-			"y": 186
+			"x": 1371,
+			"y": 380
+		},
+		"uNWFpx9KSEtXZ1gO8jynWDp6VtZTnjZP": {
+			"height": 112,
+			"title": "nota_vojguard_notabu.farkMetalReclaiming",
+			"width": 337,
+			"x": 1944,
+			"y": 507
 		},
 		"uVCO1P8yUkdTbWmI4AfliFyoueJccHYq": {
 			"height": 94,
 			"title": "store",
 			"width": 453,
-			"x": 519,
-			"y": -131
+			"x": 1590,
+			"y": -251
 		}
 	},
 	"roles": [ {
@@ -96,95 +145,177 @@
 	} ],
 	"root": {
 		"children": [ {
-			"children": [],
-			"id": "0I1O0fLCWNMsfHGUvLJDRPcYdHIyL7kH",
-			"nodeType": "luaCommand",
-			"parameters": [ {
-				"name": "var",
-				"value": "fark"
-			}, {
-				"name": "value",
-				"value": "nota_vojguard_notabu.GetMyUnits('armfark')"
-			}, {
-				"name": "scriptName",
-				"value": "store"
+			"children": [ {
+				"children": [],
+				"id": "MCDXsupjbFXXr3XztIpRMMnLEFpP7Ky3",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "fark"
+				}, {
+					"name": "value",
+					"value": "GetMyUnits('armfark')"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
 			} ],
-			"scriptName": "store"
-		}, {
-			"children": [],
-			"id": "uVCO1P8yUkdTbWmI4AfliFyoueJccHYq",
-			"nodeType": "luaCommand",
-			"parameters": [ {
-				"name": "var",
-				"value": "battlePos"
-			}, {
-				"name": "value",
-				"value": "nota_vojguard_notabu.Battleposition(corridor, 670)"
-			}, {
-				"name": "scriptName",
-				"value": "store"
-			} ],
-			"scriptName": "store"
-		}, {
-			"children": [],
-			"id": "1tWhOE6BHI0OHwRrlUhFqDdzlnne26Xi",
-			"nodeType": "luaCommand",
-			"parameters": [ {
-				"name": "var",
-				"value": "retreatPos"
-			}, {
-				"name": "value",
-				"value": "nota_vojguard_notabu.Battleposition(corridor, 800)"
-			}, {
-				"name": "scriptName",
-				"value": "store"
-			} ],
-			"scriptName": "store"
+			"id": "is6Lry7cLuNJc9fqGlc4JHaCw9mzlKaU",
+			"nodeType": "repeat",
+			"parameters": []
 		}, {
 			"children": [ {
 				"children": [ {
-					"children": [],
-					"id": "LmuOLuWfgVA7cCLmsaAw7wMZWtBKY6oB",
-					"nodeType": "luaCommand",
-					"parameters": [ {
-						"name": "farkID",
-						"value": "fark[1]"
-					}, {
-						"name": "reclaimPosition",
-						"value": "battlePos"
-					}, {
-						"name": "reclaimRadius",
-						"value": "200"
-					}, {
-						"name": "retreatPosition",
-						"value": "retreatPos"
-					}, {
-						"name": "scriptName",
-						"value": "nota_vojguard_notabu.farkMetalReclaiming"
+					"children": [ {
+						"children": [ {
+							"children": [],
+							"id": "uVCO1P8yUkdTbWmI4AfliFyoueJccHYq",
+							"nodeType": "luaCommand",
+							"parameters": [ {
+								"name": "var",
+								"value": "battlePos"
+							}, {
+								"name": "value",
+								"value": "Battleposition(corridor, 700)"
+							}, {
+								"name": "scriptName",
+								"value": "store"
+							} ],
+							"scriptName": "store"
+						}, {
+							"children": [],
+							"id": "1tWhOE6BHI0OHwRrlUhFqDdzlnne26Xi",
+							"nodeType": "luaCommand",
+							"parameters": [ {
+								"name": "var",
+								"value": "retreatPos"
+							}, {
+								"name": "value",
+								"value": "Battleposition(corridor, 1100)"
+							}, {
+								"name": "scriptName",
+								"value": "store"
+							} ],
+							"scriptName": "store"
+						}, {
+							"children": [],
+							"id": "qqgC3nDpCBwfzRzfvvNpqIIHulelHYi5",
+							"nodeType": "luaCommand",
+							"parameters": [ {
+								"name": "var",
+								"value": "dangerCount"
+							}, {
+								"name": "value",
+								"value": "SurroundingsDangerCounter(fark[1], 800, true)"
+							}, {
+								"name": "scriptName",
+								"value": "store"
+							} ],
+							"scriptName": "store"
+						} ],
+						"id": "OmY5rgHnB0Ld1yvyw9oBUs1A4BLgpPm1",
+						"nodeType": "sequence",
+						"parameters": []
 					} ],
-					"scriptName": "nota_vojguard_notabu.farkMetalReclaiming"
+					"id": "CVTpReh8DTlz8o8CHDuGVUJEicvo3iQP",
+					"nodeType": "repeat",
+					"parameters": []
 				}, {
 					"children": [ {
 						"children": [],
-						"id": "SLK8HdtKQ3yge8jD2tE3rFCUXCOmRR9A",
+						"id": "p2LXmsZ4HY00ha6VKhDmyk3MRlVbAFAK",
 						"nodeType": "luaCommand",
 						"parameters": [ {
 							"name": "farkID",
-							"value": "fark[2]"
+							"value": "fark[1]"
 						}, {
 							"name": "reclaimPosition",
-							"value": "battlePos"
+							"value": "retreatPos"
 						}, {
 							"name": "reclaimRadius",
-							"value": "200"
-						}, {
-							"name": "retreatPosition",
-							"value": "retreatPos"
+							"value": "500"
 						}, {
 							"name": "scriptName",
 							"value": "nota_vojguard_notabu.farkMetalReclaiming"
 						} ],
 						"scriptName": "nota_vojguard_notabu.farkMetalReclaiming"
+					}, {
+						"children": [],
+						"id": "kiwTDw8cDW75HIBPFDW3gst16w6HL9gq",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "farkID",
+							"value": "fark[1]"
+						}, {
+							"name": "reclaimPosition",
+							"value": "battlePos"
+						}, {
+							"name": "reclaimRadius",
+							"value": "400"
+						}, {
+							"name": "scriptName",
+							"value": "nota_vojguard_notabu.farkMetalReclaiming"
+						} ],
+						"scriptName": "nota_vojguard_notabu.farkMetalReclaiming"
+					} ],
+					"id": "FX4vgSGeB8UQApcmPCVD6OpGdtOOcn0q",
+					"nodeType": "luaCondition",
+					"parameters": [ {
+						"name": "expression",
+						"value": "dangerCount > 0"
+					}, {
+						"name": "repeat",
+						"value": "true"
+					} ]
+				}, {
+					"children": [ {
+						"children": [ {
+							"children": [],
+							"id": "kHxH8VfMhdIQhLHb4aMiIMx84EPGVksB",
+							"nodeType": "luaCommand",
+							"parameters": [ {
+								"name": "farkID",
+								"value": "fark[2]"
+							}, {
+								"name": "reclaimPosition",
+								"value": "retreatPos"
+							}, {
+								"name": "reclaimRadius",
+								"value": "500"
+							}, {
+								"name": "scriptName",
+								"value": "nota_vojguard_notabu.farkMetalReclaiming"
+							} ],
+							"scriptName": "nota_vojguard_notabu.farkMetalReclaiming"
+						}, {
+							"children": [],
+							"id": "uNWFpx9KSEtXZ1gO8jynWDp6VtZTnjZP",
+							"nodeType": "luaCommand",
+							"parameters": [ {
+								"name": "farkID",
+								"value": "fark[2]"
+							}, {
+								"name": "reclaimPosition",
+								"value": "battlePos"
+							}, {
+								"name": "reclaimRadius",
+								"value": "400"
+							}, {
+								"name": "scriptName",
+								"value": "nota_vojguard_notabu.farkMetalReclaiming"
+							} ],
+							"scriptName": "nota_vojguard_notabu.farkMetalReclaiming"
+						} ],
+						"id": "rFXT22Abg7KkqDTzhceKGLpGfIxQHWXB",
+						"nodeType": "luaCondition",
+						"parameters": [ {
+							"name": "expression",
+							"value": "dangerCount > 0"
+						}, {
+							"name": "repeat",
+							"value": "true"
+						} ]
 					}, {
 						"children": [],
 						"id": "MUuTs6xp13ZxerhJUNnZ6yHBITxwQgKZ",
@@ -201,27 +332,28 @@
 						"value": "false"
 					} ]
 				} ],
-				"id": "myhlpfJjEk4sjr02IWXVnmI9xiV2YFib",
-				"nodeType": "sequence",
-				"parameters": []
-			}, {
-				"children": [],
-				"id": "hqVsuJRDljaDCuVfiRvM48PyRgj6shqM",
-				"nodeType": "success",
-				"parameters": []
+				"id": "Xo3p8G5vuOcGFS1kAsOygDzp91h210Nc",
+				"nodeType": "parallel",
+				"parameters": [ {
+					"name": "mode",
+					"value": "any-success"
+				} ]
 			} ],
-			"id": "4rQWFbWgl6ViJaWWyv5XenO2H5VK1bx6",
+			"id": "Ip3VjhZkM3KoOiI6JSqZX0s88p7QnhvU",
 			"nodeType": "luaCondition",
 			"parameters": [ {
 				"name": "expression",
-				"value": "battlePos ~= nil"
+				"value": "#fark > 0"
 			}, {
 				"name": "repeat",
-				"value": "false"
+				"value": "true"
 			} ]
 		} ],
-		"id": "OmY5rgHnB0Ld1yvyw9oBUs1A4BLgpPm1",
-		"nodeType": "sequence",
-		"parameters": []
+		"id": "RXeIXYBy7QMJShyXsemf7fbvoOUj0Bne",
+		"nodeType": "parallel",
+		"parameters": [ {
+			"name": "mode",
+			"value": "any-success"
+		} ]
 	}
 }

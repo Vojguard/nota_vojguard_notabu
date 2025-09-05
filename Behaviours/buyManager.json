@@ -2,7 +2,7 @@
 	"additionalNodes": [],
 	"additionalParameters": {
 		"root": {
-			"height": 168,
+			"height": 188,
 			"width": 216
 		}
 	},
@@ -18,6 +18,9 @@
 	}, {
 		"command": "Variable",
 		"name": "mavCost"
+	}, {
+		"command": "Variable",
+		"name": "seerCost"
 	} ],
 	"outputs": [],
 	"properties": {
@@ -53,15 +56,22 @@
 			"height": 72,
 			"title": "nota_vojguard_notabu.buyUnits",
 			"width": 263,
-			"x": 1292,
-			"y": 216
+			"x": 1290,
+			"y": 322
+		},
+		"CYlVsB2miOtB0zUulqnWtn3spt1S8Fdo": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 273,
+			"x": 952,
+			"y": 222
 		},
 		"DYV1UpIPBB6v0uq3nvVBi13JPAnD1GLU": {
 			"height": 90,
 			"title": "luaCondition",
 			"width": 194,
-			"x": 651,
-			"y": 295
+			"x": 649,
+			"y": 401
 		},
 		"EJWYfZB8s33xlxuslajkwUvXMxBzgMYk": {
 			"height": 94,
@@ -74,8 +84,8 @@
 			"height": 90,
 			"title": "luaCondition",
 			"width": 194,
-			"x": 650,
-			"y": 373
+			"x": 648,
+			"y": 479
 		},
 		"LLKLn1ED2yV3vvgZkKLt1af1ikpcuUrU": {
 			"height": 94,
@@ -88,36 +98,50 @@
 			"height": 72,
 			"title": "nota_vojguard_notabu.buyUnits",
 			"width": 263,
-			"x": 1286,
-			"y": 379
+			"x": 1284,
+			"y": 485
 		},
 		"VZsJn8TBYtgdbV5I47EjiTykRCQvzFVP": {
 			"height": 90,
 			"title": "luaCondition",
 			"width": 269,
-			"x": 961,
-			"y": 209
+			"x": 959,
+			"y": 315
 		},
 		"ZLiTDYluFoymLz4pBBGtESi3hRk8kBAO": {
 			"height": 90,
 			"title": "luaCondition",
 			"width": 277,
-			"x": 960,
-			"y": 296
+			"x": 958,
+			"y": 402
 		},
 		"Zl63W6GJVqI2naJIB8y60AvkOc7PvNr9": {
 			"height": 90,
 			"title": "luaCondition",
 			"width": 272,
-			"x": 963,
-			"y": 374
+			"x": 961,
+			"y": 480
 		},
 		"e3PB8mqx9BD6oxeVtx0CaIOyWwswxUFH": {
 			"height": 90,
 			"title": "luaCondition",
 			"width": 194,
-			"x": 654,
-			"y": 210
+			"x": 652,
+			"y": 316
+		},
+		"kM9N89RGkvuHZYoDYzJmN8PlB6ZQ8Z8C": {
+			"height": 72,
+			"title": "nota_vojguard_notabu.buyUnits",
+			"width": 263,
+			"x": 1282,
+			"y": 229
+		},
+		"kvLGX6cCLK6WHitOmZJKai6Saf4jrM4A": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 194,
+			"x": 645,
+			"y": 223
 		},
 		"ndDxSApuVUtTMzQRltbzWDojlnOp0x0v": {
 			"height": 90,
@@ -130,15 +154,15 @@
 			"height": 72,
 			"title": "nota_vojguard_notabu.buyUnits",
 			"width": 263,
-			"x": 1282,
-			"y": 301
+			"x": 1280,
+			"y": 407
 		},
 		"pbfzlkslRdvITg1SpvAfVC5oMHZreOwx": {
 			"height": 54,
 			"title": "success",
 			"width": 132,
-			"x": 650,
-			"y": 459
+			"x": 648,
+			"y": 565
 		},
 		"sh6Y8MX0w3KSTLKE0a4DdW0NIB6u7WLI": {
 			"height": 94,
@@ -160,6 +184,13 @@
 			"width": 131,
 			"x": 438,
 			"y": 262
+		},
+		"yizL2rLlXnMPZLhKhxYdAvkCPbGprwTD": {
+			"height": 94,
+			"title": "store",
+			"width": 394,
+			"x": 447,
+			"y": 39
 		}
 	},
 	"roles": [ {
@@ -243,6 +274,21 @@
 			} ],
 			"scriptName": "store"
 		}, {
+			"children": [],
+			"id": "yizL2rLlXnMPZLhKhxYdAvkCPbGprwTD",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "seer"
+			}, {
+				"name": "value",
+				"value": "nota_vojguard_notabu.GetMyUnits('armseer')"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
 			"children": [ {
 				"children": [ {
 					"children": [ {
@@ -273,6 +319,40 @@
 				"parameters": [ {
 					"name": "expression",
 					"value": "#spy < 1"
+				}, {
+					"name": "repeat",
+					"value": "false"
+				} ]
+			}, {
+				"children": [ {
+					"children": [ {
+						"children": [],
+						"id": "kM9N89RGkvuHZYoDYzJmN8PlB6ZQ8Z8C",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "unitName",
+							"value": "'armseer'"
+						}, {
+							"name": "scriptName",
+							"value": "nota_vojguard_notabu.buyUnits"
+						} ],
+						"scriptName": "nota_vojguard_notabu.buyUnits"
+					} ],
+					"id": "CYlVsB2miOtB0zUulqnWtn3spt1S8Fdo",
+					"nodeType": "luaCondition",
+					"parameters": [ {
+						"name": "expression",
+						"value": "metalCount.currentLevel > seerCost"
+					}, {
+						"name": "repeat",
+						"value": "false"
+					} ]
+				} ],
+				"id": "kvLGX6cCLK6WHitOmZJKai6Saf4jrM4A",
+				"nodeType": "luaCondition",
+				"parameters": [ {
+					"name": "expression",
+					"value": "#seer < 1"
 				}, {
 					"name": "repeat",
 					"value": "false"

@@ -23,21 +23,23 @@ end
 
 return function(corridor, offset)
 	local battleline = Sensors.nota_vojguard_notabu.Battleline(corridor)
-    if battleline ~= nil then
-        local battlevec = Sensors.nota_vojguard_notabu.Battlevector(corridor)
-		local perp = Vec3(-battlevec.z, battlevec.y, battlevec.x)
-        local battleposition = battleline - (battlevec * offset)
-		if (Script.LuaUI('exampleDebug_update')) then
-				Script.LuaUI.exampleDebug_update(
-					offset,
-					{
-						startPos = battleposition + perp * 500,
-						endPos = battleposition - perp * 500
+    local battlevec = Sensors.nota_vojguard_notabu.Battlevector(corridor)
+	local perp = Vec3(-battlevec.z, battlevec.y, battlevec.x)
+    local battleposition = battleline - (battlevec * offset)
+	if (Script.LuaUI('exampleDebug_update')) then
+			Script.LuaUI.exampleDebug_update(
+				offset,
+				{
+					startPos = battleposition + perp * 500,
+					endPos = battleposition - perp * 500,
+					color = {
+						r = 0,
+						g = 1,
+						b = 1
 					}
+				}
 
-				)
-		end
-        return battleposition
-    end
-    return nil
+			)
+	end
+    return battleposition
 end

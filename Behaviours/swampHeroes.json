@@ -16,14 +16,14 @@
 		"scriptName": "store"
 	}, {
 		"children": [],
-		"id": "QRPxcluSgIdOYbyLFmr54jE6Hha6EOA7",
+		"id": "naR0Ox5wvwL5xvgxb96tzBkR4rKRZVAt",
 		"nodeType": "luaCommand",
 		"parameters": [ {
 			"name": "var",
-			"value": "lugBattlePos"
+			"value": "myUnits"
 		}, {
 			"name": "value",
-			"value": "nota_vojguard_notabu.Battleposition(midCorridor, 675)"
+			"value": "nota_vojguard_notabu.GetMyUnits('armpeep')"
 		}, {
 			"name": "scriptName",
 			"value": "store"
@@ -61,14 +61,14 @@
 		"scriptName": "store"
 	}, {
 		"children": [],
-		"id": "naR0Ox5wvwL5xvgxb96tzBkR4rKRZVAt",
+		"id": "QRPxcluSgIdOYbyLFmr54jE6Hha6EOA7",
 		"nodeType": "luaCommand",
 		"parameters": [ {
 			"name": "var",
-			"value": "myUnits"
+			"value": "lugBattlePos"
 		}, {
 			"name": "value",
-			"value": "nota_vojguard_notabu.GetMyUnits('armpeep')"
+			"value": "nota_vojguard_notabu.Battleposition(midCorridor, 675)"
 		}, {
 			"name": "scriptName",
 			"value": "store"
@@ -76,19 +76,16 @@
 		"scriptName": "store"
 	}, {
 		"children": [],
-		"id": "jZpBHJa6Md6uX8Raoan3R5zZu3HnWQV9",
+		"id": "u1RbDIAKZr49B44BROtdvyzPjIrArG0d",
 		"nodeType": "luaCommand",
 		"parameters": [ {
-			"name": "var",
-			"value": "groupForm"
-		}, {
-			"name": "value",
-			"value": "nota_vojguard_notabu.FormationDefinitions(units)"
+			"name": "unitName",
+			"value": "'armmart'"
 		}, {
 			"name": "scriptName",
-			"value": "store"
+			"value": "nota_vojguard_notabu.buyUnits"
 		} ],
-		"scriptName": "store"
+		"scriptName": "nota_vojguard_notabu.buyUnits"
 	}, {
 		"children": [],
 		"id": "nrAyAUlg8dwCGPKlNgpQ6zWmq95FimtZ",
@@ -106,18 +103,6 @@
 		"scriptName": "nota_vojguard_notabu.followCorridor"
 	}, {
 		"children": [],
-		"id": "u1RbDIAKZr49B44BROtdvyzPjIrArG0d",
-		"nodeType": "luaCommand",
-		"parameters": [ {
-			"name": "unitName",
-			"value": "'armmart'"
-		}, {
-			"name": "scriptName",
-			"value": "nota_vojguard_notabu.buyUnits"
-		} ],
-		"scriptName": "nota_vojguard_notabu.buyUnits"
-	}, {
-		"children": [],
 		"id": "GFudG91a9njRbGU784kL5NsdUvaXnYFD",
 		"nodeType": "luaCommand",
 		"parameters": [ {
@@ -126,6 +111,21 @@
 		}, {
 			"name": "value",
 			"value": "nota_vojguard_notabu.Battleline(midCorridor)"
+		}, {
+			"name": "scriptName",
+			"value": "store"
+		} ],
+		"scriptName": "store"
+	}, {
+		"children": [],
+		"id": "jZpBHJa6Md6uX8Raoan3R5zZu3HnWQV9",
+		"nodeType": "luaCommand",
+		"parameters": [ {
+			"name": "var",
+			"value": "groupForm"
+		}, {
+			"name": "value",
+			"value": "nota_vojguard_notabu.FormationDefinitions(units)"
 		}, {
 			"name": "scriptName",
 			"value": "store"
@@ -218,14 +218,14 @@
 			"height": 94,
 			"title": "store",
 			"width": 293,
-			"x": 554,
-			"y": -181
+			"x": 550,
+			"y": -301
 		},
 		"6xqW4z2iG2I03J9qGb4V8NvhVkMV1rP8": {
 			"height": 132,
 			"title": "formation.moveCustomGroup",
 			"width": 269,
-			"x": 2715,
+			"x": 2712,
 			"y": -252
 		},
 		"8FDLk63YrVGAwW3YRqdCHbr4LeR9wXnf": {
@@ -256,25 +256,32 @@
 			"x": 895,
 			"y": 300
 		},
+		"BBcGTavM5r3hCoDRH4y2bhW9evJHRC85": {
+			"height": 94,
+			"title": "store",
+			"width": 296,
+			"x": 548,
+			"y": -109
+		},
 		"BQqzyudj4riGJumX485ci4G5PnIcsrem": {
 			"height": 130,
 			"title": "reference",
 			"width": 292,
-			"x": 1423,
+			"x": 1422,
 			"y": 687
 		},
 		"BnrEHrqKHyUngBfGF6jyCzmk5oth6of9": {
 			"height": 130,
 			"title": "reference",
 			"width": 309,
-			"x": 1415,
+			"x": 1414,
 			"y": 562
 		},
 		"CWfLtmKB3J4aaU4n06sbNBEdBYwzAYuH": {
 			"height": 94,
 			"title": "store",
 			"width": 333,
-			"x": 2505,
+			"x": 2503,
 			"y": 22
 		},
 		"Fm9mMsWxi5ZjafcJhHqiPv7k8dLurUQn": {
@@ -288,28 +295,28 @@
 			"height": 94,
 			"title": "store",
 			"width": 511,
-			"x": 2216,
+			"x": 2214,
 			"y": -240
 		},
 		"GUUntzIx5BGYxM1APBDiNWUc2htTFDd4": {
 			"height": 130,
 			"title": "reference",
 			"width": 318,
-			"x": 1410,
+			"x": 1409,
 			"y": 440
 		},
 		"OIq7LtyLYzrcYyAqYSYyK6rW37Fqrye7": {
 			"height": 94,
 			"title": "store",
 			"width": 288,
-			"x": 552,
-			"y": -275
+			"x": 548,
+			"y": -395
 		},
 		"QRPxcluSgIdOYbyLFmr54jE6Hha6EOA7": {
 			"height": 94,
 			"title": "store",
 			"width": 453,
-			"x": 2509,
+			"x": 2507,
 			"y": 6
 		},
 		"WwOLhD43uHaVoLOcREFTpJg1J6BkTnN4": {
@@ -323,7 +330,7 @@
 			"height": 92,
 			"title": "nota_vojguard_notabu.moveOnBattleline",
 			"width": 320,
-			"x": 2396,
+			"x": 2394,
 			"y": -15
 		},
 		"dChRDsHYp8cI9S2GknJvdLiYcWhiH4NX": {
@@ -344,22 +351,22 @@
 			"height": 94,
 			"title": "store",
 			"width": 402,
-			"x": 2811,
+			"x": 2808,
 			"y": 130
 		},
 		"jiUybmazTJRWGLwYDpSaGe4ht1JJbhNR": {
 			"height": 94,
 			"title": "store",
 			"width": 296,
-			"x": 555,
-			"y": -88
+			"x": 551,
+			"y": -208
 		},
 		"k1tbt9qj4pE4UhJj3fCvFw4pOEDqG9lv": {
 			"height": 94,
 			"title": "store",
 			"width": 296,
-			"x": 550,
-			"y": -374
+			"x": 546,
+			"y": -494
 		},
 		"mxriUud3xgvsjYGHS2OfJbKTN99uprnQ": {
 			"height": 60,
@@ -379,63 +386,63 @@
 			"height": 94,
 			"title": "store",
 			"width": 378,
-			"x": 2826,
+			"x": 2823,
 			"y": 284
 		},
 		"nrAyAUlg8dwCGPKlNgpQ6zWmq95FimtZ": {
 			"height": 92,
 			"title": "nota_vojguard_notabu.followCorridor",
 			"width": 296,
-			"x": 2455,
+			"x": 2453,
 			"y": 109
 		},
 		"puojSfaZrJZickXNvaTVIEhrjBDxgZON": {
 			"height": 94,
 			"title": "store",
 			"width": 198,
-			"x": 2897,
+			"x": 2894,
 			"y": 3
 		},
 		"qEAEnq4AtIhemLu2fIA1ndBl2OyVeN5y": {
 			"height": 94,
 			"title": "store",
 			"width": 574,
-			"x": 2472,
+			"x": 2470,
 			"y": 54
 		},
 		"r6fFrNWqPT62xO6RpNIy3yj1fafWbAsA": {
 			"height": 94,
 			"title": "store",
 			"width": 453,
-			"x": 2624,
+			"x": 2622,
 			"y": 206
 		},
 		"tUmAV6Jw7Re5NSFXiwPaylYWmVBuEC2h": {
 			"height": 130,
 			"title": "reference",
 			"width": 348,
-			"x": 1408,
+			"x": 1407,
 			"y": 299
 		},
 		"u1RbDIAKZr49B44BROtdvyzPjIrArG0d": {
 			"height": 72,
 			"title": "nota_vojguard_notabu.buyUnits",
 			"width": 263,
-			"x": 2390,
+			"x": 2388,
 			"y": -136
 		},
 		"vCUbcex7ntmeaJjeGF0NsopBzJj7szfJ": {
 			"height": 94,
 			"title": "store",
 			"width": 453,
-			"x": 2828,
+			"x": 2825,
 			"y": -83
 		},
 		"wFOKFA04CcZ4GPuPHjukZf2BDfZhsjG3": {
 			"height": 214,
 			"title": "reference",
 			"width": 304,
-			"x": 1409,
+			"x": 1408,
 			"y": 92
 		},
 		"xBgCydZy7qI8Eg2YJfcse9n7X39mKm0X": {
@@ -512,6 +519,21 @@
 			} ],
 			"scriptName": "store"
 		}, {
+			"children": [],
+			"id": "BBcGTavM5r3hCoDRH4y2bhW9evJHRC85",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "seerCost"
+			}, {
+				"name": "value",
+				"value": "core.MissionInfo().buy['armseer']"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
 			"children": [ {
 				"children": [ {
 					"children": [],
@@ -580,6 +602,9 @@
 							}, {
 								"name": "mavCost",
 								"value": "mavCost"
+							}, {
+								"name": "seerCost",
+								"value": "seerCost"
 							} ],
 							"referenceOutputs": []
 						} ],

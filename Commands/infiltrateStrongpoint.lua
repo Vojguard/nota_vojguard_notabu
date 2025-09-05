@@ -32,7 +32,7 @@ end
 
 function Run(self, units, parameter)
 	local infilPos = parameter.infiltrationPosition
-	local shika = Sensors.nota_vojguard_notabu.FindEnemyShika(infilPos)
+	local shika = Sensors.nota_vojguard_notabu.ReturnFirstEnemyShika(parameter.corridor)
     local spyID = parameter.infiltratorID
 	if spyID == nil then
 		return FAILURE
@@ -54,7 +54,7 @@ function Run(self, units, parameter)
 		return SUCCESS
 	end
 	if not self.init then
-		Spring.GiveOrderToUnit(spyID, CMD.MOVE,{infilPos.x,infilPos.y,infilPos.z},{"shift"})
+		Spring.GiveOrderToUnit(spyID, CMD.MOVE,{infilPos.x,infilPos.y,infilPos.z},{})
 		self.init = true
 	end
 	return RUNNING
