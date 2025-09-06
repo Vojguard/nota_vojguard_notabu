@@ -16,7 +16,7 @@
 			"height": 94,
 			"title": "store",
 			"width": 218,
-			"x": 461,
+			"x": 462,
 			"y": -40
 		},
 		"5IAE0ZiLs6pPF4St7dlvrCI0xQqa6Ai7": {
@@ -30,7 +30,7 @@
 			"height": 60,
 			"title": "repeat",
 			"width": 131,
-			"x": 1379,
+			"x": 1380,
 			"y": -47
 		},
 		"84zLGdJFpLSObYbEgM64q2gDnP7VZpK1": {
@@ -44,14 +44,14 @@
 			"height": 94,
 			"title": "store",
 			"width": 394,
-			"x": 1024,
+			"x": 1025,
 			"y": -143
 		},
 		"Bdmjz70RFMsfkeetqLZkw1vd068ggE4b": {
 			"height": 90,
 			"title": "luaCondition",
 			"width": 194,
-			"x": 800,
+			"x": 801,
 			"y": 40
 		},
 		"JczZ5p2uk5TWGfsNdZ1Yl9uZ1JHrYnze": {
@@ -72,7 +72,7 @@
 			"height": 70,
 			"title": "parallel",
 			"width": 202,
-			"x": 461,
+			"x": 462,
 			"y": 47
 		},
 		"dxbiNDWkiwrASPRwx1frMIs0dWCM05oI": {
@@ -86,7 +86,7 @@
 			"height": 94,
 			"title": "store",
 			"width": 218,
-			"x": 453,
+			"x": 454,
 			"y": -126
 		},
 		"kjDwF3poPdWEYWDXFjjhENXP0jNMhBXH": {
@@ -114,7 +114,7 @@
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 270,
+			"x": 271,
 			"y": 17
 		},
 		"rfW9nvi8dMf62AKu8CFpH8Kd9ZUtq7Bq": {
@@ -128,14 +128,14 @@
 			"height": 70,
 			"title": "parallel",
 			"width": 202,
-			"x": 1095,
+			"x": 1096,
 			"y": 47
 		},
 		"x45ltlFjUPA8pmcVFfPdWzgfvqVQGqLG": {
 			"height": 54,
 			"title": "success",
 			"width": 132,
-			"x": 1101,
+			"x": 1102,
 			"y": 116
 		},
 		"xVsCPEYZnbHZTIPNlBSZRfP2xpQt1Vmu": {
@@ -149,7 +149,7 @@
 			"height": 60,
 			"title": "repeat",
 			"width": 131,
-			"x": 807,
+			"x": 808,
 			"y": -131
 		}
 	},
@@ -252,7 +252,7 @@
 									"value": "shikaPos"
 								}, {
 									"name": "value",
-									"value": "nota_vojguard_notabu.ReturnFirstEnemyShika(corridor)"
+									"value": "ReturnFirstEnemyShika(corridor)"
 								}, {
 									"name": "scriptName",
 									"value": "store"
