@@ -16,7 +16,7 @@
 			"height": 94,
 			"title": "store",
 			"width": 218,
-			"x": 466,
+			"x": 467,
 			"y": -142
 		},
 		"B5RsJGdUfEm7Hl58L4DJQChYpkgLH3Nz": {
@@ -37,21 +37,21 @@
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 1604,
+			"x": 1605,
 			"y": -47
 		},
 		"H8VLmx379sAP3p8s6Tgw4xbyPcHpfxB3": {
 			"height": 90,
 			"title": "luaCondition",
 			"width": 194,
-			"x": 808,
+			"x": 810,
 			"y": 40
 		},
 		"JKxCvC5vyvJa1PpX4OwJfkIwhN708Ykz": {
 			"height": 70,
 			"title": "parallel",
 			"width": 202,
-			"x": 469,
+			"x": 470,
 			"y": 47
 		},
 		"Jk6XBh8eBluwMhy5HRZsKFvO1StCEawL": {
@@ -72,14 +72,14 @@
 			"height": 60,
 			"title": "repeat",
 			"width": 131,
-			"x": 720,
+			"x": 722,
 			"y": -113
 		},
 		"R0SLIaT0YgYUYskpPCmy6bZDpr9K8KWx": {
 			"height": 54,
 			"title": "success",
 			"width": 132,
-			"x": 1118,
+			"x": 1120,
 			"y": 116
 		},
 		"S8nnqFvFQQ26OWme8zk01CXRauk8eu4J": {
@@ -93,14 +93,14 @@
 			"height": 70,
 			"title": "parallel",
 			"width": 202,
-			"x": 1103,
+			"x": 1105,
 			"y": 47
 		},
 		"czNmHWLcger55oSLWBndGzPlfOPiUVbw": {
 			"height": 90,
 			"title": "luaCondition",
 			"width": 194,
-			"x": 1493,
+			"x": 1494,
 			"y": 188
 		},
 		"dGddrO5LxlufpU68jVlUn13oxy3ND26o": {
@@ -114,7 +114,7 @@
 			"height": 94,
 			"title": "store",
 			"width": 394,
-			"x": 912,
+			"x": 914,
 			"y": -124
 		},
 		"gP5UO7sjzoMMwLTBCxbFJPqiuLQMswL5": {
@@ -135,14 +135,14 @@
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 278,
+			"x": 279,
 			"y": 17
 		},
 		"uqL7Xc9YTXJV9vtqHc6zPSflvzARFb3b": {
 			"height": 94,
 			"title": "store",
 			"width": 218,
-			"x": 465,
+			"x": 466,
 			"y": -49
 		},
 		"vQstapO9Z7KuNDlfLknaVUJXLN5bZQko": {
@@ -156,7 +156,7 @@
 			"height": 60,
 			"title": "repeat",
 			"width": 131,
-			"x": 1387,
+			"x": 1389,
 			"y": -47
 		}
 	},
@@ -229,7 +229,7 @@
 									"value": "battlePos"
 								}, {
 									"name": "value",
-									"value": "Battleposition(corridor, 470)"
+									"value": "Battleposition(corridor, 400)"
 								}, {
 									"name": "scriptName",
 									"value": "store"

@@ -1,1 +1,1 @@
-# notabu 1.3.1
+# notabu 1.3.2

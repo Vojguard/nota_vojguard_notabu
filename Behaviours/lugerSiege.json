@@ -1,5 +1,20 @@
 {
-	"additionalNodes": [],
+	"additionalNodes": [ {
+		"children": [],
+		"id": "YCNKgLeagaHdaRBOBsh3l1P3oUqXAeDm",
+		"nodeType": "luaCommand",
+		"parameters": [ {
+			"name": "var",
+			"value": "x"
+		}, {
+			"name": "value",
+			"value": "PositionsDistance(battlePos, shikaPos)"
+		}, {
+			"name": "scriptName",
+			"value": "store"
+		} ],
+		"scriptName": "store"
+	} ],
 	"additionalParameters": {
 		"root": {
 			"height": 108,
@@ -12,46 +27,53 @@
 	} ],
 	"outputs": [],
 	"properties": {
+		"3iEqLGJIm7GhQ3buaHR8K6kBTkDyU6wt": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 358,
+			"x": 2227,
+			"y": 336
+		},
 		"4108577SrkiYmVjDPJ4AFhcZofMoMWdn": {
 			"height": 94,
 			"title": "store",
 			"width": 218,
-			"x": 462,
+			"x": 464,
 			"y": -40
 		},
 		"5IAE0ZiLs6pPF4St7dlvrCI0xQqa6Ai7": {
 			"height": 94,
 			"title": "store",
 			"width": 453,
-			"x": 1843,
+			"x": 1844,
 			"y": -287
 		},
 		"5TbofteQg74GN0SzQMNxoIjCytk33PSY": {
 			"height": 60,
 			"title": "repeat",
 			"width": 131,
-			"x": 1380,
+			"x": 1382,
 			"y": -47
 		},
 		"84zLGdJFpLSObYbEgM64q2gDnP7VZpK1": {
 			"height": 94,
 			"title": "store",
 			"width": 453,
-			"x": 1842,
+			"x": 1843,
 			"y": -195
 		},
 		"AlIQqiWA8X4mH7Xuf1HQVeWMvwzrnwT4": {
 			"height": 94,
 			"title": "store",
 			"width": 394,
-			"x": 1025,
+			"x": 1027,
 			"y": -143
 		},
 		"Bdmjz70RFMsfkeetqLZkw1vd068ggE4b": {
 			"height": 90,
 			"title": "luaCondition",
 			"width": 194,
-			"x": 801,
+			"x": 803,
 			"y": 40
 		},
 		"JczZ5p2uk5TWGfsNdZ1Yl9uZ1JHrYnze": {
@@ -61,95 +83,109 @@
 			"x": 2232,
 			"y": 174
 		},
+		"S9WQD5vVn7jJuvNF3TWUQs7MW9khVmKy": {
+			"height": 132,
+			"title": "nota_vojguard_notabu.moveOnBattleline",
+			"width": 320,
+			"x": 2610,
+			"y": 246
+		},
+		"YCNKgLeagaHdaRBOBsh3l1P3oUqXAeDm": {
+			"height": 94,
+			"title": "store",
+			"width": 330,
+			"x": 1846,
+			"y": 72
+		},
 		"bl9FnRQlRJSEIOJxwDG9lVeeL8QvFPSB": {
 			"height": 90,
 			"title": "luaCondition",
 			"width": 194,
-			"x": 1485,
+			"x": 1487,
 			"y": 188
 		},
 		"bswt1dpfNBuniM6N3w2dwyStX59GifuA": {
 			"height": 70,
 			"title": "parallel",
 			"width": 202,
-			"x": 462,
+			"x": 464,
 			"y": 47
 		},
 		"dxbiNDWkiwrASPRwx1frMIs0dWCM05oI": {
 			"height": 94,
 			"title": "store",
 			"width": 465,
-			"x": 1840,
+			"x": 1841,
 			"y": -103
 		},
 		"k560fL0Oq00az8y8P39UUf7I3P3D6B7E": {
 			"height": 94,
 			"title": "store",
 			"width": 218,
-			"x": 454,
+			"x": 456,
 			"y": -126
 		},
 		"kjDwF3poPdWEYWDXFjjhENXP0jNMhBXH": {
 			"height": 92,
 			"title": "nota_vojguard_notabu.positionSiege",
 			"width": 293,
-			"x": 2232,
-			"y": 299
+			"x": 2635,
+			"y": 373
 		},
 		"kkGZsYNb24Lc1Nq2cDqPwj99zHJ9Ne7o": {
 			"height": 90,
 			"title": "luaCondition",
 			"width": 194,
-			"x": 1897,
+			"x": 1898,
 			"y": 299
 		},
 		"mnZRDpKbDn6IW6wQ04GEi5Y3Fhbo88fN": {
 			"height": 132,
 			"title": "nota_vojguard_notabu.moveOnBattleline",
 			"width": 320,
-			"x": 1774,
+			"x": 1775,
 			"y": 170
 		},
 		"rdddDxPRIUtHYMGWSrrlwnZ2pz5OzBHa": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 271,
+			"x": 272,
 			"y": 17
 		},
 		"rfW9nvi8dMf62AKu8CFpH8Kd9ZUtq7Bq": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 1598,
+			"x": 1600,
 			"y": -47
 		},
 		"u3hvUPXrjvIyAkEvsECDBL9n5OFKELPn": {
 			"height": 70,
 			"title": "parallel",
 			"width": 202,
-			"x": 1096,
+			"x": 1098,
 			"y": 47
 		},
 		"x45ltlFjUPA8pmcVFfPdWzgfvqVQGqLG": {
 			"height": 54,
 			"title": "success",
 			"width": 132,
-			"x": 1102,
+			"x": 1104,
 			"y": 116
 		},
 		"xVsCPEYZnbHZTIPNlBSZRfP2xpQt1Vmu": {
 			"height": 94,
 			"title": "store",
 			"width": 435,
-			"x": 1839,
+			"x": 1840,
 			"y": -11
 		},
 		"xdixgs1RDoojWYqZm3Zfc706R02GBraC": {
 			"height": 60,
 			"title": "repeat",
 			"width": 131,
-			"x": 808,
+			"x": 810,
 			"y": -131
 		}
 	},
@@ -326,20 +362,52 @@
 								} ],
 								"scriptName": "nota_vojguard_notabu.moveOnBattleline"
 							}, {
-								"children": [],
-								"id": "kjDwF3poPdWEYWDXFjjhENXP0jNMhBXH",
-								"nodeType": "luaCommand",
-								"parameters": [ {
-									"name": "unitIDs",
-									"value": "lugs"
+								"children": [ {
+									"children": [],
+									"id": "S9WQD5vVn7jJuvNF3TWUQs7MW9khVmKy",
+									"nodeType": "luaCommand",
+									"parameters": [ {
+										"name": "unitIDs",
+										"value": "lugs"
+									}, {
+										"name": "battlePosition",
+										"value": "battlePos"
+									}, {
+										"name": "battleVector",
+										"value": "battleVec"
+									}, {
+										"name": "formationOffset",
+										"value": "formationOffset"
+									}, {
+										"name": "scriptName",
+										"value": "nota_vojguard_notabu.moveOnBattleline"
+									} ],
+									"scriptName": "nota_vojguard_notabu.moveOnBattleline"
 								}, {
-									"name": "positionToSiege",
-									"value": "shikaPos"
-								}, {
-									"name": "scriptName",
-									"value": "nota_vojguard_notabu.positionSiege"
+									"children": [],
+									"id": "kjDwF3poPdWEYWDXFjjhENXP0jNMhBXH",
+									"nodeType": "luaCommand",
+									"parameters": [ {
+										"name": "unitIDs",
+										"value": "lugs"
+									}, {
+										"name": "positionToSiege",
+										"value": "shikaPos"
+									}, {
+										"name": "scriptName",
+										"value": "nota_vojguard_notabu.positionSiege"
+									} ],
+									"scriptName": "nota_vojguard_notabu.positionSiege"
 								} ],
-								"scriptName": "nota_vojguard_notabu.positionSiege"
+								"id": "3iEqLGJIm7GhQ3buaHR8K6kBTkDyU6wt",
+								"nodeType": "luaCondition",
+								"parameters": [ {
+									"name": "expression",
+									"value": "PositionsDistance(battlePos, shikaPos) > 2000"
+								}, {
+									"name": "repeat",
+									"value": "true"
+								} ]
 							} ],
 							"id": "kkGZsYNb24Lc1Nq2cDqPwj99zHJ9Ne7o",
 							"nodeType": "luaCondition",

@@ -70,8 +70,8 @@
 			"height": 90,
 			"title": "luaCondition",
 			"width": 194,
-			"x": 649,
-			"y": 445
+			"x": 906,
+			"y": 544
 		},
 		"EJWYfZB8s33xlxuslajkwUvXMxBzgMYk": {
 			"height": 94,
@@ -91,8 +91,22 @@
 			"height": 72,
 			"title": "nota_vojguard_notabu.buyUnits",
 			"width": 263,
-			"x": 1279,
-			"y": 420
+			"x": 1513,
+			"y": 487
+		},
+		"SoxhgiW6BxRW0QFpwFG7fz7lceahWix7": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 277,
+			"x": 900,
+			"y": 407
+		},
+		"TkVaM25KTYHxYxChiAkJyP12EQtElVQK": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 194,
+			"x": 647,
+			"y": 445
 		},
 		"VZsJn8TBYtgdbV5I47EjiTykRCQvzFVP": {
 			"height": 90,
@@ -105,14 +119,21 @@
 			"height": 90,
 			"title": "luaCondition",
 			"width": 277,
-			"x": 955,
-			"y": 513
+			"x": 1189,
+			"y": 580
 		},
 		"Zl63W6GJVqI2naJIB8y60AvkOc7PvNr9": {
 			"height": 90,
 			"title": "luaCondition",
 			"width": 272,
-			"x": 957,
+			"x": 1191,
+			"y": 481
+		},
+		"bYZgAtTUPfNj8cM6qMAGbWqikeiQ6KRN": {
+			"height": 72,
+			"title": "nota_vojguard_notabu.buyUnits",
+			"width": 263,
+			"x": 1226,
 			"y": 414
 		},
 		"e3PB8mqx9BD6oxeVtx0CaIOyWwswxUFH": {
@@ -147,8 +168,8 @@
 			"height": 72,
 			"title": "nota_vojguard_notabu.buyUnits",
 			"width": 263,
-			"x": 1282,
-			"y": 520
+			"x": 1516,
+			"y": 587
 		},
 		"pbfzlkslRdvITg1SpvAfVC5oMHZreOwx": {
 			"height": 54,
@@ -388,30 +409,7 @@
 				"children": [ {
 					"children": [ {
 						"children": [],
-						"id": "PvncFpmloksce2useq2ObTajkqpVWMa2",
-						"nodeType": "luaCommand",
-						"parameters": [ {
-							"name": "unitName",
-							"value": "'armmav'"
-						}, {
-							"name": "scriptName",
-							"value": "nota_vojguard_notabu.buyUnits"
-						} ],
-						"scriptName": "nota_vojguard_notabu.buyUnits"
-					} ],
-					"id": "Zl63W6GJVqI2naJIB8y60AvkOc7PvNr9",
-					"nodeType": "luaCondition",
-					"parameters": [ {
-						"name": "expression",
-						"value": "metalCount.currentLevel > mavCost"
-					}, {
-						"name": "repeat",
-						"value": "true"
-					} ]
-				}, {
-					"children": [ {
-						"children": [],
-						"id": "pH7MmrvEWukBc42WMi6Of1Cn75fdoNLU",
+						"id": "bYZgAtTUPfNj8cM6qMAGbWqikeiQ6KRN",
 						"nodeType": "luaCommand",
 						"parameters": [ {
 							"name": "unitName",
@@ -422,7 +420,7 @@
 						} ],
 						"scriptName": "nota_vojguard_notabu.buyUnits"
 					} ],
-					"id": "ZLiTDYluFoymLz4pBBGtESi3hRk8kBAO",
+					"id": "SoxhgiW6BxRW0QFpwFG7fz7lceahWix7",
 					"nodeType": "luaCondition",
 					"parameters": [ {
 						"name": "expression",
@@ -431,12 +429,69 @@
 						"name": "repeat",
 						"value": "true"
 					} ]
+				}, {
+					"children": [ {
+						"children": [ {
+							"children": [],
+							"id": "PvncFpmloksce2useq2ObTajkqpVWMa2",
+							"nodeType": "luaCommand",
+							"parameters": [ {
+								"name": "unitName",
+								"value": "'armmav'"
+							}, {
+								"name": "scriptName",
+								"value": "nota_vojguard_notabu.buyUnits"
+							} ],
+							"scriptName": "nota_vojguard_notabu.buyUnits"
+						} ],
+						"id": "Zl63W6GJVqI2naJIB8y60AvkOc7PvNr9",
+						"nodeType": "luaCondition",
+						"parameters": [ {
+							"name": "expression",
+							"value": "metalCount.currentLevel > mavCost"
+						}, {
+							"name": "repeat",
+							"value": "true"
+						} ]
+					}, {
+						"children": [ {
+							"children": [],
+							"id": "pH7MmrvEWukBc42WMi6Of1Cn75fdoNLU",
+							"nodeType": "luaCommand",
+							"parameters": [ {
+								"name": "unitName",
+								"value": "'armmart'"
+							}, {
+								"name": "scriptName",
+								"value": "nota_vojguard_notabu.buyUnits"
+							} ],
+							"scriptName": "nota_vojguard_notabu.buyUnits"
+						} ],
+						"id": "ZLiTDYluFoymLz4pBBGtESi3hRk8kBAO",
+						"nodeType": "luaCondition",
+						"parameters": [ {
+							"name": "expression",
+							"value": "metalCount.currentLevel > lugerCost"
+						}, {
+							"name": "repeat",
+							"value": "true"
+						} ]
+					} ],
+					"id": "DYV1UpIPBB6v0uq3nvVBi13JPAnD1GLU",
+					"nodeType": "luaCondition",
+					"parameters": [ {
+						"name": "expression",
+						"value": "#mav < 2 * #lug"
+					}, {
+						"name": "repeat",
+						"value": "true"
+					} ]
 				} ],
-				"id": "DYV1UpIPBB6v0uq3nvVBi13JPAnD1GLU",
+				"id": "TkVaM25KTYHxYxChiAkJyP12EQtElVQK",
 				"nodeType": "luaCondition",
 				"parameters": [ {
 					"name": "expression",
-					"value": "#mav < 2* #lug"
+					"value": "#lug < 4"
 				}, {
 					"name": "repeat",
 					"value": "true"
